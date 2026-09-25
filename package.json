@@ -1,0 +1,9 @@
+{
+  "name": "hcorpus.com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node build.mjs && python -m http.server 8080 --directory docs"
+  }
+}
