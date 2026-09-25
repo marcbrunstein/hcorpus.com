@@ -37,7 +37,7 @@ export const clients = {
     { name: 'Shiseido', logo: 'shiseido.png' },
     { name: 'EDS – an HP company', logo: 'eds.png' },
     { name: "L'Assurance Maladie", logo: 'ameli.svg' },
-    { name: 'SIAé', logo: null },
+    { name: 'SIAE – Paris Air Show', logo: 'siae.png' },
   ],
   mid: [
     { name: 'miLibris', logo: 'milibris.png' },
@@ -46,8 +46,8 @@ export const clients = {
     { name: 'Sage', logo: 'sage.png' },
     { name: 'Promosalons', logo: 'promosalons.png' },
     { name: 'VT Scan', logo: 'vtscan.png' },
-    { name: 'Crea Valoris', logo: null },
-    { name: 'Annie', logo: null },
+    { name: 'Crea Valoris', logo: 'crea-valoris.png' },
+    { name: 'Annie', logo: 'annie.png' },
   ],
   international: [
     { name: 'Innova Solutions', logo: 'innova.png', country: 'us' },
