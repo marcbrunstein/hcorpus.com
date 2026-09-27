@@ -145,7 +145,7 @@ export default {
       cyrcee: 'Personalberatung: Potenzialanalyse, Laufbahnentwicklung, Recruiting und Führungskräfteentwicklung.',
       pt: 'Assessment-Center und Entwicklung strategischer Kompetenzen, im Rahmen des internationalen GAPI-Netzwerks.',
       orsys: 'Ein Anbieter beruflicher Weiterbildung für Unternehmen.',
-      nikita: 'KI-Agentur für KMU, Mittelstand und regulierte Berufe: Audit, Schulung und produktiver Einsatz von KI-Agenten.',
+      nikita: 'KI-Agentur.',
       nmu: 'Ein italienisches Unternehmen für digitale Dienste und Anwendungen mit Sitz in Bologna.',
     },
   },
