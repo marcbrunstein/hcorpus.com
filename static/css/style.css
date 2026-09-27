@@ -777,6 +777,11 @@ p {
   background: var(--white);
   border: 1px solid var(--line);
   margin: -1px 0 0 -1px;
+  display: flex;
+}
+/* la cellule (lien ou bloc) occupe toute la case : toute la surface est cliquable */
+.logos .cell {
+  flex: 1;
   min-height: 116px;
   display: flex;
   flex-direction: column;
@@ -785,6 +790,11 @@ p {
   gap: 10px;
   padding: 20px 22px;
   text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+.logos a.cell:focus-visible {
+  outline-offset: -3px;
 }
 .logos .mark {
   height: 60px;
@@ -828,7 +838,7 @@ p {
   .logos {
     grid-template-columns: repeat(2, 1fr);
   }
-  .logos li {
+  .logos .cell {
     min-height: 100px;
     padding: 16px 10px;
   }

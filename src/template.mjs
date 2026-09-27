@@ -126,7 +126,10 @@ function clientItem(cl, c, from) {
     ? `<img${cl.large ? ' class="logo-lg"' : ''} src="${from.root}assets/img/clients/${cl.logo}" alt="${esc(cl.name)}" loading="lazy">`
     : `<span class="wordmark">${esc(cl.name)}</span>`;
   const country = cl.country ? `<span class="country">${esc(c.clients.countries[cl.country])}</span>` : '';
-  return `<li><span class="mark">${mark}</span>${country}</li>`;
+  const inner = `<span class="mark">${mark}</span>${country}`;
+  return cl.url
+    ? `<li><a class="cell" href="${cl.url}" rel="noopener" target="_blank">${inner}</a></li>`
+    : `<li><div class="cell">${inner}</div></li>`;
 }
 
 export function renderHome(c, lang) {
