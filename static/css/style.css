@@ -732,9 +732,7 @@ p {
 .extended {
   margin-top: clamp(72px, 9vw, 112px);
   display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: 48px 72px;
-  align-items: center;
+  gap: 40px;
   padding-top: clamp(56px, 7vw, 80px);
   border-top: 1px solid var(--line);
 }
@@ -750,14 +748,11 @@ p {
   color: var(--muted);
   font-size: 1rem;
 }
+.extended-text {
+  max-width: 62ch;
+}
 .extended img {
   width: 100%;
-}
-
-@media (max-width: 860px) {
-  .extended {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ---------- Références ---------- */
