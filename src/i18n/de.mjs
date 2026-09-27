@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Governance, Strategie, internationale Entwicklung',
+    title: 'Habeas Corpus Consulting · Governance, Strategie, Internationalisierung, künstliche Intelligenz',
     description:
-      'Ein europäisches Beraterkollektiv, gegründet 1998. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie und der internationalen Entwicklung.',
+      'Ein europäisches Beraterkollektiv, gegründet 1998. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der Einführung künstlicher Intelligenz.',
     ogLocale: 'de_DE',
   },
   nav: {
@@ -21,7 +21,7 @@ export default {
     eyebrow: 'Beratung für Unternehmensleitungen · seit 1998',
     title: 'Besser führen, klarer entscheiden, <em>über Grenzen hinaus wachsen.</em>',
     lead:
-      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie und der internationalen Entwicklung.',
+      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der Einführung künstlicher Intelligenz.',
     ctaPrimary: 'Schreiben Sie uns',
     ctaSecondary: 'Unsere Leistungen',
   },
@@ -29,18 +29,18 @@ export default {
     label: 'Über uns',
     title: 'Ein europäisches Kollektiv für nachhaltigen Erfolg',
     paragraphs: [
-      'An der Seite von Geschäftsführern und Investoren ist es unser Auftrag, nachhaltig zum Erfolg unserer Kunden beizutragen. Wir setzen dort an, wo die für das Unternehmen entscheidenden Weichen gestellt werden: bei der Zusammensetzung und Arbeitsweise seiner Gremien, bei seinen strategischen Entscheidungen und bei der Erschließung neuer Märkte.',
+      'An der Seite von Geschäftsführern und Investoren ist es unser Auftrag, nachhaltig zum Erfolg unserer Kunden beizutragen. Wir setzen dort an, wo die für das Unternehmen entscheidenden Weichen gestellt werden: bei der Zusammensetzung und Arbeitsweise seiner Gremien, bei seinen strategischen Entscheidungen bei der Erschließung neuer Märkte und zunehmend bei der Transformation durch künstliche Intelligenz.',
       'Wir belassen es nicht bei Empfehlungen: Wir begleiten auch die Umsetzung der daraus folgenden Veränderungen.',
     ],
     facts: [
       { value: '1998', label: 'Gründung des Kollektivs' },
       { value: '4 Länder', label: 'Frankreich, Deutschland, Vereinigtes Königreich, Italien' },
-      { value: '3 Schwerpunkte', label: 'Governance, Strategie, Internationalisierung' },
+      { value: '4 Schwerpunkte', label: 'Governance, Strategie, Internationalisierung, KI' },
     ],
   },
   expertise: {
     label: 'Leistungen',
-    title: 'Drei Beratungsschwerpunkte',
+    title: 'Vier Beratungsschwerpunkte',
     items: [
       {
         title: 'Governance',
@@ -70,6 +70,17 @@ export default {
           'Analyse der Vertriebsorganisation',
           'Wettbewerbs-Benchmarking',
         ],
+      },
+      {
+        title: 'Künstliche Intelligenz',
+        lead: 'KI zur Führungsaufgabe machen, nicht nur zum Technologiethema.',
+        body: null,
+        list: [
+          'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle, erwarteter Nutzen',
+          'KI-Strategie und Roadmap',
+          'Begleitung der Geschäftsleitung bei der Einführung von KI',
+        ],
+        note: 'Für die technische Umsetzung arbeiten wir mit spezialisierten Partnern zusammen.',
       },
     ],
     boardsTitle: 'Gremien, die wir begleiten',
@@ -134,6 +145,7 @@ export default {
     visit: 'Website von',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
+      bpi: 'Die französische öffentliche Investitionsbank: Finanzierung und Begleitung von Unternehmen, von der Gründung bis zur Internationalisierung.',
       oct:
         'Ein Kollektiv aus Beratung (O Consulting) sowie Training und Coaching (O Training), mit dem wir gemeinsame Beratungs- und Schulungsangebote entwickeln.',
       cristaleye:

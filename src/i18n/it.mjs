@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Governance, strategia, sviluppo internazionale',
+    title: 'Habeas Corpus Consulting · Governance, strategia, internazionale, intelligenza artificiale',
     description:
-      'Un collettivo europeo di consulenti nato nel 1998. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia e nello sviluppo internazionale.',
+      'Un collettivo europeo di consulenti nato nel 1998. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione dell’intelligenza artificiale.',
     ogLocale: 'it_IT',
   },
   nav: {
@@ -21,7 +21,7 @@ export default {
     eyebrow: 'Consulenza di direzione · dal 1998',
     title: 'Governare meglio, decidere meglio, <em>crescere oltre i confini.</em>',
     lead:
-      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia e nello sviluppo internazionale.',
+      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione dell’intelligenza artificiale.',
     ctaPrimary: 'Scriveteci',
     ctaSecondary: 'Le nostre competenze',
   },
@@ -29,18 +29,18 @@ export default {
     label: 'Chi siamo',
     title: 'Un collettivo europeo al servizio di una performance duratura',
     paragraphs: [
-      'Al fianco di dirigenti e investitori, la nostra missione è contribuire in modo duraturo alla performance dei nostri clienti. Interveniamo là dove si prendono le decisioni che impegnano l’impresa: la composizione e il funzionamento dei suoi organi, le sue scelte strategiche, la conquista di nuovi mercati.',
+      'Al fianco di dirigenti e investitori, la nostra missione è contribuire in modo duraturo alla performance dei nostri clienti. Interveniamo là dove si prendono le decisioni che impegnano l’impresa: la composizione e il funzionamento dei suoi organi, le sue scelte strategiche, la conquista di nuovi mercati e, ormai, la sua trasformazione grazie all’intelligenza artificiale.',
       'Non ci fermiamo alle raccomandazioni: accompagniamo anche l’attuazione delle trasformazioni che ne derivano.',
     ],
     facts: [
       { value: '1998', label: 'Nascita del collettivo' },
       { value: '4 paesi', label: 'Francia, Germania, Regno Unito, Italia' },
-      { value: '3 competenze', label: 'Governance, strategia, internazionale' },
+      { value: '4 competenze', label: 'Governance, strategia, internazionale, IA' },
     ],
   },
   expertise: {
     label: 'Competenze',
-    title: 'Tre ambiti di intervento',
+    title: 'Quattro ambiti di intervento',
     items: [
       {
         title: 'Governance',
@@ -70,6 +70,17 @@ export default {
           'Diagnosi dell’organizzazione commerciale',
           'Benchmark competitivo',
         ],
+      },
+      {
+        title: 'Intelligenza artificiale',
+        lead: 'Fare dell’IA una questione di direzione, non solo di tecnologia.',
+        body: null,
+        list: [
+          'Diagnosi data e IA: maturità, casi d’uso, benefici attesi',
+          'Strategia IA e roadmap',
+          'Accompagnamento del comitato di direzione nell’adozione dell’IA',
+        ],
+        note: 'Per l’implementazione tecnica ci avvaliamo di partner specializzati.',
       },
     ],
     boardsTitle: 'Gli organi che accompagniamo',
@@ -134,6 +145,7 @@ export default {
     visit: 'Sito di',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
+      bpi: 'La banca pubblica d’investimento francese: finanziamento e accompagnamento delle imprese, dalla creazione all’internazionalizzazione.',
       oct:
         'Un collettivo di consulenza (O Consulting) e di formazione e coaching (O Training) con cui proponiamo offerte congiunte di consulenza e formazione.',
       cristaleye:

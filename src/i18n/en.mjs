@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Governance, strategy, international development',
+    title: 'Habeas Corpus Consulting · Governance, strategy, international, artificial intelligence',
     description:
-      'A European collective of consultants founded in 1998. We support business leaders and investors with their governance, strategy and international development.',
+      'A European collective of consultants founded in 1998. We support business leaders and investors with their governance, strategy, international development and adoption of artificial intelligence.',
     ogLocale: 'en_GB',
   },
   nav: {
@@ -21,7 +21,7 @@ export default {
     eyebrow: 'Advising business leaders · since 1998',
     title: 'Better governance, sharper decisions, <em>growth beyond borders.</em>',
     lead:
-      'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy and international development.',
+      'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy, international development and adoption of artificial intelligence.',
     ctaPrimary: 'Get in touch',
     ctaSecondary: 'Explore our expertise',
   },
@@ -29,18 +29,18 @@ export default {
     label: 'About',
     title: 'A European collective committed to lasting performance',
     paragraphs: [
-      'Working alongside business leaders and investors, our mission is to make a lasting contribution to our clients’ performance. We step in where the decisions that shape a company are made: how its boards are composed and run, its strategic choices, and its expansion into new markets.',
+      'Working alongside business leaders and investors, our mission is to make a lasting contribution to our clients’ performance. We step in where the decisions that shape a company are made: how its boards are composed and run, its strategic choices, its expansion into new markets and, increasingly, its transformation through artificial intelligence.',
       'We do not stop at recommendations: we also support the implementation of the transformations that follow.',
     ],
     facts: [
       { value: '1998', label: 'Collective founded' },
       { value: '4 countries', label: 'France, Germany, United Kingdom, Italy' },
-      { value: '3 areas', label: 'Governance, strategy, international' },
+      { value: '4 areas', label: 'Governance, strategy, international, AI' },
     ],
   },
   expertise: {
     label: 'Expertise',
-    title: 'Three areas of expertise',
+    title: 'Four areas of expertise',
     items: [
       {
         title: 'Governance',
@@ -70,6 +70,17 @@ export default {
           'Sales organisation review',
           'Competitive benchmarking',
         ],
+      },
+      {
+        title: 'Artificial intelligence',
+        lead: 'Making AI a leadership issue, not just a technology one.',
+        body: null,
+        list: [
+          'Data and AI assessment: maturity, use cases, expected gains',
+          'AI strategy and roadmap',
+          'Supporting the executive committee in rolling out AI',
+        ],
+        note: 'For technical implementation, we work with specialised partners.',
       },
     ],
     boardsTitle: 'The governing bodies we work with',
@@ -134,6 +145,7 @@ export default {
     visit: 'Website of',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
+      bpi: 'The French public investment bank: financing and support for businesses, from start-up to international expansion.',
       oct:
         'A consulting (O Consulting) and training-coaching (O Training) collective with which we offer joint consulting and training services.',
       cristaleye:

@@ -1,8 +1,8 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Gouvernance, stratégie, développement international',
+    title: 'Habeas Corpus Consulting · Gouvernance, stratégie, international, intelligence artificielle',
     description:
-      'Collectif européen de consultants créé en 1998. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie et leur développement international.',
+      'Collectif européen de consultants créé en 1998. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration de l’intelligence artificielle.',
     ogLocale: 'fr_FR',
   },
   nav: {
@@ -21,7 +21,7 @@ export default {
     eyebrow: 'Conseil aux dirigeants · depuis 1998',
     title: 'Mieux gouverner, mieux décider, <em>grandir au-delà des frontières.</em>',
     lead:
-      'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie et leur développement international.',
+      'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration de l’intelligence artificielle.',
     ctaPrimary: 'Nous écrire',
     ctaSecondary: 'Découvrir nos expertises',
   },
@@ -29,18 +29,18 @@ export default {
     label: 'Le cabinet',
     title: 'Un collectif européen au service d’une performance durable',
     paragraphs: [
-      'Aux côtés des dirigeants et des investisseurs, notre mission est de contribuer durablement à la performance de nos clients. Nous intervenons là où se prennent les décisions qui engagent l’entreprise : la composition et le fonctionnement de ses instances, ses choix stratégiques, sa conquête de nouveaux marchés.',
+      'Aux côtés des dirigeants et des investisseurs, notre mission est de contribuer durablement à la performance de nos clients. Nous intervenons là où se prennent les décisions qui engagent l’entreprise : la composition et le fonctionnement de ses instances, ses choix stratégiques, sa conquête de nouveaux marchés et, désormais, sa transformation par l’intelligence artificielle.',
       'Nous ne nous arrêtons pas à la recommandation : nous accompagnons aussi la mise en œuvre des transformations qui en découlent.',
     ],
     facts: [
       { value: '1998', label: 'Création du collectif' },
       { value: '4 pays', label: 'France, Allemagne, Royaume-Uni, Italie' },
-      { value: '3 expertises', label: 'Gouvernance, stratégie, international' },
+      { value: '4 expertises', label: 'Gouvernance, stratégie, international, IA' },
     ],
   },
   expertise: {
     label: 'Expertises',
-    title: 'Trois domaines d’intervention',
+    title: 'Quatre domaines d’intervention',
     items: [
       {
         title: 'Gouvernance',
@@ -70,6 +70,17 @@ export default {
           'Diagnostic de l’organisation commerciale',
           'Benchmark concurrentiel',
         ],
+      },
+      {
+        title: 'Intelligence artificielle',
+        lead: 'Faire de l’IA un sujet de direction, pas seulement de technologie.',
+        body: null,
+        list: [
+          'Diagnostic data et IA : maturité, cas d’usage, gains attendus',
+          'Stratégie IA et feuille de route',
+          'Accompagnement du comité de direction dans la mise en place de l’IA',
+        ],
+        note: 'Pour la mise en œuvre technique, nous nous appuyons sur des partenaires spécialisés.',
       },
     ],
     boardsTitle: 'Les instances que nous accompagnons',
@@ -133,6 +144,7 @@ export default {
     intro: 'Des partenaires choisis pour compléter nos expertises et proposer des offres conjointes.',
     visit: 'Site de',
     items: {
+      bpi: 'Banque publique d’investissement : financement et accompagnement des entreprises, de la création à l’international.',
       oct:
         'Un collectif conseil (O Consulting) et formation-coaching (O Training) avec lequel nous proposons des offres conjointes en conseil et en formation.',
       cristaleye:

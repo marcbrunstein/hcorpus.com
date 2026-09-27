@@ -145,6 +145,7 @@ export function renderHome(c, lang) {
           <p class="lead">${esc(it.lead)}</p>
           ${it.body ? `<p>${esc(it.body)}</p>` : ''}
           ${it.list ? `<ul class="ticks">${it.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+          ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
         </article>`
     )
     .join('');
