@@ -158,7 +158,7 @@ export default {
     phone: 'Appelez-nous',
     paris: 'Bureau de Paris',
     offices: 'Nos implantations',
-    cities: ['Paris', 'Cologne', 'Londres', 'Milan'],
+    cities: ['Paris', 'Munich', 'Londres', 'Milan'],
     headOffice: 'Siège social',
   },
   footer: {

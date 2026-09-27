@@ -159,7 +159,7 @@ export default {
     phone: 'Chiamateci',
     paris: 'Ufficio di Parigi',
     offices: 'Le nostre sedi',
-    cities: ['Parigi', 'Colonia', 'Londra', 'Milano'],
+    cities: ['Parigi', 'Monaco di Baviera', 'Londra', 'Milano'],
     headOffice: 'Sede legale',
   },
   footer: {

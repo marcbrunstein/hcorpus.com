@@ -159,7 +159,7 @@ export default {
     phone: 'Rufen Sie uns an',
     paris: 'Büro Paris',
     offices: 'Unsere Standorte',
-    cities: ['Paris', 'Köln', 'London', 'Mailand'],
+    cities: ['Paris', 'München', 'London', 'Mailand'],
     headOffice: 'Firmensitz',
   },
   footer: {
