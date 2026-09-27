@@ -39,7 +39,13 @@ ${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}
 </urlset>
 `
 );
-await writeFile(join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
+// PREVIEW=1 : version de relecture, exclue des moteurs de recherche
+await writeFile(
+  join(OUT, 'robots.txt'),
+  process.env.PREVIEW
+    ? 'User-agent: *\nDisallow: /\n'
+    : `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`
+);
 await writeFile(join(OUT, '.nojekyll'), '');
 await writeFile(
   join(OUT, '404.html'),

@@ -24,6 +24,12 @@ Site statique, sans dépendance, hébergé sur GitHub Pages.
 Ajouter une référence : déposer le logo dans `static/img/clients/` et ajouter une ligne dans
 `clients` de `src/data.mjs` (`logo: null` affiche le nom en typographie).
 
+## Version de relecture
+
+`PREVIEW=1 node build.mjs` (PowerShell : `$env:PREVIEW=1; node build.mjs`) génère le site avec une balise
+`noindex` et un `robots.txt` qui bloque les moteurs de recherche. **Avant la mise en ligne définitive,
+régénérer sans `PREVIEW`** (`Remove-Item Env:PREVIEW; node build.mjs`) et committer.
+
 ## Mise en ligne (GitHub Pages)
 
 1. Sur GitHub : *Settings → Pages → Build and deployment* : Source « Deploy from a branch »,

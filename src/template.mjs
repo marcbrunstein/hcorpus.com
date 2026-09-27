@@ -60,7 +60,9 @@ function head(c, lang, kind, from, title, description) {
       : '';
   return `<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">${
+      process.env.PREVIEW ? '\n    <meta name="robots" content="noindex, nofollow">' : ''
+    }
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}">
     <link rel="canonical" href="${absUrl(lang, kind)}">

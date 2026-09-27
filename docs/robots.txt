@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://www.hcorpus.com/sitemap.xml
+Disallow: /
