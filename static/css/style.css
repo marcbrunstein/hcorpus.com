@@ -244,7 +244,9 @@ p {
   border-left: 1px solid var(--line);
 }
 .langs a {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-decoration: none;
@@ -257,6 +259,19 @@ p {
 .langs a[aria-current] {
   color: var(--navy);
   font-weight: 600;
+}
+/* drapeaux : légèrement estompés, pleine couleur pour la langue active ou au survol */
+.flag {
+  flex: none;
+  width: 21px;
+  height: 14px;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.12);
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+.langs a:hover .flag,
+.langs a[aria-current] .flag {
+  opacity: 1;
 }
 
 .nav-toggle {

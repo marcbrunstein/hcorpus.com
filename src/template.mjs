@@ -1,4 +1,5 @@
 import { site, languages, team, clients, partners } from './data.mjs';
+import { flags, languageNames } from './flags.mjs';
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -86,10 +87,11 @@ function header(c, lang, kind, from) {
   const home = kind === 'home' ? '' : hrefTo(from, lang, 'home');
   const links = SECTIONS.map((s) => `<li><a href="${home}#${s}">${esc(c.nav[s])}</a></li>`).join('');
   const langs = languages
-    .map((l) =>
-      l.code === lang.code
-        ? `<li><a href="${hrefTo(from, l, kind)}" hreflang="${l.code}" lang="${l.code}" aria-current="true">${l.label}</a></li>`
-        : `<li><a href="${hrefTo(from, l, kind)}" hreflang="${l.code}" lang="${l.code}">${l.label}</a></li>`
+    .map(
+      (l) =>
+        `<li><a href="${hrefTo(from, l, kind)}" hreflang="${l.code}" lang="${l.code}" title="${languageNames[l.code]}" aria-label="${languageNames[l.code]}"${
+          l.code === lang.code ? ' aria-current="true"' : ''
+        }>${flags[l.code]}<span aria-hidden="true">${l.label}</span></a></li>`
     )
     .join('');
   return `<a class="skip" href="#main">${esc(c.nav.skip)}</a>
