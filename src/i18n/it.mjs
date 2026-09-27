@@ -125,7 +125,7 @@ export default {
       subject: 'Investitore – scambio con Habeas Corpus',
     },
   },
-  conviction: 'Nessun dirigente dovrebbe decidere da solo le scelte che impegnano il futuro della propria impresa.',
+  conviction: 'Nessun dirigente dovrebbe trovarsi solo nel momento di fare le scelte che impegnano il futuro della propria impresa.',
   diag: {
     label: 'Diag Data IA',
     title: 'Una diagnosi data e IA ammissibile al programma Diag Data IA di Bpifrance',
@@ -150,7 +150,7 @@ export default {
       {
         quote: 'Nel 2008 ho chiesto a Marc di costituire e presiedere il mio Consiglio di sorveglianza. […] In questi nove anni ha sempre svolto perfettamente il suo ruolo. […] È una persona a cui si può affidare la costituzione e l’animazione di un Board. Con Marc si può guardare lontano in piena fiducia.',
         author: 'Guillaume Monteux',
-        role: 'Fondatore di MiLibris',
+        role: 'Fondatore di MiLibris, oggi CEO e fondatore di Gadsme',
         from: 'fr',
       },
       {
@@ -162,7 +162,7 @@ export default {
       {
         quote: 'Marc ha fornito a Jones Cyber Solutions (JCS) una consulenza e un accompagnamento di grande valore durante la nostra espansione nell’UE. […] Ha accelerato in modo significativo la nostra penetrazione del mercato e migliorato la nostra redditività nell’UE.',
         author: 'Richard Caudle',
-        role: 'Chief Customer Officer, Razorthink (Denver, Stati Uniti)',
+        role: 'Ex VP Sales, Business Development & Marketing di Jones Cyber Solutions, oggi Chief Customer Officer di Razorthink',
         from: 'en',
       },
     ],

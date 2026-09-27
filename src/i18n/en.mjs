@@ -125,7 +125,7 @@ export default {
       subject: 'Investor – conversation with Habeas Corpus',
     },
   },
-  conviction: 'No leader should have to decide alone on the choices that shape the future of their company.',
+  conviction: 'No leader should find themselves alone when making the choices that shape the future of their company.',
   diag: {
     label: 'Diag Data IA',
     title: 'A data and AI assessment eligible for Bpifrance’s Diag Data IA programme',
@@ -149,7 +149,7 @@ export default {
       {
         quote: 'In 2008, I asked Marc to form and chair my Supervisory Committee. […] During these 9 years, he has always played his role perfectly. […] He’s someone you can entrust with setting up and running a Board. With Marc, you can plan for the long term with complete confidence.',
         author: 'Guillaume Monteux',
-        role: 'Founder of MiLibris',
+        role: 'Founder of MiLibris, currently CEO and founder of Gadsme',
         from: 'fr',
       },
       {
@@ -161,7 +161,7 @@ export default {
       {
         quote: 'Marc delivered high value counsel and guidance to Jones Cyber Solutions (JCS) during our expansion into the EU. […] Marc dramatically accelerated our penetration of the market and improved our profitability in the EU.',
         author: 'Richard Caudle',
-        role: 'Chief Customer Officer, Razorthink (Denver, USA)',
+        role: 'Former VP Sales, Business Development & Marketing at Jones Cyber Solutions, currently Chief Customer Officer at Razorthink',
         from: 'en',
       },
     ],
