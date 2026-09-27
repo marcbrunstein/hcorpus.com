@@ -44,6 +44,7 @@ export default {
     items: [
       {
         title: 'Governance',
+        question: 'Ist Ihr Board Ihren Ambitionen gewachsen?',
         lead: 'Analyse, Aufbau, Optimierung und Moderation von Boards.',
         body:
           'Grundlage unserer Arbeit ist die BMMI-Methode: ein fünfstufiges Reifegradmodell, mit dem sich ein Board bewerten, aufbauen oder weiterentwickeln lässt.',
@@ -51,6 +52,7 @@ export default {
       },
       {
         title: 'Strategie',
+        question: 'Wissen Ihre Teams, wohin die Reise geht?',
         lead: 'Eine klare Richtung vorgeben und teilen.',
         body: null,
         list: [
@@ -62,6 +64,7 @@ export default {
       },
       {
         title: 'Internationale Entwicklung',
+        question: 'Wie gelingt der Eintritt in einen neuen Markt, ohne sich zu verzetteln?',
         lead: 'Neue Märkte mit Methode erschließen.',
         body: null,
         list: [
@@ -73,6 +76,7 @@ export default {
       },
       {
         title: 'Künstliche Intelligenz',
+        question: 'Wie wird KI zum Hebel statt zum Risiko?',
         wide: true,
         lead: 'KI zur Führungsaufgabe machen, nicht nur zum Technologiethema.',
         body: null,
@@ -104,6 +108,64 @@ export default {
       'Executive Committee',
     ],
     cta: 'Sprechen wir über Ihr Projekt',
+  },
+  paths: {
+    label: 'Für wen',
+    leader: {
+      kicker: 'Sie leiten ein Unternehmen',
+      title: 'Führen, entscheiden, wachsen',
+      text: 'Sie leiten ein Start-up, ein KMU oder ein mittelständisches Unternehmen. Wir helfen Ihnen, Ihre Governance zu strukturieren, Ihre Strategie zu schärfen, neue Märkte zu erschließen und künstliche Intelligenz einzuführen.',
+      cta: 'Unsere Leistungen',
+    },
+    investor: {
+      kicker: 'Sie sind Investor',
+      title: 'Beteiligungen absichern und entwickeln',
+      text: 'Sie investieren in Unternehmen. Wir bauen die Boards Ihrer Beteiligungen auf und moderieren sie, bewerten vor einer Investition deren KI-Reife und begleiten ihre internationale Entwicklung.',
+      cta: 'Sprechen wir über Ihre Beteiligungen',
+      subject: 'Investor – Austausch mit Habeas Corpus',
+    },
+  },
+  conviction: 'Keine Führungskraft sollte die Entscheidungen, die die Zukunft ihres Unternehmens prägen, allein treffen müssen.',
+  diag: {
+    label: 'Diag Data IA',
+    title: 'Eine Data- und KI-Diagnose, förderfähig im Programm Diag Data IA von Bpifrance',
+    text: 'Marc Brunstein ist bei Bpifrance als Experte für das Programm Diag Data IA gelistet. Wir bewerten Ihren Data- und KI-Reifegrad, identifizieren die Anwendungsfälle mit der größten Wirkung und erarbeiten mit Ihnen eine realistische Roadmap.',
+    points: [
+      'Data- und KI-Reifegrad des Unternehmens',
+      'Prioritäre Anwendungsfälle und erwarteter Nutzen',
+      'Roadmap und Maßnahmenplan',
+    ],
+    financing: 'Das Programm Diag Data IA von Bpifrance kofinanziert diese Diagnose für förderfähige französische KMU und mittelständische Unternehmen.',
+    cta: 'Förderfähigkeit prüfen',
+    subject: 'Diag Data IA – Förderfähigkeit',
+  },
+  testimonials: {
+    label: 'Stimmen',
+    title: 'Was unsere Kunden sagen',
+    translatedFrom: {
+      fr: 'Aus dem Französischen übersetzt',
+      en: 'Aus dem Englischen übersetzt',
+    },
+    items: [
+      {
+        quote: '2008 bat ich Marc, meinen Aufsichtsrat aufzubauen und zu leiten. […] In diesen neun Jahren hat er seine Rolle stets perfekt ausgefüllt. […] Ihm kann man den Aufbau und die Leitung eines Boards anvertrauen. Mit Marc kann man langfristig und mit vollem Vertrauen planen.',
+        author: 'Guillaume Monteux',
+        role: 'Gründer von MiLibris',
+        from: 'fr',
+      },
+      {
+        quote: 'Ein Board muss moderiert und mit Leben gefüllt werden – man muss sicherstellen, dass jedes Mitglied wirklich einen Beitrag leistet, und den Austausch erleichtern: Genau das macht Habeas Corpus sehr gut. Ich schätze die gründliche Arbeit, die Methodik und die Qualität des Austauschs.',
+        author: 'Edem Yigan',
+        role: 'Gründer und CEO von Youree',
+        from: 'fr',
+      },
+      {
+        quote: 'Marc hat Jones Cyber Solutions (JCS) bei unserer Expansion in die EU äußerst wertvoll beraten und begleitet. […] Er hat unsere Marktdurchdringung deutlich beschleunigt und unsere Rentabilität in der EU verbessert.',
+        author: 'Richard Caudle',
+        role: 'Chief Customer Officer, Razorthink (Denver, USA)',
+        from: 'en',
+      },
+    ],
   },
   team: {
     label: 'Team',

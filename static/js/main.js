@@ -27,6 +27,30 @@
   addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // Apparitions discrètes au défilement (uniquement pour les éléments encore hors de l'écran,
+  // pour éviter tout clignotement ; désactivé si l'utilisateur réduit les animations)
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.documentElement.classList.add('js');
+    const targets = document.querySelectorAll(
+      '.section h2, .path, .facts > div, .conviction p, .expertise, .boards, .diag-card, .person, .extended, .client-group, .quote, .partners li'
+    );
+    const reveal = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('is-visible');
+          reveal.unobserve(entry.target);
+        });
+      },
+      { rootMargin: '0px 0px -8% 0px' }
+    );
+    targets.forEach((el) => {
+      if (el.getBoundingClientRect().top < innerHeight) return;
+      el.classList.add('reveal');
+      reveal.observe(el);
+    });
+  }
+
   // Section active dans la navigation
   const links = [...document.querySelectorAll('.nav a[href^="#"]')];
   if (!links.length || !('IntersectionObserver' in window)) return;

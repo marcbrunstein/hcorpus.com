@@ -141,6 +141,7 @@ export function renderHome(c, lang) {
     .map(
       (it, i) => `<article class="expertise${it.wide ? ' expertise-wide' : ''}">
           <p class="num">0${i + 1}</p>
+          ${it.question ? `<p class="question">${esc(it.question)}</p>` : ''}
           <h3>${esc(it.title)}</h3>
           <p class="lead">${esc(it.lead)}</p>
           ${it.body ? `<p>${esc(it.body)}</p>` : ''}
@@ -185,6 +186,27 @@ export function renderHome(c, lang) {
     })
     .join('');
 
+  const mailSubject = (subject) => `${mail}?subject=${encodeURIComponent(subject)}`;
+
+  const pathCard = (p, href, variant) => `<a class="path path-${variant}" href="${href}">
+          <p class="path-kicker">${esc(p.kicker)}</p>
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.text)}</p>
+          <span class="link-arrow">${esc(p.cta)}${icon.arrow}</span>
+        </a>`;
+
+  const quotes = c.testimonials.items
+    .map((t) => {
+      const translated = t.from !== lang.code ? c.testimonials.translatedFrom[t.from] : null;
+      return `<figure class="quote">
+          <blockquote><p>${esc(t.quote)}</p></blockquote>
+          <figcaption><strong>${esc(t.author)}</strong><span>${esc(t.role)}</span>${
+            translated ? `<em>${esc(translated)}</em>` : ''
+          }</figcaption>
+        </figure>`;
+    })
+    .join('');
+
   return `<!doctype html>
 <html lang="${lang.code}">
   ${head(c, lang, 'home', from, c.meta.title, c.meta.description)}
@@ -201,6 +223,13 @@ export function renderHome(c, lang) {
           <a class="btn btn-ghost" href="#expertise">${esc(c.hero.ctaSecondary)}</a>
         </p>
         <ul class="cities" aria-label="${esc(c.contact.offices)}">${c.contact.cities.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+    </section>
+
+    <section class="paths" aria-label="${esc(c.paths.label)}">
+      <div class="wrap paths-grid">
+        ${pathCard(c.paths.leader, '#expertise', 'leader')}
+        ${pathCard(c.paths.investor, mailSubject(c.paths.investor.subject), 'investor')}
       </div>
     </section>
 
@@ -221,6 +250,12 @@ export function renderHome(c, lang) {
       </div>
     </section>
 
+    <section class="conviction">
+      <div class="wrap">
+        <p>${esc(c.conviction)}</p>
+      </div>
+    </section>
+
     <section class="section section-tint" id="expertise">
       <div class="wrap">
         ${label(c.expertise.label)}
@@ -231,6 +266,23 @@ export function renderHome(c, lang) {
           <ul>${c.expertise.boards.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
         </div>
         <p class="more"><a class="link-arrow" href="#contact">${esc(c.expertise.cta)}${icon.arrow}</a></p>
+      </div>
+    </section>
+
+    <section class="section diag" id="diag-data-ia">
+      <div class="wrap">
+        <div class="diag-card">
+          <div class="diag-main">
+            ${label(c.diag.label)}
+            <h2>${esc(c.diag.title)}</h2>
+            <p>${esc(c.diag.text)}</p>
+          </div>
+          <div class="diag-side">
+            <ul class="ticks">${c.diag.points.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+            <p class="diag-financing">${esc(c.diag.financing)}</p>
+            <a class="btn btn-yellow" href="${mailSubject(c.diag.subject)}">${esc(c.diag.cta)}${icon.arrow}</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -258,7 +310,15 @@ export function renderHome(c, lang) {
       </div>
     </section>
 
-    <section class="section" id="partners">
+    <section class="section" id="testimonials">
+      <div class="wrap">
+        ${label(c.testimonials.label)}
+        <h2>${esc(c.testimonials.title)}</h2>
+        <div class="quotes">${quotes}</div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="partners">
       <div class="wrap">
         <div class="split">
           <div>

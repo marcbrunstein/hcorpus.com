@@ -44,6 +44,7 @@ export default {
     items: [
       {
         title: 'Gouvernance',
+        question: 'Votre conseil est-il à la hauteur de vos ambitions ?',
         lead: 'Diagnostic, création, optimisation et animation de boards.',
         body:
           'Nous nous appuyons sur la méthodologie BMMI : un modèle de maturité en cinq niveaux pour évaluer un board, le constituer ou le faire progresser.',
@@ -51,6 +52,7 @@ export default {
       },
       {
         title: 'Stratégie',
+        question: 'Vos équipes savent-elles où vous allez ?',
         lead: 'Donner un cap clair et le partager.',
         body: null,
         list: [
@@ -62,6 +64,7 @@ export default {
       },
       {
         title: 'Développement international',
+        question: 'Comment réussir sur un nouveau marché sans vous y perdre ?',
         lead: 'Conquérir de nouveaux marchés avec méthode.',
         body: null,
         list: [
@@ -73,6 +76,7 @@ export default {
       },
       {
         title: 'Intelligence artificielle',
+        question: 'Comment faire de l’IA un levier plutôt qu’un risque ?',
         wide: true,
         lead: 'Faire de l’IA un sujet de direction, pas seulement de technologie.',
         body: null,
@@ -104,6 +108,63 @@ export default {
       'Comité exécutif',
     ],
     cta: 'Parlons de votre projet',
+  },
+  paths: {
+    label: 'Pour qui',
+    leader: {
+      kicker: 'Vous êtes dirigeant',
+      title: 'Gouverner, décider, grandir',
+      text: 'Vous dirigez une start-up, une PME ou une ETI. Nous vous aidons à structurer votre gouvernance, clarifier votre stratégie, conquérir de nouveaux marchés et intégrer l’intelligence artificielle.',
+      cta: 'Voir nos expertises',
+    },
+    investor: {
+      kicker: 'Vous êtes investisseur',
+      title: 'Sécuriser et valoriser vos participations',
+      text: 'Vous investissez dans des entreprises. Nous mettons en place et animons les boards de vos participations, évaluons leur maturité IA avant investissement et accompagnons leur développement international.',
+      cta: 'Parlons de vos participations',
+      subject: 'Investisseur – échange avec Habeas Corpus',
+    },
+  },
+  conviction: 'Aucun dirigeant ne devrait décider seul des choix qui engagent l’avenir de son entreprise.',
+  diag: {
+    label: 'Diag Data IA',
+    title: 'Un diagnostic data et IA éligible au programme Diag Data IA de Bpifrance',
+    text: 'Marc Brunstein est expert référencé par Bpifrance pour le programme Diag Data IA. Nous évaluons votre maturité data et IA, identifions les cas d’usage à plus fort impact et construisons avec vous une feuille de route réaliste.',
+    points: [
+      'Maturité data et IA de l’entreprise',
+      'Cas d’usage prioritaires et gains attendus',
+      'Feuille de route et plan d’action',
+    ],
+    financing: 'Le programme Diag Data IA de Bpifrance cofinance ce diagnostic pour les PME et ETI éligibles.',
+    cta: 'Vérifier mon éligibilité',
+    subject: 'Diag Data IA – éligibilité',
+  },
+  testimonials: {
+    label: 'Témoignages',
+    title: 'Ils en parlent',
+    translatedFrom: {
+      en: 'Traduit de l’anglais',
+    },
+    items: [
+      {
+        quote: 'En 2008, j’ai demandé à Marc de constituer et présider mon Comité de Surveillance. […] Pendant ces 9 années, il a toujours parfaitement joué son rôle. […] C’est quelqu’un à qui on peut confier la constitution et l’animation d’un Board. Avec Marc, on peut se projeter dans la durée en toute confiance.',
+        author: 'Guillaume Monteux',
+        role: 'Fondateur de MiLibris',
+        from: 'fr',
+      },
+      {
+        quote: 'Il faut animer un Board et le faire vivre, en s’assurant que chaque membre contribue réellement et en fluidifiant les échanges : c’est ce que fait très bien Habeas Corpus. J’apprécie le travail de fond, la méthodologie et la qualité des échanges.',
+        author: 'Edem Yigan',
+        role: 'Fondateur et CEO de Youree',
+        from: 'fr',
+      },
+      {
+        quote: 'Marc a apporté à Jones Cyber Solutions (JCS) des conseils et un accompagnement à très forte valeur ajoutée lors de notre expansion dans l’Union européenne. […] Il a considérablement accéléré notre pénétration du marché et amélioré notre rentabilité en Europe.',
+        author: 'Richard Caudle',
+        role: 'Chief Customer Officer, Razorthink (Denver, États-Unis)',
+        from: 'en',
+      },
+    ],
   },
   team: {
     label: 'Équipe',

@@ -44,6 +44,7 @@ export default {
     items: [
       {
         title: 'Governance',
+        question: 'Is your board equal to your ambitions?',
         lead: 'Assessing, setting up, optimising and running boards.',
         body:
           'Our work is grounded in the BMMI methodology: a five-level maturity model used to assess a board, build it or help it progress.',
@@ -51,6 +52,7 @@ export default {
       },
       {
         title: 'Strategy',
+        question: 'Do your teams know where you are heading?',
         lead: 'Setting a clear course and sharing it.',
         body: null,
         list: [
@@ -62,6 +64,7 @@ export default {
       },
       {
         title: 'International development',
+        question: 'How do you succeed in a new market without losing your way?',
         lead: 'Entering new markets, methodically.',
         body: null,
         list: [
@@ -73,6 +76,7 @@ export default {
       },
       {
         title: 'Artificial intelligence',
+        question: 'How do you make AI a lever rather than a risk?',
         wide: true,
         lead: 'Making AI a leadership issue, not just a technology one.',
         body: null,
@@ -104,6 +108,63 @@ export default {
       'Executive committee',
     ],
     cta: 'Let’s discuss your project',
+  },
+  paths: {
+    label: 'Who we work with',
+    leader: {
+      kicker: 'You lead a company',
+      title: 'Govern, decide, grow',
+      text: 'You run a start-up, an SME or a mid-sized company. We help you structure your governance, clarify your strategy, enter new markets and adopt artificial intelligence.',
+      cta: 'See our expertise',
+    },
+    investor: {
+      kicker: 'You are an investor',
+      title: 'Secure and grow your portfolio companies',
+      text: 'You invest in companies. We set up and run the boards of your portfolio companies, assess their AI maturity before you invest and support their international development.',
+      cta: 'Let’s talk about your portfolio',
+      subject: 'Investor – conversation with Habeas Corpus',
+    },
+  },
+  conviction: 'No leader should have to decide alone on the choices that shape the future of their company.',
+  diag: {
+    label: 'Diag Data IA',
+    title: 'A data and AI assessment eligible for Bpifrance’s Diag Data IA programme',
+    text: 'Marc Brunstein is a Bpifrance-accredited expert for the Diag Data IA programme. We assess your data and AI maturity, identify the use cases with the greatest impact and build a realistic roadmap with you.',
+    points: [
+      'Your company’s data and AI maturity',
+      'Priority use cases and expected gains',
+      'Roadmap and action plan',
+    ],
+    financing: 'Bpifrance’s Diag Data IA programme co-finances this assessment for eligible French SMEs and mid-sized companies.',
+    cta: 'Check my eligibility',
+    subject: 'Diag Data IA – eligibility',
+  },
+  testimonials: {
+    label: 'Testimonials',
+    title: 'In their words',
+    translatedFrom: {
+      fr: 'Translated from French',
+    },
+    items: [
+      {
+        quote: 'In 2008, I asked Marc to form and chair my Supervisory Committee. […] During these 9 years, he has always played his role perfectly. […] He’s someone you can entrust with setting up and running a Board. With Marc, you can plan for the long term with complete confidence.',
+        author: 'Guillaume Monteux',
+        role: 'Founder of MiLibris',
+        from: 'fr',
+      },
+      {
+        quote: 'A Board has to be run and kept alive, making sure every member genuinely contributes and keeping discussions flowing: that is what Habeas Corpus does very well. I value the in-depth work, the methodology and the quality of the discussions.',
+        author: 'Edem Yigan',
+        role: 'Founder and CEO of Youree',
+        from: 'fr',
+      },
+      {
+        quote: 'Marc delivered high value counsel and guidance to Jones Cyber Solutions (JCS) during our expansion into the EU. […] Marc dramatically accelerated our penetration of the market and improved our profitability in the EU.',
+        author: 'Richard Caudle',
+        role: 'Chief Customer Officer, Razorthink (Denver, USA)',
+        from: 'en',
+      },
+    ],
   },
   team: {
     label: 'Team',
