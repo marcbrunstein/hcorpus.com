@@ -134,6 +134,7 @@ export default {
     visit: 'Website of',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
+      bpi: 'The French public investment bank. Marc Brunstein is a Bpifrance-accredited expert.',
       oct:
         'A consulting (O Consulting) and training-coaching (O Training) collective with which we offer joint consulting and training services.',
       cristaleye:
@@ -145,7 +146,7 @@ export default {
       cyrcee: 'HR consulting: assessment, career management, recruitment and leadership development.',
       pt: 'Assessment centres and strategic skills development, as part of the international GAPI network.',
       orsys: 'A professional training provider for businesses.',
-      nikita: 'AI agency.',
+      nikita: 'AI agency: quantified audits, Qualiopi-certified training and AI agents in production, for large companies, mid-sized companies, SMEs and regulated professions.',
       nmu: 'An Italian digital services and applications company based in Bologna.',
     },
   },

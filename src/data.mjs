@@ -68,6 +68,7 @@ export const clients = {
 
 // url : site du partenaire (null = pas de lien)
 export const partners = [
+  { id: 'bpi', name: 'Bpifrance', url: 'https://www.bpifrance.fr' },
   { id: 'oct', name: 'OC&T', url: 'https://oc-t.com/' },
   { id: 'cristaleye', name: 'Crystal Eye Technology Partners', url: 'https://crystaleyet.com/' },
   { id: 'pfa', name: 'Le Pôle Franco-Allemand', url: 'https://pole-franco-allemand.de/fr/' },

@@ -134,6 +134,7 @@ export default {
     visit: 'Website von',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
+      bpi: 'Die französische öffentliche Investitionsbank. Marc Brunstein ist bei Bpifrance als Experte gelistet.',
       oct:
         'Ein Kollektiv aus Beratung (O Consulting) sowie Training und Coaching (O Training), mit dem wir gemeinsame Beratungs- und Schulungsangebote entwickeln.',
       cristaleye:
@@ -145,7 +146,7 @@ export default {
       cyrcee: 'Personalberatung: Potenzialanalyse, Laufbahnentwicklung, Recruiting und Führungskräfteentwicklung.',
       pt: 'Assessment-Center und Entwicklung strategischer Kompetenzen, im Rahmen des internationalen GAPI-Netzwerks.',
       orsys: 'Ein Anbieter beruflicher Weiterbildung für Unternehmen.',
-      nikita: 'KI-Agentur.',
+      nikita: 'KI-Agentur: bezifferte Audits, Qualiopi-zertifizierte Schulungen und KI-Agenten im Produktivbetrieb, für Großunternehmen, Mittelstand, KMU und regulierte Berufe.',
       nmu: 'Ein italienisches Unternehmen für digitale Dienste und Anwendungen mit Sitz in Bologna.',
     },
   },
