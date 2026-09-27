@@ -161,7 +161,7 @@ export default {
       cyrcee: 'HR consulting: assessment, career management, recruitment and leadership development.',
       pt: 'Assessment centres and strategic skills development, as part of the international GAPI network.',
       orsys: 'A professional training provider for businesses.',
-      nikita: 'AI agency.',
+      nikita: 'AI agency: quantified audits, Qualiopi-certified training and AI agents in production, for large companies, mid-sized companies, SMEs and regulated professions.',
       nmu: 'An Italian digital services and applications company based in Bologna.',
     },
   },

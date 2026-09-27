@@ -160,7 +160,7 @@ export default {
       cyrcee: 'Conseil en ressources humaines : évaluation, gestion des carrières, recrutement et développement managérial.',
       pt: 'Assessment center et développement des compétences stratégiques, au sein du réseau international GAPI.',
       orsys: 'Organisme de formation professionnelle continue pour les entreprises.',
-      nikita: 'Agence IA.',
+      nikita: 'Agence IA : audits chiffrés, formations certifiées Qualiopi et agents IA en production, pour les grandes entreprises, ETI, PME et professions réglementées.',
       nmu: 'Société italienne de services et d’applications numériques, basée à Bologne.',
     },
   },
