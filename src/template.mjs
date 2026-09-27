@@ -123,7 +123,7 @@ const label = (text) => `<p class="label">${esc(text)}</p>`;
 
 function clientItem(cl, c, from) {
   const mark = cl.logo
-    ? `<img src="${from.root}assets/img/clients/${cl.logo}" alt="${esc(cl.name)}" loading="lazy">`
+    ? `<img${cl.large ? ' class="logo-lg"' : ''} src="${from.root}assets/img/clients/${cl.logo}" alt="${esc(cl.name)}" loading="lazy">`
     : `<span class="wordmark">${esc(cl.name)}</span>`;
   const country = cl.country ? `<span class="country">${esc(c.clients.countries[cl.country])}</span>` : '';
   return `<li><span class="mark">${mark}</span>${country}</li>`;

@@ -798,10 +798,14 @@ p {
   max-width: 100%;
   width: auto;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: 0.72;
+  /* contraste renforcé pour que les logos clairs (SIAE, Sage…) restent lisibles */
+  filter: grayscale(1) contrast(1.25);
+  opacity: 0.85;
   mix-blend-mode: multiply;
   transition: filter 0.3s, opacity 0.3s;
+}
+.logos img.logo-lg {
+  max-height: 60px;
 }
 .logos li:hover img {
   filter: none;
@@ -826,11 +830,10 @@ p {
   }
   .logos li {
     min-height: 100px;
-    padding: 16px 12px;
+    padding: 16px 10px;
   }
   .logos img {
-    max-width: 110px;
-    max-height: 44px;
+    max-height: 48px;
   }
 }
 

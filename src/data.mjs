@@ -26,6 +26,7 @@ export const team = [
 ];
 
 // logo : fichier dans static/img/clients/ (null = nom affiché en typographie)
+// large : true pour un logo compact qui doit s'afficher un peu plus grand
 // Les groupes s'affichent dans cet ordre ; leurs titres sont dans src/i18n (clients.groups)
 export const clients = {
   large: [
@@ -37,7 +38,7 @@ export const clients = {
     { name: 'Shiseido', logo: 'shiseido.png', country: 'fr' },
     { name: 'VHV Versicherungen', logo: 'vhv.png', country: 'de' },
     { name: "L'Assurance Maladie", logo: 'ameli.svg', country: 'fr' },
-    { name: 'SIAE – Paris Air Show', logo: 'siae.png', country: 'fr' },
+    { name: 'SIAE – Paris Air Show', logo: 'siae.png', country: 'fr', large: true },
     { name: 'CFACI – AHK', logo: 'cfaci.png', country: 'frde' },
   ],
   tech: [
@@ -58,7 +59,7 @@ export const clients = {
     { name: 'VT Scan', logo: 'vtscan.png', country: 'fr' },
     { name: 'Epoka', logo: 'epoka.png', country: 'fr' },
     { name: 'Cynck Consulting MEA', logo: 'cynck.png', country: 'ae' },
-    { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'de' },
+    { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'frde' },
     { name: 'Crea Valoris', logo: 'crea-valoris.png', country: 'fr' },
     { name: 'Annie', logo: 'annie.png', country: 'fr' },
   ],
