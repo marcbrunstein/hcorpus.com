@@ -145,7 +145,7 @@ export default {
       cyrcee: 'Consulenza HR: valutazione, gestione delle carriere, selezione e sviluppo manageriale.',
       pt: 'Assessment center e sviluppo delle competenze strategiche, all’interno della rete internazionale GAPI.',
       orsys: 'Un ente di formazione professionale continua per le imprese.',
-      nikita: 'Specializzato in IA.',
+      nikita: 'Agenzia IA per PMI, medie imprese e professioni regolamentate: audit, formazione e messa in produzione di agenti IA.',
       nmu: 'Una società italiana di servizi e applicazioni digitali con sede a Bologna.',
     },
   },

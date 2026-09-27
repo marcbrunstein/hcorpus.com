@@ -77,6 +77,6 @@ export const partners = [
   { id: 'cyrcee', name: 'CYRCEE Consulting', url: 'https://www.cyrcee.fr' },
   { id: 'pt', name: 'Potentiel & Talents', url: 'https://potentielettalents.com' },
   { id: 'orsys', name: 'ORSYS', url: 'https://www.orsys.fr' },
-  { id: 'nikita', name: 'Nikita', url: null },
+  { id: 'nikita', name: 'Nikita', url: 'https://agencenikita.com/' },
   { id: 'nmu', name: 'NMU City Roaming', url: 'https://www.linkedin.com/company/nmu-city-roaming' },
 ];
