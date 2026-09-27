@@ -79,7 +79,7 @@ export default {
         list: [
           'Data and AI assessment: maturity, high-impact use cases, expected gains',
           'AI strategy and roadmap: priorities, business cases, choice of solutions and partners',
-          'AI governance: role of the board, AI committee, risks and AI Act compliance',
+          'AI governance: the place of AI in governing bodies, setting up an AI committee, risk management and AI Act compliance',
           'Executive committee support: leadership awareness and steering the transformation',
           'AI due diligence for investors',
         ],

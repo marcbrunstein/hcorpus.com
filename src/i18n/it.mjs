@@ -79,7 +79,7 @@ export default {
         list: [
           'Diagnosi data e IA: maturità, casi d’uso ad alto impatto, benefici attesi',
           'Strategia IA e roadmap: priorità, business case, scelta di soluzioni e partner',
-          'Governance dell’IA: ruolo del board, comitato IA, rischi e conformità all’AI Act',
+          'Governance dell’IA: ruolo dell’IA negli organi di governo, costituzione di un comitato IA, gestione dei rischi e conformità all’AI Act',
           'Accompagnamento del comitato di direzione: sensibilizzazione dei dirigenti e guida della trasformazione',
           'Due diligence IA per gli investitori',
         ],

@@ -79,7 +79,7 @@ export default {
         list: [
           'Diagnostic data et IA : maturité, cas d’usage à fort impact, gains attendus',
           'Stratégie IA et feuille de route : priorités, business cases, choix de solutions et de partenaires',
-          'Gouvernance de l’IA : rôle du board, comité IA, risques et conformité à l’AI Act',
+          'Gouvernance de l’IA : place de l’IA dans les instances, création d’un comité IA, maîtrise des risques et conformité à l’AI Act',
           'Accompagnement du codir : acculturation des dirigeants et pilotage de la transformation',
           'Due diligence IA pour les investisseurs',
         ],

@@ -79,7 +79,7 @@ export default {
         list: [
           'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle mit hoher Wirkung, erwarteter Nutzen',
           'KI-Strategie und Roadmap: Prioritäten, Business Cases, Auswahl von Lösungen und Partnern',
-          'KI-Governance: Rolle des Boards, KI-Ausschuss, Risiken und Einhaltung des AI Act',
+          'KI-Governance: Stellenwert der KI in den Gremien, Einrichtung eines KI-Ausschusses, Risikomanagement und Einhaltung des AI Act',
           'Begleitung der Geschäftsleitung: Sensibilisierung der Führungskräfte und Steuerung der Transformation',
           'KI-Due-Diligence für Investoren',
         ],
