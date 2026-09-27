@@ -132,22 +132,20 @@ export default {
     title: 'Una rete di partner di fiducia',
     intro: 'Partner scelti per completare le nostre competenze e proporre offerte congiunte.',
     visit: 'Sito di',
-    names: { cfaci: 'Camera di commercio e dell’industria franco-tedesca', pfa: 'Pôle Franco-Allemand' },
+    names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      cfaci:
-        'Habeas Corpus Consulting siede nell’ufficio esecutivo della sua Commissione franco-tedesca per le risorse umane, e Marc Brunstein vi conduce da molti anni seminari di formazione.',
       oct:
         'Un collettivo di consulenza (O Consulting) e di formazione e coaching (O Training) con cui proponiamo offerte congiunte di consulenza e formazione.',
       cristaleye:
         'Consulenza in tecnologie dell’informazione. Insieme aiutiamo le aziende americane a svilupparsi in Europa e quelle europee a crescere a livello internazionale, in particolare nell’IT e nelle telecomunicazioni.',
       pfa: 'Un centro di competenze transfrontaliero che accompagna PMI e investitori nei loro progetti tra Francia e Germania.',
-      akb: 'Coaching, formazione manageriale e accompagnamento interculturale franco-tedesco.',
+      akb: 'Coaching, formazione manageriale e accompagnamento interculturale in Francia e in Germania.',
       mba: 'Una rete di consulenza in fusioni e acquisizioni al servizio di titolari e dirigenti di PMI e medie imprese.',
       araiko: 'Una società specializzata nell’integrazione operativa dell’intelligenza artificiale nelle PMI e nelle medie imprese.',
       cyrcee: 'Consulenza HR: valutazione, gestione delle carriere, selezione e sviluppo manageriale.',
       pt: 'Assessment center e sviluppo delle competenze strategiche, all’interno della rete internazionale GAPI.',
       orsys: 'Un ente di formazione professionale continua per le imprese.',
-      nikita: 'Un’agenzia di comunicazione specializzata in strategia ed esperienza di marca.',
+      nikita: 'Specializzato in IA.',
       nmu: 'Una società italiana di servizi e applicazioni digitali con sede a Bologna.',
     },
   },

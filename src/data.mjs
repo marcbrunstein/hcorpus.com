@@ -67,7 +67,6 @@ export const clients = {
 
 // url : site du partenaire (null = pas de lien)
 export const partners = [
-  { id: 'cfaci', name: 'Chambre franco-allemande de commerce et d’industrie', url: 'https://www.francoallemand.com' },
   { id: 'oct', name: 'OC&T', url: null },
   { id: 'cristaleye', name: 'Cristal Eye Technologies', url: null },
   { id: 'pfa', name: 'Le Pôle Franco-Allemand', url: 'https://pole-franco-allemand.de/fr/' },

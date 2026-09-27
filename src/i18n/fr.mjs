@@ -133,20 +133,18 @@ export default {
     intro: 'Des partenaires choisis pour compléter nos expertises et proposer des offres conjointes.',
     visit: 'Site de',
     items: {
-      cfaci:
-        'Habeas Corpus Consulting siège au bureau exécutif de sa Commission franco-allemande des ressources humaines, et Marc Brunstein y anime depuis de nombreuses années des séminaires de formation.',
       oct:
         'Un collectif conseil (O Consulting) et formation-coaching (O Training) avec lequel nous proposons des offres conjointes en conseil et en formation.',
       cristaleye:
         'Conseil en technologies de l’information. Ensemble, nous aidons les entreprises américaines à se développer en Europe, et les européennes à l’international, notamment dans les technologies de l’information et les télécommunications.',
       pfa: 'Centre de compétences transfrontalier qui accompagne PME et investisseurs dans leurs projets entre la France et l’Allemagne.',
-      akb: 'Coaching, formation au management et accompagnement interculturel franco-allemand.',
+      akb: 'Coaching, formation au management et accompagnement interculturel en France et en Allemagne.',
       mba: 'Réseau de conseil en fusions-acquisitions au service des dirigeants et actionnaires de PME et d’ETI.',
       araiko: 'Cabinet spécialisé dans l’intégration opérationnelle de l’intelligence artificielle en PME et ETI.',
       cyrcee: 'Conseil en ressources humaines : évaluation, gestion des carrières, recrutement et développement managérial.',
       pt: 'Assessment center et développement des compétences stratégiques, au sein du réseau international GAPI.',
       orsys: 'Organisme de formation professionnelle continue pour les entreprises.',
-      nikita: 'Agence de communication spécialisée dans la stratégie et l’expérience de marque.',
+      nikita: 'Spécialisé en IA.',
       nmu: 'Société italienne de services et d’applications numériques, basée à Bologne.',
     },
   },

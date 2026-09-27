@@ -132,22 +132,20 @@ export default {
     title: 'A network of trusted partners',
     intro: 'Partners chosen to complement our expertise and offer joint services.',
     visit: 'Website of',
-    names: { cfaci: 'French-German Chamber of Commerce and Industry', pfa: 'Pôle Franco-Allemand' },
+    names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      cfaci:
-        'Habeas Corpus Consulting sits on the executive board of its French-German Human Resources Committee, and Marc Brunstein has led training seminars there for many years.',
       oct:
         'A consulting (O Consulting) and training-coaching (O Training) collective with which we offer joint consulting and training services.',
       cristaleye:
         'IT consulting. Together, we help American companies grow in Europe and European companies expand internationally, particularly in information technology and telecommunications.',
       pfa: 'A cross-border centre of expertise supporting SMEs and investors in their projects between France and Germany.',
-      akb: 'Coaching, management training and French-German intercultural support.',
+      akb: 'Coaching, management training and intercultural support in France and Germany.',
       mba: 'A mergers and acquisitions advisory network for owners and managers of SMEs and mid-sized companies.',
       araiko: 'A firm specialising in the practical integration of artificial intelligence in SMEs and mid-sized companies.',
       cyrcee: 'HR consulting: assessment, career management, recruitment and leadership development.',
       pt: 'Assessment centres and strategic skills development, as part of the international GAPI network.',
       orsys: 'A professional training provider for businesses.',
-      nikita: 'A communications agency specialising in brand strategy and brand experience.',
+      nikita: 'Specialised in AI.',
       nmu: 'An Italian digital services and applications company based in Bologna.',
     },
   },

@@ -132,22 +132,20 @@ export default {
     title: 'Ein Netzwerk verlässlicher Partner',
     intro: 'Ausgewählte Partner, die unsere Kompetenzen ergänzen und mit denen wir gemeinsame Angebote entwickeln.',
     visit: 'Website von',
-    names: { cfaci: 'Deutsch-Französische Industrie- und Handelskammer', pfa: 'Pôle Franco-Allemand' },
+    names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      cfaci:
-        'Habeas Corpus Consulting ist im Vorstand ihres Deutsch-Französischen Personalausschusses vertreten, und Marc Brunstein leitet dort seit vielen Jahren Schulungsseminare.',
       oct:
         'Ein Kollektiv aus Beratung (O Consulting) sowie Training und Coaching (O Training), mit dem wir gemeinsame Beratungs- und Schulungsangebote entwickeln.',
       cristaleye:
         'IT-Beratung. Gemeinsam unterstützen wir amerikanische Unternehmen bei ihrer Entwicklung in Europa und europäische Unternehmen bei ihrer Internationalisierung, insbesondere in der IT- und Telekommunikationsbranche.',
       pfa: 'Ein grenzüberschreitendes Kompetenzzentrum, das KMU und Investoren bei ihren Projekten zwischen Frankreich und Deutschland begleitet.',
-      akb: 'Coaching, Führungskräftetraining und deutsch-französische interkulturelle Begleitung.',
+      akb: 'Coaching, Führungskräftetraining und interkulturelle Begleitung in Frankreich und Deutschland.',
       mba: 'Ein M&A-Beratungsnetzwerk für Inhaber und Geschäftsführer von KMU und mittelständischen Unternehmen.',
       araiko: 'Eine Beratung, die sich auf die praktische Einführung künstlicher Intelligenz in KMU und im Mittelstand spezialisiert hat.',
       cyrcee: 'Personalberatung: Potenzialanalyse, Laufbahnentwicklung, Recruiting und Führungskräfteentwicklung.',
       pt: 'Assessment-Center und Entwicklung strategischer Kompetenzen, im Rahmen des internationalen GAPI-Netzwerks.',
       orsys: 'Ein Anbieter beruflicher Weiterbildung für Unternehmen.',
-      nikita: 'Eine Kommunikationsagentur mit Schwerpunkt auf Markenstrategie und Markenerlebnis.',
+      nikita: 'Spezialisiert auf KI.',
       nmu: 'Ein italienisches Unternehmen für digitale Dienste und Anwendungen mit Sitz in Bologna.',
     },
   },
