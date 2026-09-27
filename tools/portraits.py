@@ -41,17 +41,29 @@ def duotone(im):
     return ImageOps.colorize(g, black=NAVY, mid=MID, white=LIGHT)
 
 
+# Portraits de la core team. Par défaut : carré centré en haut de l'image.
+# Sinon "rotate" (degrés, sens antihoraire, autour de "center") puis "box" (carré de recadrage),
+# pour aligner cadrage serré et légère inclinaison de la tête sur les autres portraits.
+CORE = {
+    "marc-brunstein": {"src": "marc.jpg"},
+    "arnaud-huet": {"src": "arnaud-2026.jpg", "rotate": 6, "center": (420, 330), "box": (150, 80, 690, 620)},
+    "jerome-ravet": {"src": "jerome.png"},
+    "nathalie-blumberg": {"src": "nathalie.jpg"},
+}
+
+
 def core_team():
-    for src, name in {
-        "marc.jpg": "marc-brunstein",
-        "arnaud.jpg": "arnaud-huet",
-        "jerome.png": "jerome-ravet",
-        "nathalie.jpg": "nathalie-blumberg",
-    }.items():
-        im = flatten(Image.open(os.path.join(SRC, src)))
-        side = min(im.size)
-        left = (im.width - side) // 2
-        im = im.crop((left, 0, left + side, side)).resize((640, 640), Image.LANCZOS)
+    for name, cfg in CORE.items():
+        im = flatten(Image.open(os.path.join(SRC, cfg["src"])))
+        if "box" in cfg:
+            if cfg.get("rotate"):
+                im = im.rotate(cfg["rotate"], resample=Image.BICUBIC, center=cfg["center"])
+            im = im.crop(cfg["box"])
+        else:
+            side = min(im.size)
+            left = (im.width - side) // 2
+            im = im.crop((left, 0, left + side, side))
+        im = im.resize((640, 640), Image.LANCZOS)
         duotone(im).save(os.path.join(OUT, name + ".jpg"), quality=84, optimize=True, progressive=True)
         print(name)
 
