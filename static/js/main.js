@@ -20,7 +20,7 @@
       toggle.focus();
     }
   });
-  matchMedia('(min-width: 981px)').addEventListener('change', (e) => e.matches && setOpen(false));
+  matchMedia('(min-width: 1101px)').addEventListener('change', (e) => e.matches && setOpen(false));
 
   // Filet sous l'en-tête après défilement
   const onScroll = () => header.classList.toggle('is-scrolled', scrollY > 8);
