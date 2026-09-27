@@ -91,6 +91,7 @@ export default {
       'Advisory Board',
       'Strategieausschuss',
       'CSR- / ESG-Ausschuss',
+      'KI-Ausschuss',
       'Wissenschaftlicher Beirat',
       'Beirat',
       'Mission Committee',
@@ -145,7 +146,7 @@ export default {
     visit: 'Website von',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      bpi: 'Die französische öffentliche Investitionsbank: Finanzierung und Begleitung von Unternehmen, von der Gründung bis zur Internationalisierung.',
+      bpi: 'Die französische öffentliche Investitionsbank. Marc Brunstein ist bei Bpifrance als Experte gelistet.',
       oct:
         'Ein Kollektiv aus Beratung (O Consulting) sowie Training und Coaching (O Training), mit dem wir gemeinsame Beratungs- und Schulungsangebote entwickeln.',
       cristaleye:

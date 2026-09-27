@@ -91,6 +91,7 @@ export default {
       'Advisory board',
       'Comité stratégique',
       'Comité RSE / ESG',
+      'Comité IA',
       'Comité scientifique',
       'Comité consultatif',
       'Comité de mission',
@@ -144,7 +145,7 @@ export default {
     intro: 'Des partenaires choisis pour compléter nos expertises et proposer des offres conjointes.',
     visit: 'Site de',
     items: {
-      bpi: 'Banque publique d’investissement : financement et accompagnement des entreprises, de la création à l’international.',
+      bpi: 'Banque publique d’investissement. Marc Brunstein est expert référencé par Bpifrance.',
       oct:
         'Un collectif conseil (O Consulting) et formation-coaching (O Training) avec lequel nous proposons des offres conjointes en conseil et en formation.',
       cristaleye:

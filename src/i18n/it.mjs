@@ -91,6 +91,7 @@ export default {
       'Advisory board',
       'Comitato strategico',
       'Comitato CSR / ESG',
+      'Comitato IA',
       'Comitato scientifico',
       'Comitato consultivo',
       'Comitato di missione',
@@ -145,7 +146,7 @@ export default {
     visit: 'Sito di',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      bpi: 'La banca pubblica d’investimento francese: finanziamento e accompagnamento delle imprese, dalla creazione all’internazionalizzazione.',
+      bpi: 'La banca pubblica d’investimento francese. Marc Brunstein è esperto accreditato presso Bpifrance.',
       oct:
         'Un collettivo di consulenza (O Consulting) e di formazione e coaching (O Training) con cui proponiamo offerte congiunte di consulenza e formazione.',
       cristaleye:
