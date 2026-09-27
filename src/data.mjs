@@ -68,7 +68,7 @@ export const clients = {
 
 // url : site du partenaire (null = pas de lien)
 export const partners = [
-  { id: 'oct', name: 'OC&T', url: null },
+  { id: 'oct', name: 'OC&T', url: 'https://oc-t.com/' },
   { id: 'cristaleye', name: 'Cristal Eye Technologies', url: null },
   { id: 'pfa', name: 'Le Pôle Franco-Allemand', url: 'https://pole-franco-allemand.de/fr/' },
   { id: 'akb', name: 'AKB Coaching & Consulting', url: 'https://www.coach-pro-akb.fr' },
