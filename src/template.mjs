@@ -139,7 +139,7 @@ export function renderHome(c, lang) {
 
   const expertise = c.expertise.items
     .map(
-      (it, i) => `<article class="expertise">
+      (it, i) => `<article class="expertise${it.wide ? ' expertise-wide' : ''}">
           <p class="num">0${i + 1}</p>
           <h3>${esc(it.title)}</h3>
           <p class="lead">${esc(it.lead)}</p>
