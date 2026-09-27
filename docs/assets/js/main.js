@@ -44,11 +44,25 @@
       },
       { rootMargin: '0px 0px -8% 0px' }
     );
+    const pending = new Set();
     targets.forEach((el) => {
       if (el.getBoundingClientRect().top < innerHeight) return;
       el.classList.add('reveal');
+      pending.add(el);
       reveal.observe(el);
     });
+    // Filet de sécurité : si l'observateur ne se déclenche pas, on affiche au défilement
+    const check = () => {
+      pending.forEach((el) => {
+        if (el.classList.contains('is-visible') || el.getBoundingClientRect().top < innerHeight * 0.95) {
+          el.classList.add('is-visible');
+          pending.delete(el);
+        }
+      });
+      if (!pending.size) removeEventListener('scroll', check);
+    };
+    addEventListener('scroll', check, { passive: true });
+    addEventListener('beforeprint', () => pending.forEach((el) => el.classList.add('is-visible')));
   }
 
   // Section active dans la navigation
