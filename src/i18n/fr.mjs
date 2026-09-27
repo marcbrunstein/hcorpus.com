@@ -110,8 +110,13 @@ export default {
   clients: {
     label: 'Références',
     title: 'Ils nous ont fait confiance',
-    groups: { large: 'Grands comptes', mid: 'ETI, PME et start-ups', international: 'International' },
+    groups: {
+      large: 'Grands comptes et institutions',
+      tech: 'Technologies, télécoms et numérique',
+      mid: 'ETI, PME et start-ups',
+    },
     countries: {
+      fr: 'France',
       us: 'États-Unis',
       ca: 'Canada',
       uk: 'Royaume-Uni',

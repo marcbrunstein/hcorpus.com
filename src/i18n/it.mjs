@@ -110,8 +110,13 @@ export default {
   clients: {
     label: 'Referenze',
     title: 'Ci hanno dato fiducia',
-    groups: { large: 'Grandi gruppi', mid: 'Medie imprese, PMI e start-up', international: 'Internazionale' },
+    groups: {
+      large: 'Grandi gruppi e istituzioni',
+      tech: 'Tecnologia, telecomunicazioni e digitale',
+      mid: 'Medie imprese, PMI e start-up',
+    },
     countries: {
+      fr: 'Francia',
       us: 'Stati Uniti',
       ca: 'Canada',
       uk: 'Regno Unito',

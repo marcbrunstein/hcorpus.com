@@ -110,8 +110,13 @@ export default {
   clients: {
     label: 'Clients',
     title: 'They have placed their trust in us',
-    groups: { large: 'Large corporations', mid: 'Mid-sized companies, SMEs and start-ups', international: 'International' },
+    groups: {
+      large: 'Large corporations and institutions',
+      tech: 'Technology, telecoms and digital',
+      mid: 'Mid-sized companies, SMEs and start-ups',
+    },
     countries: {
+      fr: 'France',
       us: 'United States',
       ca: 'Canada',
       uk: 'United Kingdom',

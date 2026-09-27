@@ -110,8 +110,13 @@ export default {
   clients: {
     label: 'Referenzen',
     title: 'Sie haben uns ihr Vertrauen geschenkt',
-    groups: { large: 'Großunternehmen', mid: 'Mittelstand, KMU und Start-ups', international: 'International' },
+    groups: {
+      large: 'Großunternehmen und Institutionen',
+      tech: 'Technologie, Telekommunikation und Digitales',
+      mid: 'Mittelstand, KMU und Start-ups',
+    },
     countries: {
+      fr: 'Frankreich',
       us: 'Vereinigte Staaten',
       ca: 'Kanada',
       uk: 'Vereinigtes Königreich',

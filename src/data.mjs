@@ -26,41 +26,41 @@ export const team = [
 ];
 
 // logo : fichier dans static/img/clients/ (null = nom affiché en typographie)
-// country : clé de traduction du pays (références internationales)
+// Les groupes s'affichent dans cet ordre ; leurs titres sont dans src/i18n (clients.groups)
 export const clients = {
   large: [
-    { name: 'AXA', logo: 'axa.png' },
-    { name: 'SFR', logo: 'sfr.png' },
-    { name: 'Disneyland Paris', logo: 'disneyland-paris.png' },
-    { name: 'Orange', logo: 'orange.png' },
-    { name: 'Michelin', logo: 'michelin.png' },
-    { name: 'Shiseido', logo: 'shiseido.png' },
-    { name: 'EDS – an HP company', logo: 'eds.png' },
-    { name: "L'Assurance Maladie", logo: 'ameli.svg' },
-    { name: 'SIAE – Paris Air Show', logo: 'siae.png' },
+    { name: 'AXA', logo: 'axa.png', country: 'fr' },
+    { name: 'Orange', logo: 'orange.png', country: 'fr' },
+    { name: 'SFR', logo: 'sfr.png', country: 'fr' },
+    { name: 'Disneyland Paris', logo: 'disneyland-paris.png', country: 'fr' },
+    { name: 'Michelin', logo: 'michelin.png', country: 'fr' },
+    { name: 'Shiseido', logo: 'shiseido.png', country: 'fr' },
+    { name: 'VHV Versicherungen', logo: 'vhv.png', country: 'de' },
+    { name: "L'Assurance Maladie", logo: 'ameli.svg', country: 'fr' },
+    { name: 'SIAE – Paris Air Show', logo: 'siae.png', country: 'fr' },
+    { name: 'CFACI – AHK', logo: 'cfaci.png', country: 'frde' },
   ],
-  mid: [
-    { name: 'miLibris', logo: 'milibris.png' },
-    { name: 'Youree', logo: 'youree.png' },
-    { name: 'Epoka', logo: 'epoka.png' },
-    { name: 'Sage', logo: 'sage.png' },
-    { name: 'Promosalons', logo: 'promosalons.png' },
-    { name: 'VT Scan', logo: 'vtscan.png' },
-    { name: 'Crea Valoris', logo: 'crea-valoris.png' },
-    { name: 'Annie', logo: 'annie.png' },
-  ],
-  international: [
+  tech: [
+    { name: 'EastFirm Telecom – T-Mobile', logo: 't-mobile.png', country: 'uk' },
+    { name: 'EDS – an HP company', logo: 'eds.png', country: 'fr' },
+    { name: 'Sage', logo: 'sage.png', country: 'fr' },
     { name: 'Innova Solutions', logo: 'innova.png', country: 'us' },
     { name: 'Excelacom', logo: 'excelacom.png', country: 'us' },
+    { name: 'cVidya', logo: 'cvidya.png', country: 'il' },
     { name: 'Jones Cyber Solutions', logo: 'jones.png', country: 'us' },
     { name: 'MicroSigns', logo: 'microsigns.png', country: 'ca' },
-    { name: 'EastFirm Telecom – T-Mobile', logo: 't-mobile.png', country: 'uk' },
-    { name: 'VHV Versicherungen', logo: 'vhv.png', country: 'de' },
-    { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'de' },
-    { name: 'CFACI – AHK', logo: 'cfaci.png', country: 'frde' },
-    { name: 'cVidya', logo: 'cvidya.png', country: 'il' },
-    { name: 'Cynck Consulting MEA', logo: 'cynck.png', country: 'ae' },
     { name: 'Wattsonic', logo: 'wattsonic.svg', country: 'cn' },
+    { name: 'miLibris', logo: 'milibris.png', country: 'fr' },
+    { name: 'Youree', logo: 'youree.png', country: 'fr' },
+  ],
+  mid: [
+    { name: 'Promosalons', logo: 'promosalons.png', country: 'fr' },
+    { name: 'VT Scan', logo: 'vtscan.png', country: 'fr' },
+    { name: 'Epoka', logo: 'epoka.png', country: 'fr' },
+    { name: 'Cynck Consulting MEA', logo: 'cynck.png', country: 'ae' },
+    { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'de' },
+    { name: 'Crea Valoris', logo: 'crea-valoris.png', country: 'fr' },
+    { name: 'Annie', logo: 'annie.png', country: 'fr' },
   ],
 };
 

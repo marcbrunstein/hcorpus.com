@@ -126,7 +126,7 @@ function clientItem(cl, c, from) {
     ? `<img src="${from.root}assets/img/clients/${cl.logo}" alt="${esc(cl.name)}" loading="lazy">`
     : `<span class="wordmark">${esc(cl.name)}</span>`;
   const country = cl.country ? `<span class="country">${esc(c.clients.countries[cl.country])}</span>` : '';
-  return `<li>${mark}${country}</li>`;
+  return `<li><span class="mark">${mark}</span>${country}</li>`;
 }
 
 export function renderHome(c, lang) {
@@ -162,11 +162,11 @@ export function renderHome(c, lang) {
     })
     .join('');
 
-  const groups = ['large', 'mid', 'international']
+  const groups = Object.keys(clients)
     .map(
       (g) => `<div class="client-group">
           <h3>${esc(c.clients.groups[g])}</h3>
-          <ul class="logos${g === 'international' ? ' logos-intl' : ''}">${clients[g].map((cl) => clientItem(cl, c, from)).join('')}</ul>
+          <ul class="logos">${clients[g].map((cl) => clientItem(cl, c, from)).join('')}</ul>
         </div>`
     )
     .join('');
