@@ -233,7 +233,7 @@ export default {
     email: 'Write to us',
     phone: 'Call us',
     paris: 'Paris office',
-    offices: 'Where we operate',
+    offices: 'Our presence',
     cities: ['Paris', 'Munich', 'London', 'Milan'],
     headOffice: 'Registered office',
   },

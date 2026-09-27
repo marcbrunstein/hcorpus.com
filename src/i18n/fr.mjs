@@ -232,7 +232,7 @@ export default {
     email: 'Écrivez-nous',
     phone: 'Appelez-nous',
     paris: 'Bureau de Paris',
-    offices: 'Nos implantations',
+    offices: 'Notre présence',
     cities: ['Paris', 'Munich', 'Londres', 'Milan'],
     headOffice: 'Siège social',
   },

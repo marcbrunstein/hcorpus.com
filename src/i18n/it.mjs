@@ -234,7 +234,7 @@ export default {
     email: 'Scriveteci',
     phone: 'Chiamateci',
     paris: 'Ufficio di Parigi',
-    offices: 'Le nostre sedi',
+    offices: 'La nostra presenza',
     cities: ['Parigi', 'Monaco di Baviera', 'Londra', 'Milano'],
     headOffice: 'Sede legale',
   },
