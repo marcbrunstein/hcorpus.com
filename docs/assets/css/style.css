@@ -399,14 +399,24 @@ p {
   color: rgb(255 255 255 / 0.7);
 }
 
-.hero h1 {
+/* le h1 (descriptif, pour le référencement) garde l'allure d'un surtitre */
+.hero h1.eyebrow {
+  font-family: var(--sans);
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-wrap: pretty;
+}
+.hero-title {
+  font-family: var(--serif);
+  font-weight: 400;
   font-size: clamp(2.5rem, 6.4vw, 5.25rem);
   line-height: 1.04;
   letter-spacing: -0.02em;
   max-width: 17ch;
-  margin-bottom: 36px;
+  margin: 0 0 36px;
+  text-wrap: balance;
 }
-.hero h1 em {
+.hero-title em {
   font-style: italic;
   color: rgb(255 255 255 / 0.78);
 }

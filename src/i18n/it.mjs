@@ -1,8 +1,9 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Governance, strategia, internazionale, intelligenza artificiale',
-    description:
-      'Un collettivo europeo di consulenti nato nel 1998. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione dell’intelligenza artificiale.',
+    title: 'Consulenza in governance, strategia e IA | Habeas Corpus',
+    description: 'Collettivo europeo di consulenza dal 1998: governance e board, strategia, sviluppo internazionale e IA. Diagnosi data e IA ammissibile a Bpifrance.',
+    legalDescription: 'Note legali, hosting e protezione dei dati personali del sito di Habeas Corpus Consulting.',
+    imageAlt: 'Logo di Habeas Corpus Consulting',
     ogLocale: 'it_IT',
   },
   nav: {
@@ -18,7 +19,7 @@ export default {
     contact: 'Contatti',
   },
   hero: {
-    eyebrow: 'Consulenza di direzione · dal 1998',
+    eyebrow: 'Consulenza in governance, strategia, internazionalizzazione e IA · dal 1998',
     title: 'Governare meglio, decidere meglio, <em>crescere oltre i confini.</em>',
     lead:
       'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione dell’intelligenza artificiale.',
@@ -148,7 +149,7 @@ export default {
     },
     items: [
       {
-        quote: 'Nel 2008 ho chiesto a Marc di costituire e presiedere il mio Consiglio di sorveglianza. […] In questi nove anni ha sempre svolto perfettamente il suo ruolo. […] È una persona a cui si può affidare la costituzione e l’animazione di un Board. Con Marc si può guardare lontano in piena fiducia.',
+        quote: 'Ho chiesto a Marc di costituire e presiedere il mio Consiglio di sorveglianza. […] Ha sempre svolto perfettamente il suo ruolo. […] È una persona a cui si può affidare la costituzione e l’animazione di un Board. Con Marc si può guardare lontano in piena fiducia.',
         author: 'Guillaume Monteux',
         role: 'Fondatore di MiLibris, oggi CEO e fondatore di Gadsme',
         from: 'fr',

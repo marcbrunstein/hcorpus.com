@@ -30,33 +30,89 @@ const icon = {
     '<svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3.6 5.6h-2V14h2V5.6ZM2.6 2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM14.5 9.3c0-2.3-1.2-3.8-3.2-3.8-1 0-1.8.5-2.2 1.1v-1h-2V14h2V9.7c0-1.1.4-1.9 1.4-1.9s1.4.8 1.4 1.9V14h2.1V9.3Z"/></svg>',
 };
 
+// Données structurées schema.org (page d'accueil) : site, organisation, offres et équipe
+function structuredData(c, lang, description) {
+  const org = site.url + '/#organization';
+  const person = (id) => `${site.url}/#${id}`;
+  const address = (street, postalCode, locality) => ({
+    '@type': 'PostalAddress',
+    streetAddress: street,
+    postalCode,
+    addressLocality: locality,
+    addressCountry: 'FR',
+  });
+  const [parisCp, ...parisCity] = site.paris[1].split(' ');
+  const [hoCp, ...hoCity] = site.headOffice[1].split(' ');
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': site.url + '/#website',
+        url: site.url + '/',
+        name: 'Habeas Corpus Consulting',
+        inLanguage: languages.map((l) => l.code),
+        publisher: { '@id': org },
+      },
+      {
+        '@type': ['Organization', 'ProfessionalService'],
+        '@id': org,
+        name: 'Habeas Corpus Consulting',
+        legalName: 'Habeas Corpus',
+        url: absUrl(lang, 'home'),
+        logo: { '@type': 'ImageObject', url: site.url + '/assets/img/logo-habeas-corpus.png', width: 512, height: 512 },
+        image: site.url + '/assets/img/og-image.jpg',
+        description,
+        email: site.email,
+        telephone: site.phone,
+        foundingDate: '1998',
+        vatID: 'FR17898734231',
+        founder: { '@id': person('marc') },
+        employee: team.map((p) => ({ '@id': person(p.id) })),
+        address: [
+          address(site.paris[0], parisCp, parisCity.join(' ')),
+          address(site.headOffice[0], hoCp, hoCity.join(' ')),
+        ],
+        areaServed: ['FR', 'DE', 'GB', 'IT'].map((code) => ({ '@type': 'Country', name: code })),
+        knowsAbout: c.expertise.items.map((it) => it.title),
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: c.expertise.title,
+          itemListElement: c.expertise.items.map((it) => ({
+            '@type': 'OfferCatalog',
+            name: it.title,
+            itemListElement: (it.list || [it.lead]).map((x) => ({
+              '@type': 'Offer',
+              itemOffered: { '@type': 'Service', name: x.split(' : ')[0].split(': ')[0], description: x },
+            })),
+          })),
+        },
+      },
+      ...team.map((p) => ({
+        '@type': 'Person',
+        '@id': person(p.id),
+        name: p.name,
+        jobTitle: c.team.roles[p.id].role,
+        image: `${site.url}/assets/img/team/${p.photo}`,
+        worksFor: { '@id': org },
+        ...(p.linkedin ? { sameAs: [p.linkedin] } : {}),
+      })),
+    ],
+  };
+}
+
 function head(c, lang, kind, from, title, description) {
   const alternates = languages
     .map((l) => `<link rel="alternate" hreflang="${l.code}" href="${absUrl(l, kind)}">`)
     .join('\n    ');
   const xdefault = `<link rel="alternate" hreflang="x-default" href="${absUrl(languages[0], kind)}">`;
+  const ogAlternates = languages
+    .filter((l) => l.code !== lang.code)
+    .map((l) => `<meta property="og:locale:alternate" content="${l.ogLocale}">`)
+    .join('\n    ');
   const ld =
     kind === 'home'
-      ? `<script type="application/ld+json">${JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'ProfessionalService',
-          name: 'Habeas Corpus Consulting',
-          url: site.url + '/',
-          logo: site.url + '/assets/img/logo-habeas-corpus.png',
-          image: site.url + '/assets/img/og-image.jpg',
-          description,
-          email: site.email,
-          telephone: site.phone,
-          foundingDate: '1998',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: site.paris[0],
-            postalCode: '75001',
-            addressLocality: 'Paris',
-            addressCountry: 'FR',
-          },
-          areaServed: ['FR', 'DE', 'GB', 'IT'],
-        })}</script>`
+      ? `<script type="application/ld+json">${JSON.stringify(structuredData(c, lang, description)).replace(/</g, '\\u003c')}</script>`
       : '';
   return `<head>
     <meta charset="utf-8">
@@ -74,9 +130,14 @@ function head(c, lang, kind, from, title, description) {
     <meta property="og:description" content="${esc(description)}">
     <meta property="og:url" content="${absUrl(lang, kind)}">
     <meta property="og:image" content="${site.url}/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${esc(c.meta.imageAlt)}">
     <meta property="og:locale" content="${c.meta.ogLocale}">
+    ${ogAlternates}
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#0b2e47">
-    <link rel="icon" href="${from.root}assets/img/favicon.png" type="image/png">
+    <link rel="icon" href="${from.root}assets/img/favicon.png" type="image/png" sizes="48x48">
     <link rel="apple-touch-icon" href="${from.root}assets/img/apple-touch-icon.png">
     <link rel="preload" href="${from.root}assets/fonts/newsreader-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${from.root}assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
@@ -99,7 +160,7 @@ function header(c, lang, kind, from) {
   return `<a class="skip" href="#main">${esc(c.nav.skip)}</a>
   <header class="site-header" id="top">
     <div class="wrap header-inner">
-      <a class="brand" href="${home || './'}#top"><img src="${from.root}assets/img/logo-habeas-corpus.png" width="56" height="56" alt="Habeas Corpus Consulting"></a>
+      <a class="brand" href="${home || './'}#top"><img src="${from.root}assets/img/logo-header.png" width="52" height="52" alt="Habeas Corpus Consulting"></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-open="${esc(c.nav.menu)}" data-close="${esc(c.nav.close)}"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">${esc(c.nav.menu)}</span></button>
       <div class="menu" id="menu">
         <nav aria-label="Navigation"><ul class="nav">${links}</ul></nav>
@@ -219,8 +280,8 @@ export function renderHome(c, lang) {
   <main id="main">
     <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">${esc(c.hero.eyebrow)}</p>
-        <h1>${c.hero.title}</h1>
+        <h1 class="eyebrow">${esc(c.hero.eyebrow)}</h1>
+        <p class="hero-title">${c.hero.title}</p>
         <p class="hero-lead">${esc(c.hero.lead)}</p>
         <p class="actions">
           <a class="btn btn-light" href="${mail}">${esc(c.hero.ctaPrimary)}${icon.arrow}</a>
@@ -374,7 +435,7 @@ export function renderLegal(c, lang) {
   const title = `${c.legal.title} · Habeas Corpus Consulting`;
   return `<!doctype html>
 <html lang="${lang.code}">
-  ${head(c, lang, 'legal', from, title, c.meta.description)}
+  ${head(c, lang, 'legal', from, title, c.meta.legalDescription)}
   <body>
   ${header(c, lang, 'legal', from)}
   <main id="main" class="legal">

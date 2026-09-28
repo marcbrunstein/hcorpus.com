@@ -1,8 +1,9 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Governance, strategy, international, artificial intelligence',
-    description:
-      'A European collective of consultants founded in 1998. We support business leaders and investors with their governance, strategy, international development and adoption of artificial intelligence.',
+    title: 'Governance, strategy & AI consulting | Habeas Corpus',
+    description: 'European consulting firm since 1998: governance and boards, strategy, international development and AI. Bpifrance-eligible data and AI assessment.',
+    legalDescription: 'Legal notice, hosting and personal data protection for the Habeas Corpus Consulting website.',
+    imageAlt: 'Habeas Corpus Consulting logo',
     ogLocale: 'en_GB',
   },
   nav: {
@@ -18,7 +19,7 @@ export default {
     contact: 'Contact',
   },
   hero: {
-    eyebrow: 'Advising business leaders · since 1998',
+    eyebrow: 'Governance, strategy, international and AI consulting · since 1998',
     title: 'Better governance, sharper decisions, <em>growth beyond borders.</em>',
     lead:
       'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy, international development and adoption of artificial intelligence.',
@@ -147,7 +148,7 @@ export default {
     },
     items: [
       {
-        quote: 'In 2008, I asked Marc to form and chair my Supervisory Committee. […] During these 9 years, he has always played his role perfectly. […] He’s someone you can entrust with setting up and running a Board. With Marc, you can plan for the long term with complete confidence.',
+        quote: 'I asked Marc to form and chair my Supervisory Committee. […] He has always played his role perfectly. […] He’s someone you can entrust with setting up and running a Board. With Marc, you can plan for the long term with complete confidence.',
         author: 'Guillaume Monteux',
         role: 'Founder of MiLibris, currently CEO and founder of Gadsme',
         from: 'fr',

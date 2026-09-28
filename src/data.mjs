@@ -11,10 +11,10 @@ export const site = {
 };
 
 export const languages = [
-  { code: 'fr', label: 'FR', dir: '', legal: 'mentions-legales' },
-  { code: 'en', label: 'EN', dir: 'en', legal: 'legal-notice' },
-  { code: 'de', label: 'DE', dir: 'de', legal: 'impressum' },
-  { code: 'it', label: 'IT', dir: 'it', legal: 'note-legali' },
+  { code: 'fr', label: 'FR', dir: '', legal: 'mentions-legales', ogLocale: 'fr_FR' },
+  { code: 'en', label: 'EN', dir: 'en', legal: 'legal-notice', ogLocale: 'en_GB' },
+  { code: 'de', label: 'DE', dir: 'de', legal: 'impressum', ogLocale: 'de_DE' },
+  { code: 'it', label: 'IT', dir: 'it', legal: 'note-legali', ogLocale: 'it_IT' },
 ];
 
 // linkedin : renseigner l'URL du profil pour afficher le lien

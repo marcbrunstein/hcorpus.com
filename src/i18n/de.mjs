@@ -1,8 +1,9 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Governance, Strategie, Internationalisierung, künstliche Intelligenz',
-    description:
-      'Ein europäisches Beraterkollektiv, gegründet 1998. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der Einführung künstlicher Intelligenz.',
+    title: 'Beratung für Governance, Strategie & KI | Habeas Corpus',
+    description: 'Europäisches Beratungskollektiv seit 1998: Governance und Boards, Strategie, Internationalisierung und KI. Data- und KI-Diagnose mit Bpifrance-Förderung.',
+    legalDescription: 'Impressum, Hosting und Datenschutz der Website von Habeas Corpus Consulting.',
+    imageAlt: 'Logo von Habeas Corpus Consulting',
     ogLocale: 'de_DE',
   },
   nav: {
@@ -18,7 +19,7 @@ export default {
     contact: 'Kontakt',
   },
   hero: {
-    eyebrow: 'Beratung für Unternehmensleitungen · seit 1998',
+    eyebrow: 'Beratung zu Governance, Strategie, Internationalisierung und KI · seit 1998',
     title: 'Besser führen, klarer entscheiden, <em>über Grenzen hinaus wachsen.</em>',
     lead:
       'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der Einführung künstlicher Intelligenz.',
@@ -148,7 +149,7 @@ export default {
     },
     items: [
       {
-        quote: '2008 bat ich Marc, meinen Aufsichtsrat aufzubauen und zu leiten. […] In diesen neun Jahren hat er seine Rolle stets perfekt ausgefüllt. […] Ihm kann man den Aufbau und die Leitung eines Boards anvertrauen. Mit Marc kann man langfristig und mit vollem Vertrauen planen.',
+        quote: 'Ich bat Marc, meinen Aufsichtsrat aufzubauen und zu leiten. […] Er hat seine Rolle stets perfekt ausgefüllt. […] Ihm kann man den Aufbau und die Leitung eines Boards anvertrauen. Mit Marc kann man langfristig und mit vollem Vertrauen planen.',
         author: 'Guillaume Monteux',
         role: 'Gründer von MiLibris, heute CEO und Gründer von Gadsme',
         from: 'fr',

@@ -1,8 +1,9 @@
 export default {
   meta: {
-    title: 'Habeas Corpus Consulting · Gouvernance, stratégie, international, intelligence artificielle',
-    description:
-      'Collectif européen de consultants créé en 1998. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration de l’intelligence artificielle.',
+    title: 'Conseil en gouvernance, stratégie et IA | Habeas Corpus',
+    description: 'Cabinet de conseil européen depuis 1998 : gouvernance et boards, stratégie, développement international et IA. Diagnostic Data IA éligible Bpifrance.',
+    legalDescription: 'Mentions légales, hébergement et protection des données personnelles du site Habeas Corpus Consulting.',
+    imageAlt: 'Logo Habeas Corpus Consulting',
     ogLocale: 'fr_FR',
   },
   nav: {
@@ -18,7 +19,7 @@ export default {
     contact: 'Contact',
   },
   hero: {
-    eyebrow: 'Conseil aux dirigeants · depuis 1998',
+    eyebrow: 'Conseil en gouvernance, stratégie, international et IA · depuis 1998',
     title: 'Mieux gouverner, mieux décider, <em>grandir au-delà des frontières.</em>',
     lead:
       'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration de l’intelligence artificielle.',
@@ -147,7 +148,7 @@ export default {
     },
     items: [
       {
-        quote: 'En 2008, j’ai demandé à Marc de constituer et présider mon Comité de Surveillance. […] Pendant ces 9 années, il a toujours parfaitement joué son rôle. […] C’est quelqu’un à qui on peut confier la constitution et l’animation d’un Board. Avec Marc, on peut se projeter dans la durée en toute confiance.',
+        quote: 'J’ai demandé à Marc de constituer et présider mon Comité de Surveillance. […] Il a toujours parfaitement joué son rôle. […] C’est quelqu’un à qui on peut confier la constitution et l’animation d’un Board. Avec Marc, on peut se projeter dans la durée en toute confiance.',
         author: 'Guillaume Monteux',
         role: 'Fondateur de MiLibris, aujourd’hui CEO et fondateur de Gadsme',
         from: 'fr',
