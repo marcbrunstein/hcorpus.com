@@ -67,6 +67,7 @@ function structuredData(c, lang, description) {
         telephone: site.phone,
         foundingDate: '1998',
         vatID: 'FR17898734231',
+        sameAs: [site.linkedin],
         founder: { '@id': person('marc') },
         employee: team.map((p) => ({ '@id': person(p.id) })),
         address: [
@@ -176,7 +177,7 @@ function footer(c, lang, kind, from) {
   return `<footer class="site-footer">
     <div class="wrap footer-inner">
       <p>© ${year} Habeas Corpus Consulting</p>
-      <p><a href="${hrefTo(from, lang, 'legal')}">${esc(c.footer.legal)}</a>${
+      <p><a class="footer-linkedin" href="${site.linkedin}" rel="noopener" target="_blank">${icon.linkedin}LinkedIn</a> · <a href="${hrefTo(from, lang, 'legal')}">${esc(c.footer.legal)}</a>${
         kind === 'legal' ? ` · <a href="${home}">${esc(c.footer.home)}</a>` : ''
       }</p>
     </div>

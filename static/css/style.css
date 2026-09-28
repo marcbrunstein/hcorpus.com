@@ -1039,6 +1039,11 @@ p {
 .site-footer a {
   color: rgb(255 255 255 / 0.85);
 }
+.footer-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 
 /* ---------- Mentions légales / 404 ---------- */
 

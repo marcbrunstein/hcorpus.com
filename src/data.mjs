@@ -8,6 +8,7 @@ export const site = {
   phoneHref: '+33189167322',
   paris: ['19 rue Jean-Jacques Rousseau', '75001 Paris'],
   headOffice: ['5 route du Bosc André', '27230 Saint-Germain-la-Campagne'],
+  linkedin: 'https://www.linkedin.com/company/habeas-corpus-sas/',
 };
 
 export const languages = [
