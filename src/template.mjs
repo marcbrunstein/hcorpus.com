@@ -363,7 +363,7 @@ export function renderHome(c, lang) {
             <p>${esc(c.team.extendedText)}</p>
             <p class="join">${esc(c.team.joinText)} <a class="link-arrow" href="${mail}">${esc(c.team.joinCta)}${icon.arrow}</a></p>
           </div>
-          <img src="${r}assets/img/team/extended-team.jpg" width="1716" height="406" alt="${esc(c.team.extendedAlt)}" loading="lazy">
+          <img src="${r}assets/img/team/extended-team.jpg" width="1224" height="612" alt="${esc(c.team.extendedAlt)}" loading="lazy">
         </div>
       </div>
     </section>

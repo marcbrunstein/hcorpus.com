@@ -22,6 +22,12 @@ TARGET_MEAN = 0.50        # luminosité moyenne visée (0-1)
 # Portraits de l'extended team retirés : (rangée, colonne) dans la mosaïque d'origine
 REMOVED = {(1, 2)}
 
+# Portraits ajoutés à la mosaïque : source et cadre de recadrage (même proportion 1,2:1 que les vignettes)
+EXTENDED_EXTRA = [
+    {"name": "Dario Capolongo", "src": "dario.jpg", "box": (675, 95, 1275, 595)},
+]
+EXTENDED_PER_ROW = 5  # 15 portraits = 3 rangées complètes
+
 
 def flatten(im):
     im = im.convert("RGBA")
@@ -82,7 +88,10 @@ def extended_team():
             cx = (x0 + x1) // 2 - 4
             tile = im.crop((cx - w // 2, y0 + 1, cx - w // 2 + w, y0 + 1 + h)).resize((240, 200), Image.LANCZOS)
             tiles.append(duotone(tile))
-    per_row, gap = 7, 6
+    for extra in EXTENDED_EXTRA:
+        src = flatten(Image.open(os.path.join(SRC, extra["src"])))
+        tiles.append(duotone(src.crop(extra["box"]).resize((240, 200), Image.LANCZOS)))
+    per_row, gap = EXTENDED_PER_ROW, 6
     tw, th = 240, 200
     n_rows = math.ceil(len(tiles) / per_row)
     out = Image.new("RGB", (per_row * tw + (per_row - 1) * gap, n_rows * th + (n_rows - 1) * gap), (251, 250, 247))
