@@ -174,7 +174,6 @@ export default {
     roles: {
       marc: { role: 'Socio fondatore', place: 'Parigi – Normandia' },
       arnaud: { role: 'Socio', place: 'Parigi' },
-      jerome: { role: 'Principal', place: 'Parigi' },
       nathalie: { role: 'Project officer', place: 'Parigi' },
     },
     linkedin: 'Profilo LinkedIn di',

@@ -22,9 +22,12 @@ export const languages = [
 export const team = [
   { id: 'marc', name: 'Marc Brunstein', photo: 'marc-brunstein.jpg', linkedin: 'https://www.linkedin.com/in/marcbrunstein/' },
   { id: 'arnaud', name: 'Arnaud Huet', photo: 'arnaud-huet.jpg', linkedin: 'https://www.linkedin.com/in/arnaudhuet/' },
-  { id: 'jerome', name: 'Jérôme Ravet', photo: 'jerome-ravet.jpg', linkedin: 'https://www.linkedin.com/in/jeromeravet92300/' },
   { id: 'nathalie', name: 'Nathalie Blumberg', photo: 'nathalie-blumberg.jpg', linkedin: 'https://www.linkedin.com/in/nathalie-blumberg-145b30193/' },
 ];
+
+// Extended team : nombre de portraits (sans noms), fichiers static/img/team/extended/01.jpg à NN.jpg
+// générés par tools/portraits.py
+export const extendedCount = 16;
 
 // logo : fichier dans static/img/clients/ (null = nom affiché en typographie)
 // large : true pour un logo compact qui doit s'afficher un peu plus grand

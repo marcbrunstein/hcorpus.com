@@ -173,7 +173,6 @@ export default {
     roles: {
       marc: { role: 'Founding Partner', place: 'Paris – Normandy' },
       arnaud: { role: 'Partner', place: 'Paris' },
-      jerome: { role: 'Principal', place: 'Paris' },
       nathalie: { role: 'Project Officer', place: 'Paris' },
     },
     linkedin: 'LinkedIn profile of',

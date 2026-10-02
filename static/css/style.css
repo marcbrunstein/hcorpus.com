@@ -730,8 +730,8 @@ p {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px 28px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px clamp(28px, 4vw, 56px);
 }
 .person img {
   width: 100%;
@@ -771,6 +771,12 @@ p {
   .people {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* nombre impair : le dernier portrait est centré sous les autres */
+  .person:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 14px);
+  }
 }
 @media (max-width: 420px) {
   .person h3 {
@@ -800,8 +806,52 @@ p {
 .extended-text {
   max-width: 62ch;
 }
-.extended img {
+
+/* Mosaïque de l'extended team : au survol, le portrait visé ressort et les autres s'estompent */
+.mosaic {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+.mosaic li {
+  overflow: hidden;
+  background: var(--tint);
+  transition: opacity 0.4s ease;
+}
+.mosaic img {
+  display: block;
   width: 100%;
+  height: auto;
+  aspect-ratio: 6 / 5;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+@media (hover: hover) {
+  .mosaic:hover li {
+    opacity: 0.35;
+  }
+  .mosaic li:hover {
+    opacity: 1;
+  }
+  .mosaic li:hover img {
+    transform: scale(1.06);
+  }
+}
+@media (min-width: 1000px) {
+  .extended {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: clamp(48px, 6vw, 96px);
+    align-items: start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mosaic li,
+  .mosaic img {
+    transition: none;
+  }
 }
 
 /* ---------- Références ---------- */

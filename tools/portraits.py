@@ -4,7 +4,7 @@ Traitement identique pour chaque visage : niveaux de gris, contraste et luminosi
 normalisés, puis bichromie bleu marine de la charte.
 
 Usage (depuis la racine du dépôt) : python tools/portraits.py
-Sources attendues dans _source/ (non versionné) : marc.jpg, arnaud.jpg, jerome.png,
+Sources attendues dans _source/ (non versionné) : marc.jpg, arnaud-2026.jpg, jerome.png, dario.jpg,
 nathalie.jpg, extended.png (mosaïque d'origine 4 x 4).
 """
 import math
@@ -24,9 +24,11 @@ REMOVED = {(1, 2)}
 
 # Portraits ajoutés à la mosaïque : source et cadre de recadrage (même proportion 1,2:1 que les vignettes)
 EXTENDED_EXTRA = [
-    {"name": "Dario Capolongo", "src": "dario.jpg", "box": (675, 95, 1275, 595)},
+    {"src": "dario.jpg", "box": (675, 95, 1275, 595)},
+    {"src": "jerome.png", "box": (40, 0, 340, 250)},
 ]
-EXTENDED_PER_ROW = 5  # 15 portraits = 3 rangées complètes
+# Chaque vignette est enregistrée à part (static/img/team/extended/NN.jpg), leur nombre est extendedCount dans src/data.mjs
+EXT_OUT = os.path.join(OUT, "extended")
 
 
 def flatten(im):
@@ -53,7 +55,6 @@ def duotone(im):
 CORE = {
     "marc-brunstein": {"src": "marc.jpg"},
     "arnaud-huet": {"src": "arnaud-2026.jpg", "rotate": 6, "center": (420, 330), "box": (150, 80, 690, 620)},
-    "jerome-ravet": {"src": "jerome.png"},
     "nathalie-blumberg": {"src": "nathalie.jpg"},
 }
 
@@ -91,14 +92,10 @@ def extended_team():
     for extra in EXTENDED_EXTRA:
         src = flatten(Image.open(os.path.join(SRC, extra["src"])))
         tiles.append(duotone(src.crop(extra["box"]).resize((240, 200), Image.LANCZOS)))
-    per_row, gap = EXTENDED_PER_ROW, 6
-    tw, th = 240, 200
-    n_rows = math.ceil(len(tiles) / per_row)
-    out = Image.new("RGB", (per_row * tw + (per_row - 1) * gap, n_rows * th + (n_rows - 1) * gap), (251, 250, 247))
-    for i, t in enumerate(tiles):
-        out.paste(t, ((i % per_row) * (tw + gap), (i // per_row) * (th + gap)))
-    out.save(os.path.join(OUT, "extended-team.jpg"), quality=84, optimize=True, progressive=True)
-    print("extended-team", len(tiles), out.size)
+    os.makedirs(EXT_OUT, exist_ok=True)
+    for i, t in enumerate(tiles, 1):
+        t.save(os.path.join(EXT_OUT, f"{i:02d}.jpg"), quality=84, optimize=True, progressive=True)
+    print("extended", len(tiles))
 
 
 if __name__ == "__main__":

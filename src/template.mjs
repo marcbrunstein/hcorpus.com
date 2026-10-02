@@ -1,4 +1,4 @@
-import { site, languages, team, clients, partners } from './data.mjs';
+import { site, languages, team, extendedCount, clients, partners } from './data.mjs';
 import { flags, languageNames } from './flags.mjs';
 
 const esc = (s) =>
@@ -233,6 +233,13 @@ export function renderHome(c, lang) {
     })
     .join('');
 
+  // Extended team : mosaïque de portraits sans noms ; au survol, le portrait visé ressort
+  const tiles = Array.from(
+    { length: extendedCount },
+    (_, i) =>
+      `<li><img src="${r}assets/img/team/extended/${String(i + 1).padStart(2, '0')}.jpg" width="240" height="200" alt="" loading="lazy"></li>`
+  ).join('');
+
   const groups = Object.keys(clients)
     .map(
       (g) => `<div class="client-group">
@@ -363,7 +370,7 @@ export function renderHome(c, lang) {
             <p>${esc(c.team.extendedText)}</p>
             <p class="join">${esc(c.team.joinText)} <a class="link-arrow" href="${mail}">${esc(c.team.joinCta)}${icon.arrow}</a></p>
           </div>
-          <img src="${r}assets/img/team/extended-team.jpg" width="1224" height="612" alt="${esc(c.team.extendedAlt)}" loading="lazy">
+          <ul class="mosaic" aria-label="${esc(c.team.extendedAlt)}">${tiles}</ul>
         </div>
       </div>
     </section>
