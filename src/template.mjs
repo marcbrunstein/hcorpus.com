@@ -205,7 +205,7 @@ export function renderHome(c, lang) {
 
   const expertise = c.expertise.items
     .map(
-      (it, i) => `<article class="expertise">
+      (it, i) => `<article class="expertise" id="expertise-${i + 1}">
           <p class="num">0${i + 1}</p>
           ${it.question ? `<p class="question">${esc(it.question)}</p>` : ''}
           <h3>${esc(it.title)}</h3>
@@ -213,7 +213,7 @@ export function renderHome(c, lang) {
           ${it.body ? `<p>${esc(it.body)}</p>` : ''}
           ${it.list ? `<ul class="ticks">${it.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
           ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
-          ${it.case ? `<aside class="case"><p class="case-title">${esc(it.case.title)}</p><p>${esc(it.case.text)}</p></aside>` : ''}
+          ${it.case ? `<details class="case"><summary><span>${esc(it.case.title)}</span><span class="case-toggle" aria-hidden="true"></span></summary><p>${esc(it.case.text)}</p></details>` : ''}
         </article>`
     )
     .join('');
@@ -295,7 +295,8 @@ export function renderHome(c, lang) {
   ${header(c, lang, 'home', from)}
   <main id="main">
     <section class="hero">
-      <div class="wrap">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
         <h1 class="eyebrow">${esc(c.hero.eyebrow)}</h1>
         <p class="hero-title">${c.hero.title}</p>
         <p class="hero-lead">${esc(c.hero.lead)}</p>
@@ -304,6 +305,15 @@ export function renderHome(c, lang) {
           <a class="btn btn-ghost" href="#expertise">${esc(c.hero.ctaSecondary)}</a>
         </p>
         <ul class="cities" aria-label="${esc(c.contact.offices)}">${c.contact.cities.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+        </div>
+        <nav class="hero-offers" aria-label="${esc(c.hero.offersLabel)}">
+          <ol>${c.expertise.items
+            .map(
+              (it, i) =>
+                `<li><a href="#expertise-${i + 1}"><span class="hero-offer-num">0${i + 1}</span><span class="hero-offer-title">${esc(it.title)}</span><span class="hero-offer-text">${esc(it.short)}</span></a></li>`
+            )
+            .join('')}</ol>
+        </nav>
       </div>
     </section>
 

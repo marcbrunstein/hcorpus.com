@@ -48,7 +48,8 @@
   </header>
   <main id="main">
     <section class="hero">
-      <div class="wrap">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
         <h1 class="eyebrow">Governance, strategy, international and AI consulting · since 1998</h1>
         <p class="hero-title">Better governance, sharper decisions, <em>stronger growth.</em></p>
         <p class="hero-lead">Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy, international development and the thoughtful adoption of artificial intelligence.</p>
@@ -57,6 +58,10 @@
           <a class="btn btn-ghost" href="#expertise">Explore our expertise</a>
         </p>
         <ul class="cities" aria-label="Our presence"><li>Paris</li><li>Munich</li><li>London</li><li>Milan</li></ul>
+        </div>
+        <nav class="hero-offers" aria-label="Our expertise">
+          <ol><li><a href="#expertise-1"><span class="hero-offer-num">01</span><span class="hero-offer-title">Governance</span><span class="hero-offer-text">Boards and committees that help you decide</span></a></li><li><a href="#expertise-2"><span class="hero-offer-num">02</span><span class="hero-offer-title">Strategy</span><span class="hero-offer-text">A clear direction your teams share</span></a></li><li><a href="#expertise-3"><span class="hero-offer-num">03</span><span class="hero-offer-title">International development</span><span class="hero-offer-text">Winning new markets, methodically</span></a></li><li><a href="#expertise-4"><span class="hero-offer-num">04</span><span class="hero-offer-title">Artificial intelligence</span><span class="hero-offer-text">A thoughtful adoption of AI</span></a></li></ol>
+        </nav>
       </div>
     </section>
 
@@ -91,7 +96,7 @@
       <div class="wrap">
         <p class="label">Expertise</p>
         <h2>What we bring you</h2>
-        <div class="expertise-grid"><article class="expertise">
+        <div class="expertise-grid"><article class="expertise" id="expertise-1">
           <p class="num">01</p>
           <p class="question">Is your board equal to your ambitions?</p>
           <h3>Governance</h3>
@@ -99,8 +104,8 @@
           <p>Our work is grounded in the BMMI methodology: a five-level maturity model used to assess a board, build it or help it progress.</p>
           
           
-          <aside class="case"><p class="case-title">Client case · Digital press start-up</p><p>From the company’s creation, we set up a supervisory committee for its founder, recruited five independent figures with complementary profiles (entrepreneurship, publishing, software, public sector, digital advertising) and chaired its work. For eight years, the committee challenged the founder’s strategic choices and supported him through key milestones: international expansion, then a funding round with a venture capital fund. Having become a strategic committee, joined by the fund’s representatives, it supported the company all the way to its exit: the acquisition by a major media and telecoms group.</p></aside>
-        </article><article class="expertise">
+          <details class="case"><summary><span>Client case · Digital press start-up</span><span class="case-toggle" aria-hidden="true"></span></summary><p>From the company’s creation, we set up a supervisory committee for its founder, recruited five independent figures with complementary profiles (entrepreneurship, publishing, software, public sector, digital advertising) and chaired its work. For eight years, the committee challenged the founder’s strategic choices and supported him through key milestones: international expansion, then a funding round with a venture capital fund. Having become a strategic committee, joined by the fund’s representatives, it supported the company all the way to its exit: the acquisition by a major media and telecoms group.</p></details>
+        </article><article class="expertise" id="expertise-2">
           <p class="num">02</p>
           <p class="question">Do your teams know where you are heading?</p>
           <h3>Strategy</h3>
@@ -109,7 +114,7 @@
           <ul class="ticks"><li>Strategic platform: vision, missions, values, ambitions</li><li>Brand platform and naming</li><li>Fundraising</li><li>Strategy seminars</li></ul>
           
           
-        </article><article class="expertise">
+        </article><article class="expertise" id="expertise-3">
           <p class="num">03</p>
           <p class="question">How do you succeed in a new market without losing your way?</p>
           <h3>International development</h3>
@@ -118,7 +123,7 @@
           <ul class="ticks"><li>Geographic expansion and internationalisation</li><li>Sales strategy</li><li>Sales organisation review</li><li>Competitive benchmarking</li></ul>
           
           
-        </article><article class="expertise">
+        </article><article class="expertise" id="expertise-4">
           <p class="num">04</p>
           <p class="question">How do you make AI a lever rather than a risk?</p>
           <h3>Artificial intelligence</h3>

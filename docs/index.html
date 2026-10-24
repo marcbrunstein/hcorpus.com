@@ -48,7 +48,8 @@
   </header>
   <main id="main">
     <section class="hero">
-      <div class="wrap">
+      <div class="wrap hero-grid">
+        <div class="hero-main">
         <h1 class="eyebrow">Conseil en gouvernance, stratégie, international et IA · depuis 1998</h1>
         <p class="hero-title">Mieux gouverner, mieux décider, <em>mieux grandir.</em></p>
         <p class="hero-lead">Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration raisonnée de l’intelligence artificielle.</p>
@@ -57,6 +58,10 @@
           <a class="btn btn-ghost" href="#expertise">Découvrir nos expertises</a>
         </p>
         <ul class="cities" aria-label="Notre présence"><li>Paris</li><li>Munich</li><li>Londres</li><li>Milan</li></ul>
+        </div>
+        <nav class="hero-offers" aria-label="Nos expertises">
+          <ol><li><a href="#expertise-1"><span class="hero-offer-num">01</span><span class="hero-offer-title">Gouvernance</span><span class="hero-offer-text">Des boards et comités qui aident à décider</span></a></li><li><a href="#expertise-2"><span class="hero-offer-num">02</span><span class="hero-offer-title">Stratégie</span><span class="hero-offer-text">Un cap clair, partagé par vos équipes</span></a></li><li><a href="#expertise-3"><span class="hero-offer-num">03</span><span class="hero-offer-title">Développement international</span><span class="hero-offer-text">Conquérir de nouveaux marchés avec méthode</span></a></li><li><a href="#expertise-4"><span class="hero-offer-num">04</span><span class="hero-offer-title">Intelligence artificielle</span><span class="hero-offer-text">Une intégration raisonnée de l’IA</span></a></li></ol>
+        </nav>
       </div>
     </section>
 
@@ -91,7 +96,7 @@
       <div class="wrap">
         <p class="label">Expertises</p>
         <h2>Ce que nous vous apportons</h2>
-        <div class="expertise-grid"><article class="expertise">
+        <div class="expertise-grid"><article class="expertise" id="expertise-1">
           <p class="num">01</p>
           <p class="question">Votre conseil est-il à la hauteur de vos ambitions ?</p>
           <h3>Gouvernance</h3>
@@ -99,8 +104,8 @@
           <p>Nous nous appuyons sur la méthodologie BMMI : un modèle de maturité en cinq niveaux pour évaluer un board, le constituer ou le faire progresser.</p>
           
           
-          <aside class="case"><p class="case-title">Cas client · Start-up de la presse numérique</p><p>Dès la création de l’entreprise, nous avons constitué pour son fondateur un comité de surveillance, recruté cinq personnalités indépendantes aux profils complémentaires (entrepreneuriat, édition, logiciel, secteur public, publicité numérique) et présidé ses travaux. Pendant huit ans, le comité a challengé les choix stratégiques du fondateur et l’a accompagné dans ses étapes décisives : le développement international, puis une levée de fonds auprès d’un fonds de capital-risque. Devenu comité stratégique, élargi aux représentants du fonds, il a accompagné l’entreprise jusqu’à son exit : le rachat par un grand groupe de médias et de télécoms.</p></aside>
-        </article><article class="expertise">
+          <details class="case"><summary><span>Cas client · Start-up de la presse numérique</span><span class="case-toggle" aria-hidden="true"></span></summary><p>Dès la création de l’entreprise, nous avons constitué pour son fondateur un comité de surveillance, recruté cinq personnalités indépendantes aux profils complémentaires (entrepreneuriat, édition, logiciel, secteur public, publicité numérique) et présidé ses travaux. Pendant huit ans, le comité a challengé les choix stratégiques du fondateur et l’a accompagné dans ses étapes décisives : le développement international, puis une levée de fonds auprès d’un fonds de capital-risque. Devenu comité stratégique, élargi aux représentants du fonds, il a accompagné l’entreprise jusqu’à son exit : le rachat par un grand groupe de médias et de télécoms.</p></details>
+        </article><article class="expertise" id="expertise-2">
           <p class="num">02</p>
           <p class="question">Vos équipes savent-elles où vous allez ?</p>
           <h3>Stratégie</h3>
@@ -109,7 +114,7 @@
           <ul class="ticks"><li>Plateforme stratégique : vision, missions, valeurs, ambitions</li><li>Plateforme de marque et recherche de nom</li><li>Recherche de financement</li><li>Séminaires stratégiques</li></ul>
           
           
-        </article><article class="expertise">
+        </article><article class="expertise" id="expertise-3">
           <p class="num">03</p>
           <p class="question">Comment réussir sur un nouveau marché sans vous y perdre ?</p>
           <h3>Développement international</h3>
@@ -118,7 +123,7 @@
           <ul class="ticks"><li>Expansion géographique et internationalisation</li><li>Stratégie commerciale</li><li>Diagnostic de l’organisation commerciale</li><li>Benchmark concurrentiel</li></ul>
           
           
-        </article><article class="expertise">
+        </article><article class="expertise" id="expertise-4">
           <p class="num">04</p>
           <p class="question">Comment faire de l’IA un levier plutôt qu’un risque ?</p>
           <h3>Intelligence artificielle</h3>

@@ -26,6 +26,7 @@ export default {
       'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy, international development and the thoughtful adoption of artificial intelligence.',
     ctaPrimary: 'Let’s discuss your project',
     ctaSecondary: 'Explore our expertise',
+    offersLabel: 'Our expertise',
   },
   about: {
     label: 'About',
@@ -46,6 +47,7 @@ export default {
     items: [
       {
         title: 'Governance',
+        short: 'Boards and committees that help you decide',
         question: 'Is your board equal to your ambitions?',
         lead: 'A board that genuinely challenges management and helps it make better decisions.',
         body:
@@ -58,6 +60,7 @@ export default {
       },
       {
         title: 'Strategy',
+        short: 'A clear direction your teams share',
         question: 'Do your teams know where you are heading?',
         lead: 'A clear direction, understood and owned by your teams.',
         body: null,
@@ -70,6 +73,7 @@ export default {
       },
       {
         title: 'International development',
+        short: 'Winning new markets, methodically',
         question: 'How do you succeed in a new market without losing your way?',
         lead: 'Succeed in a new market without spreading your resources too thin.',
         body: null,
@@ -82,6 +86,7 @@ export default {
       },
       {
         title: 'Artificial intelligence',
+        short: 'A thoughtful adoption of AI',
         question: 'How do you make AI a lever rather than a risk?',
         lead: 'No miracle promises, no timidity: AI applied with discernment, in service of your strategy.',
         body: null,
