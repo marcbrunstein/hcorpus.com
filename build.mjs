@@ -2,7 +2,7 @@
 // Usage : node build.mjs
 import { rm, mkdir, writeFile, cp } from 'node:fs/promises';
 import { join } from 'node:path';
-import { languages, site } from './src/data.mjs';
+import { languages, site, legacyRedirects } from './src/data.mjs';
 import { renderHome, renderLegal, renderPrivacy, pagePath } from './src/template.mjs';
 
 const OUT = 'docs';
@@ -31,6 +31,27 @@ for (const lang of languages) {
     await writeFile(join(dir, 'index.html'), render(t[lang.code], lang));
     urls.push({ lang, kind });
   }
+}
+
+// Pages de redirection pour les anciennes adresses WordPress (GitHub Pages ne gère pas les redirections serveur)
+for (const [from, to] of Object.entries(legacyRedirects)) {
+  const depth = from.split('/').length;
+  const rel = '../'.repeat(depth) + to;
+  const abs = site.url + '/' + to;
+  const dir = join(OUT, ...from.split('/'));
+  await mkdir(dir, { recursive: true });
+  await writeFile(
+    join(dir, 'index.html'),
+    `<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Habeas Corpus Consulting</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="${abs}">
+<meta http-equiv="refresh" content="0; url=${rel}">
+<script>location.replace(${JSON.stringify(rel)}${to.includes('#') ? '' : ' + location.hash'});</script>
+</head><body><p><a href="${rel}">Habeas Corpus Consulting</a></p></body></html>
+`
+  );
 }
 
 // Plan du site avec les équivalences linguistiques (hreflang) et la date de génération
