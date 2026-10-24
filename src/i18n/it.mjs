@@ -47,12 +47,15 @@ export default {
     items: [
       {
         title: 'Governance',
-        short: 'Board e comitati che aiutano a decidere',
-        question: 'Il vostro consiglio è all’altezza delle vostre ambizioni?',
-        lead: 'Un board che stimola davvero la direzione e la aiuta a decidere meglio.',
+        short: 'Board e comitati di direzione che aiutano a decidere',
+        question: 'I vostri organi decisionali sono all’altezza delle vostre ambizioni?',
+        lead: 'Board e comitati di direzione che stimolano davvero e aiutano a decidere meglio.',
         body:
-          'Ci basiamo sulla metodologia BMMI: un modello di maturità a cinque livelli per valutare un board, costituirlo o farlo evolvere.',
-        list: null,
+          'Ci basiamo sulla metodologia BMMI: un modello di maturità a cinque livelli per valutare un organo, costituirlo o farlo progredire.',
+        list: [
+          'Board: consiglio di amministrazione, consiglio di sorveglianza, advisory board e comitati specializzati – diagnosi, costituzione, animazione',
+          'Organi di direzione (comitato di direzione, comitato esecutivo): costituzione, animazione e valutazione',
+        ],
         case: {
           title: 'Caso cliente · Start-up della stampa digitale',
           text: 'Fin dalla nascita dell’impresa abbiamo costituito per il suo fondatore un comitato di sorveglianza, reclutato cinque personalità indipendenti dai profili complementari (imprenditoria, editoria, software, settore pubblico, pubblicità digitale) e ne abbiamo presieduto i lavori. Per otto anni il comitato ha messo alla prova le scelte strategiche del fondatore e lo ha accompagnato nelle tappe decisive: lo sviluppo internazionale, poi una raccolta di fondi presso un fondo di venture capital. Divenuto comitato strategico e allargato ai rappresentanti del fondo, ha accompagnato l’impresa fino all’exit: l’acquisizione da parte di un grande gruppo dei media e delle telecomunicazioni.',
@@ -70,6 +73,10 @@ export default {
           'Ricerca di finanziamenti',
           'Seminari strategici',
         ],
+        case: {
+          title: 'Caso cliente · Associazione dell’economia sociale e solidale',
+          text: 'Per un’associazione che accoglie, ospita e accompagna persone in situazione di precarietà ed esclusione, abbiamo co-costruito la piattaforma di marca: visione, missioni, ambizione, valori e personalità. Dopo colloqui individuali, una giornata di workshop ha riunito 24 persone rappresentative di tutta l’associazione, dalla direzione e dal consiglio fino a dipendenti, volontari e persone accompagnate. Approvata dal consiglio in quattro mesi, la piattaforma è poi servita da punto di partenza per un nuovo payoff, testato presso i suoi pubblici.',
+        },
       },
       {
         title: 'Sviluppo internazionale',
@@ -104,7 +111,7 @@ export default {
         note: 'Diagnosi realizzata da un esperto accreditato presso Bpifrance e cofinanziata dal programma Diag Data IA per le PMI e medie imprese francesi ammissibili. Non realizziamo sviluppi tecnici (agenti, integrazioni): li affidiamo a partner specializzati e ne guidiamo la realizzazione.',
         case: {
           title: 'Caso cliente · Rete internazionale di promozione fieristica',
-          text: 'Per una rete di 150 collaboratori distribuiti in 50 uffici nel mondo abbiamo guidato una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
+          text: 'Per una rete di 150 collaboratori distribuiti in 50 uffici nel mondo abbiamo guidato, in partnership con Araïko, una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
         },
       },
     ],

@@ -47,12 +47,15 @@ export default {
     items: [
       {
         title: 'Governance',
-        short: 'Boards und Gremien, die Entscheidungen stärken',
-        question: 'Ist Ihr Board Ihren Ambitionen gewachsen?',
-        lead: 'Ein Board, das die Geschäftsleitung wirklich fordert und ihr hilft, besser zu entscheiden.',
+        short: 'Boards und Führungsgremien, die Entscheidungen stärken',
+        question: 'Sind Ihre Entscheidungsgremien Ihren Ambitionen gewachsen?',
+        lead: 'Boards und Führungsgremien, die wirklich fordern und bessere Entscheidungen ermöglichen.',
         body:
-          'Grundlage unserer Arbeit ist die BMMI-Methode: ein fünfstufiges Reifegradmodell, mit dem sich ein Board bewerten, aufbauen oder weiterentwickeln lässt.',
-        list: null,
+          'Grundlage unserer Arbeit ist die BMMI-Methode: ein fünfstufiges Reifegradmodell, mit dem sich ein Gremium bewerten, aufbauen oder weiterentwickeln lässt.',
+        list: [
+          'Boards: Verwaltungsrat, Aufsichtsrat, Advisory Board und Fachausschüsse – Analyse, Aufbau, Moderation',
+          'Führungsgremien (Geschäftsleitung, Executive Committee): Aufbau, Moderation und Evaluation',
+        ],
         case: {
           title: 'Kundenbeispiel · Start-up der digitalen Presse',
           text: 'Gleich bei der Gründung des Unternehmens haben wir für den Gründer einen Aufsichtsausschuss eingerichtet, fünf unabhängige Persönlichkeiten mit sich ergänzenden Profilen gewonnen (Unternehmertum, Verlagswesen, Software, öffentlicher Sektor, digitale Werbung) und den Vorsitz übernommen. Acht Jahre lang hat der Ausschuss die strategischen Entscheidungen des Gründers hinterfragt und ihn in entscheidenden Phasen begleitet: bei der internationalen Expansion und anschließend bei einer Finanzierungsrunde mit einem Venture-Capital-Fonds. Als Strategieausschuss, erweitert um die Vertreter des Fonds, hat er das Unternehmen bis zum Exit begleitet: der Übernahme durch einen großen Medien- und Telekommunikationskonzern.',
@@ -70,6 +73,10 @@ export default {
           'Finanzierungssuche',
           'Strategieseminare',
         ],
+        case: {
+          title: 'Kundenbeispiel · Gemeinnütziger Verein der Sozialwirtschaft',
+          text: 'Für einen Verein, der Menschen in prekären Lebenslagen aufnimmt, unterbringt und begleitet, haben wir gemeinsam seine Markenplattform entwickelt: Vision, Auftrag, Ambition, Werte und Persönlichkeit. Nach Einzelgesprächen brachte ein ganztägiger Workshop 24 Personen aus dem gesamten Verein zusammen – von Geschäftsführung und Vorstand bis zu Mitarbeitenden, Ehrenamtlichen und begleiteten Personen. Nach vier Monaten vom Vorstand verabschiedet, bildete die Plattform anschließend die Grundlage für einen neuen Claim, der bei den Zielgruppen getestet wurde.',
+        },
       },
       {
         title: 'Internationale Entwicklung',
@@ -104,7 +111,7 @@ export default {
         note: 'Die Diagnose wird von einem bei Bpifrance gelisteten Experten durchgeführt und für förderfähige französische KMU und Mittelständler im Programm Diag Data IA kofinanziert. Technische Entwicklungen (Agenten, Integrationen) übernehmen wir nicht selbst: Wir vergeben sie an spezialisierte Partner und steuern ihre Umsetzung.',
         case: {
           title: 'Kundenbeispiel · Internationales Netzwerk zur Messeförderung',
-          text: 'Für ein Netzwerk mit 150 Mitarbeitenden in 50 Büros weltweit haben wir eine von Bpifrance kofinanzierte Diag-Data-IA-Diagnose geleitet. Rund zwanzig Interviews in Frankreich, Deutschland und Italien ermöglichten es, 21 Anwendungsfälle zu identifizieren und zu priorisieren; drei davon wurden mit bezifferten Nutzen und Kosten vertieft untersucht. Die Roadmap über 18 Monate beginnt mit dem Wesentlichen: KI-Kompetenz der Teams und eine Charta für den KI-Einsatz, bevor die ersten Werkzeuge eingeführt werden.',
+          text: 'Für ein Netzwerk mit 150 Mitarbeitenden in 50 Büros weltweit haben wir gemeinsam mit Araïko eine von Bpifrance kofinanzierte Diag-Data-IA-Diagnose geleitet. Rund zwanzig Interviews in Frankreich, Deutschland und Italien ermöglichten es, 21 Anwendungsfälle zu identifizieren und zu priorisieren; drei davon wurden mit bezifferten Nutzen und Kosten vertieft untersucht. Die Roadmap über 18 Monate beginnt mit dem Wesentlichen: KI-Kompetenz der Teams und eine Charta für den KI-Einsatz, bevor die ersten Werkzeuge eingeführt werden.',
         },
       },
     ],

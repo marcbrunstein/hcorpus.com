@@ -47,12 +47,15 @@ export default {
     items: [
       {
         title: 'Governance',
-        short: 'Boards and committees that help you decide',
-        question: 'Is your board equal to your ambitions?',
-        lead: 'A board that genuinely challenges management and helps it make better decisions.',
+        short: 'Boards and leadership teams that help you decide',
+        question: 'Are your decision-making bodies equal to your ambitions?',
+        lead: 'Boards and leadership teams that genuinely challenge and help you make better decisions.',
         body:
-          'Our work is grounded in the BMMI methodology: a five-level maturity model used to assess a board, build it or help it progress.',
-        list: null,
+          'We draw on the BMMI methodology: a five-level maturity model to assess a governing body, set it up or help it progress.',
+        list: [
+          'Boards: board of directors, supervisory board, advisory board and specialised committees – assessment, set-up, facilitation',
+          'Leadership teams (management committee, executive committee): set-up, facilitation and evaluation',
+        ],
         case: {
           title: 'Client case · Digital press start-up',
           text: 'From the company’s creation, we set up a supervisory committee for its founder, recruited five independent figures with complementary profiles (entrepreneurship, publishing, software, public sector, digital advertising) and chaired its work. For eight years, the committee challenged the founder’s strategic choices and supported him through key milestones: international expansion, then a funding round with a venture capital fund. Having become a strategic committee, joined by the fund’s representatives, it supported the company all the way to its exit: the acquisition by a major media and telecoms group.',
@@ -70,6 +73,10 @@ export default {
           'Fundraising',
           'Strategy seminars',
         ],
+        case: {
+          title: 'Client case · Social economy non-profit',
+          text: 'For a non-profit that welcomes, houses and supports people facing poverty and exclusion, we co-built its brand platform: vision, missions, ambition, values and personality. After individual interviews, a one-day workshop brought together 24 people representing the whole organisation, from management and the board to staff, volunteers and the people it supports. Approved by the board within four months, the platform then served as the starting point for a new tagline, tested with its audiences.',
+        },
       },
       {
         title: 'International development',
@@ -104,7 +111,7 @@ export default {
         note: 'Assessment carried out by a Bpifrance-accredited expert and co-financed by the Diag Data IA programme for eligible French SMEs and mid-sized companies. We do not carry out technical development (agents, integrations): we entrust it to specialised partners and steer its delivery.',
         case: {
           title: 'Client case · International trade fair promotion network',
-          text: 'For a network of 150 staff across 50 offices worldwide, we led a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
+          text: 'For a network of 150 staff across 50 offices worldwide, we led, in partnership with Araïko, a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
         },
       },
     ],

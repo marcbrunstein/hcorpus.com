@@ -47,12 +47,15 @@ export default {
     items: [
       {
         title: 'Gouvernance',
-        short: 'Des boards et comités qui aident à décider',
-        question: 'Votre conseil est-il à la hauteur de vos ambitions ?',
-        lead: 'Un board qui challenge vraiment la direction et l’aide à mieux décider.',
+        short: 'Boards et comités de direction qui aident à décider',
+        question: 'Vos instances de décision sont-elles à la hauteur de vos ambitions ?',
+        lead: 'Des boards et des comités de direction qui challengent vraiment et aident à mieux décider.',
         body:
-          'Nous nous appuyons sur la méthodologie BMMI : un modèle de maturité en cinq niveaux pour évaluer un board, le constituer ou le faire progresser.',
-        list: null,
+          'Nous nous appuyons sur la méthodologie BMMI : un modèle de maturité en cinq niveaux pour évaluer une instance, la constituer ou la faire progresser.',
+        list: [
+          'Boards : conseil d’administration, conseil de surveillance, advisory board et comités spécialisés – diagnostic, constitution, animation',
+          'Instances de direction (CODIR, COMEX) : constitution, animation et évaluation',
+        ],
         case: {
           title: 'Cas client · Start-up de la presse numérique',
           text: 'Dès la création de l’entreprise, nous avons constitué pour son fondateur un comité de surveillance, recruté cinq personnalités indépendantes aux profils complémentaires (entrepreneuriat, édition, logiciel, secteur public, publicité numérique) et présidé ses travaux. Pendant huit ans, le comité a challengé les choix stratégiques du fondateur et l’a accompagné dans ses étapes décisives : le développement international, puis une levée de fonds auprès d’un fonds de capital-risque. Devenu comité stratégique, élargi aux représentants du fonds, il a accompagné l’entreprise jusqu’à son exit : le rachat par un grand groupe de médias et de télécoms.',
@@ -70,6 +73,10 @@ export default {
           'Recherche de financement',
           'Séminaires stratégiques',
         ],
+        case: {
+          title: 'Cas client · Association de l’économie sociale et solidaire',
+          text: 'Pour une association qui accueille, héberge et accompagne des personnes en situation de précarité et d’exclusion, nous avons co-construit sa plateforme de marque : vision, missions, ambition, valeurs et personnalité. Après des entretiens individuels, une journée d’atelier a réuni 24 personnes représentatives de toute l’association, de la direction et du bureau jusqu’aux salariés, aux bénévoles et aux personnes accompagnées. Validée par le bureau en quatre mois, la plateforme a ensuite servi de point de départ à la recherche d’une nouvelle baseline, testée auprès de ses publics.',
+        },
       },
       {
         title: 'Développement international',
@@ -104,7 +111,7 @@ export default {
         note: 'Diagnostic réalisé par un expert référencé Bpifrance et cofinancé par le programme Diag Data IA pour les PME et ETI éligibles. Nous ne réalisons pas de développements techniques (agents, intégrations) : nous les confions à des partenaires spécialisés et en pilotons la réalisation.',
         case: {
           title: 'Cas client · Réseau international de promotion de salons',
-          text: 'Pour un réseau de 150 collaborateurs répartis dans 50 bureaux à travers le monde, nous avons piloté un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
+          text: 'Pour un réseau de 150 collaborateurs répartis dans 50 bureaux à travers le monde, nous avons piloté, en partenariat avec Araïko, un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
         },
       },
     ],
