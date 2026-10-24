@@ -66,7 +66,7 @@ export default {
       },
       {
         title: 'Governance',
-        short: 'Boards and leadership teams that help you decide',
+        short: 'Boards and leadership teams equal to your ambitions',
         question: 'Are your decision-making bodies equal to your ambitions?',
         lead: 'Boards and leadership teams that genuinely challenge and help you make better decisions.',
         body:

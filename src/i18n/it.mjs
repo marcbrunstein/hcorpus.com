@@ -66,7 +66,7 @@ export default {
       },
       {
         title: 'Governance',
-        short: 'Board e comitati di direzione che aiutano a decidere',
+        short: 'Board e comitati di direzione all’altezza delle vostre ambizioni',
         question: 'I vostri organi decisionali sono all’altezza delle vostre ambizioni?',
         lead: 'Board e comitati di direzione che stimolano davvero e aiutano a decidere meglio.',
         body:

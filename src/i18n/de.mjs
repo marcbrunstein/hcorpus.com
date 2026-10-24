@@ -66,7 +66,7 @@ export default {
       },
       {
         title: 'Governance',
-        short: 'Boards und Führungsgremien, die Entscheidungen stärken',
+        short: 'Boards und Führungsgremien, die Ihren Ambitionen gerecht werden',
         question: 'Sind Ihre Entscheidungsgremien Ihren Ambitionen gewachsen?',
         lead: 'Boards und Führungsgremien, die wirklich fordern und bessere Entscheidungen ermöglichen.',
         body:
