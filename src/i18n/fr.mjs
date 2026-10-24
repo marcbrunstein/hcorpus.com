@@ -66,7 +66,7 @@ export default {
       },
       {
         title: 'Gouvernance',
-        short: 'Boards et comités de direction qui aident à décider',
+        short: 'Des boards et comités de direction à la hauteur de vos ambitions',
         question: 'Vos instances de décision sont-elles à la hauteur de vos ambitions ?',
         lead: 'Des boards et des comités de direction qui challengent vraiment et aident à mieux décider.',
         body:
