@@ -1,14 +1,14 @@
-import { site, languages, team, clients, partners } from './data.mjs';
+import { site, languages, team, extendedCount, clients, partners } from './data.mjs';
 import { flags, languageNames } from './flags.mjs';
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-const SECTIONS = ['about', 'expertise', 'team', 'clients', 'partners', 'contact'];
+const SECTIONS = ['expertise', 'about', 'team', 'clients', 'partners', 'contact'];
 
 // Chemin relatif d'une page vers la racine du site (compatible sous-dossier GitHub Pages)
 export const pagePath = (lang, kind) => {
-  const parts = [lang.dir, kind === 'legal' ? lang.legal : ''].filter(Boolean);
+  const parts = [lang.dir, kind === 'home' ? '' : lang[kind]].filter(Boolean);
   return { parts, root: '../'.repeat(parts.length) };
 };
 
@@ -30,37 +30,96 @@ const icon = {
     '<svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3.6 5.6h-2V14h2V5.6ZM2.6 2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM14.5 9.3c0-2.3-1.2-3.8-3.2-3.8-1 0-1.8.5-2.2 1.1v-1h-2V14h2V9.7c0-1.1.4-1.9 1.4-1.9s1.4.8 1.4 1.9V14h2.1V9.3Z"/></svg>',
 };
 
+// Données structurées schema.org (page d'accueil) : site, organisation, offres et équipe
+function structuredData(c, lang, description) {
+  const org = site.url + '/#organization';
+  const person = (id) => `${site.url}/#${id}`;
+  const address = (street, postalCode, locality) => ({
+    '@type': 'PostalAddress',
+    streetAddress: street,
+    postalCode,
+    addressLocality: locality,
+    addressCountry: 'FR',
+  });
+  const [parisCp, ...parisCity] = site.paris[1].split(' ');
+  const [hoCp, ...hoCity] = site.headOffice[1].split(' ');
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebSite',
+        '@id': site.url + '/#website',
+        url: site.url + '/',
+        name: 'Habeas Corpus Consulting',
+        inLanguage: languages.map((l) => l.code),
+        publisher: { '@id': org },
+      },
+      {
+        '@type': ['Organization', 'ProfessionalService'],
+        '@id': org,
+        name: 'Habeas Corpus Consulting',
+        legalName: 'Habeas Corpus',
+        url: absUrl(lang, 'home'),
+        logo: { '@type': 'ImageObject', url: site.url + '/assets/img/logo-habeas-corpus.png', width: 512, height: 512 },
+        image: site.url + '/assets/img/og-image.jpg',
+        description,
+        email: site.email,
+        telephone: site.phone,
+        foundingDate: '1998',
+        vatID: 'FR17898734231',
+        sameAs: [site.linkedin],
+        founder: { '@id': person('marc') },
+        employee: team.map((p) => ({ '@id': person(p.id) })),
+        address: [
+          address(site.paris[0], parisCp, parisCity.join(' ')),
+          address(site.headOffice[0], hoCp, hoCity.join(' ')),
+        ],
+        areaServed: ['FR', 'DE', 'GB', 'IT'].map((code) => ({ '@type': 'Country', name: code })),
+        knowsAbout: c.expertise.items.map((it) => it.title),
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: c.expertise.title,
+          itemListElement: c.expertise.items.map((it) => ({
+            '@type': 'OfferCatalog',
+            name: it.title,
+            itemListElement: (it.list || [it.lead]).map((x) => ({
+              '@type': 'Offer',
+              itemOffered: { '@type': 'Service', name: x.split(' : ')[0].split(': ')[0], description: x },
+            })),
+          })),
+        },
+      },
+      ...team.map((p) => ({
+        '@type': 'Person',
+        '@id': person(p.id),
+        name: p.name,
+        jobTitle: c.team.roles[p.id].role,
+        image: `${site.url}/assets/img/team/${p.photo}`,
+        worksFor: { '@id': org },
+        ...(p.linkedin ? { sameAs: [p.linkedin] } : {}),
+      })),
+    ],
+  };
+}
+
 function head(c, lang, kind, from, title, description) {
   const alternates = languages
     .map((l) => `<link rel="alternate" hreflang="${l.code}" href="${absUrl(l, kind)}">`)
     .join('\n    ');
   const xdefault = `<link rel="alternate" hreflang="x-default" href="${absUrl(languages[0], kind)}">`;
+  const ogAlternates = languages
+    .filter((l) => l.code !== lang.code)
+    .map((l) => `<meta property="og:locale:alternate" content="${l.ogLocale}">`)
+    .join('\n    ');
   const ld =
     kind === 'home'
-      ? `<script type="application/ld+json">${JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'ProfessionalService',
-          name: 'Habeas Corpus Consulting',
-          url: site.url + '/',
-          logo: site.url + '/assets/img/logo-habeas-corpus.png',
-          image: site.url + '/assets/img/og-image.jpg',
-          description,
-          email: site.email,
-          telephone: site.phone,
-          foundingDate: '1998',
-          address: {
-            '@type': 'PostalAddress',
-            streetAddress: site.paris[0],
-            postalCode: '75001',
-            addressLocality: 'Paris',
-            addressCountry: 'FR',
-          },
-          areaServed: ['FR', 'DE', 'GB', 'IT'],
-        })}</script>`
+      ? `<script type="application/ld+json">${JSON.stringify(structuredData(c, lang, description)).replace(/</g, '\\u003c')}</script>`
       : '';
   return `<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">${
+      process.env.PREVIEW ? '\n    <meta name="robots" content="noindex, nofollow">' : ''
+    }
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}">
     <link rel="canonical" href="${absUrl(lang, kind)}">
@@ -72,9 +131,14 @@ function head(c, lang, kind, from, title, description) {
     <meta property="og:description" content="${esc(description)}">
     <meta property="og:url" content="${absUrl(lang, kind)}">
     <meta property="og:image" content="${site.url}/assets/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="${esc(c.meta.imageAlt)}">
     <meta property="og:locale" content="${c.meta.ogLocale}">
+    ${ogAlternates}
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="theme-color" content="#0b2e47">
-    <link rel="icon" href="${from.root}assets/img/favicon.png" type="image/png">
+    <link rel="icon" href="${from.root}assets/img/favicon.png" type="image/png" sizes="48x48">
     <link rel="apple-touch-icon" href="${from.root}assets/img/apple-touch-icon.png">
     <link rel="preload" href="${from.root}assets/fonts/newsreader-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="${from.root}assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
@@ -97,7 +161,7 @@ function header(c, lang, kind, from) {
   return `<a class="skip" href="#main">${esc(c.nav.skip)}</a>
   <header class="site-header" id="top">
     <div class="wrap header-inner">
-      <a class="brand" href="${home || './'}#top"><img src="${from.root}assets/img/logo-habeas-corpus.png" width="56" height="56" alt="Habeas Corpus Consulting"></a>
+      <a class="brand" href="${home || './'}#top"><img src="${from.root}assets/img/logo-header.png" width="52" height="52" alt="Habeas Corpus Consulting"></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-open="${esc(c.nav.menu)}" data-close="${esc(c.nav.close)}"><span class="nav-toggle-bars" aria-hidden="true"></span><span class="nav-toggle-label">${esc(c.nav.menu)}</span></button>
       <div class="menu" id="menu">
         <nav aria-label="Navigation"><ul class="nav">${links}</ul></nav>
@@ -113,8 +177,8 @@ function footer(c, lang, kind, from) {
   return `<footer class="site-footer">
     <div class="wrap footer-inner">
       <p>© ${year} Habeas Corpus Consulting</p>
-      <p><a href="${hrefTo(from, lang, 'legal')}">${esc(c.footer.legal)}</a>${
-        kind === 'legal' ? ` · <a href="${home}">${esc(c.footer.home)}</a>` : ''
+      <p><a class="footer-linkedin" href="${site.linkedin}" rel="noopener" target="_blank">${icon.linkedin}LinkedIn</a> · <a href="${hrefTo(from, lang, 'legal')}">${esc(c.footer.legal)}</a> · <a href="${hrefTo(from, lang, 'privacy')}">${esc(c.footer.privacy)}</a>${
+        kind !== 'home' ? ` · <a href="${home}">${esc(c.footer.home)}</a>` : ''
       }</p>
     </div>
   </footer>
@@ -141,12 +205,15 @@ export function renderHome(c, lang) {
 
   const expertise = c.expertise.items
     .map(
-      (it, i) => `<article class="expertise">
+      (it, i) => `<article class="expertise" id="expertise-${i + 1}">
           <p class="num">0${i + 1}</p>
+          ${it.question ? `<p class="question">${esc(it.question)}</p>` : ''}
           <h3>${esc(it.title)}</h3>
           <p class="lead">${esc(it.lead)}</p>
           ${it.body ? `<p>${esc(it.body)}</p>` : ''}
           ${it.list ? `<ul class="ticks">${it.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+          ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
+          ${it.case ? `<details class="case"><summary><span>${esc(it.case.title)}</span><span class="case-toggle" aria-hidden="true"></span></summary><p>${esc(it.case.text)}</p></details>` : ''}
         </article>`
     )
     .join('');
@@ -167,6 +234,13 @@ export function renderHome(c, lang) {
     })
     .join('');
 
+  // Extended team : mosaïque de portraits sans noms ; au survol, le portrait visé ressort
+  const tiles = Array.from(
+    { length: extendedCount },
+    (_, i) =>
+      `<li><img src="${r}assets/img/team/extended/${String(i + 1).padStart(2, '0')}.jpg" width="240" height="200" alt="" loading="lazy"></li>`
+  ).join('');
+
   const groups = Object.keys(clients)
     .map(
       (g) => `<div class="client-group">
@@ -174,6 +248,13 @@ export function renderHome(c, lang) {
           <ul class="logos">${clients[g].map((cl) => clientItem(cl, c, from)).join('')}</ul>
         </div>`
     )
+    .join('');
+
+  // Bandeau de confiance sous l'en-tête : logos des grands comptes (la liste complète est dans Références)
+  const strip = clients.large
+    .filter((cl) => cl.logo && cl.strip !== false)
+    .slice(0, 7)
+    .map((cl) => `<li><img${cl.large ? ' class="logo-lg"' : ''} src="${r}assets/img/clients/${cl.logo}" alt="${esc(cl.name)}" loading="lazy"></li>`)
     .join('');
 
   const partnerList = partners
@@ -186,6 +267,27 @@ export function renderHome(c, lang) {
     })
     .join('');
 
+  const mailSubject = (subject) => `${mail}?subject=${encodeURIComponent(subject)}`;
+
+  const pathCard = (p, href, variant) => `<a class="path path-${variant}" href="${href}">
+          <p class="path-kicker">${esc(p.kicker)}</p>
+          <h3>${esc(p.title)}</h3>
+          <p>${esc(p.text)}</p>
+          <span class="link-arrow">${esc(p.cta)}${icon.arrow}</span>
+        </a>`;
+
+  const quotes = c.testimonials.items
+    .map((t) => {
+      const translated = t.from !== lang.code ? c.testimonials.translatedFrom[t.from] : null;
+      return `<figure class="quote">
+          <blockquote><p>${esc(t.quote)}</p></blockquote>
+          <figcaption><strong>${esc(t.author)}</strong><span>${esc(t.role)}</span>${
+            translated ? `<em>${esc(translated)}</em>` : ''
+          }</figcaption>
+        </figure>`;
+    })
+    .join('');
+
   return `<!doctype html>
 <html lang="${lang.code}">
   ${head(c, lang, 'home', from, c.meta.title, c.meta.description)}
@@ -193,15 +295,55 @@ export function renderHome(c, lang) {
   ${header(c, lang, 'home', from)}
   <main id="main">
     <section class="hero">
-      <div class="wrap">
-        <p class="eyebrow">${esc(c.hero.eyebrow)}</p>
-        <h1>${c.hero.title}</h1>
+      <div class="wrap hero-grid">
+        <div class="hero-main">
+        <h1 class="eyebrow">${esc(c.hero.eyebrow)}</h1>
+        <p class="hero-title">${c.hero.title}</p>
         <p class="hero-lead">${esc(c.hero.lead)}</p>
         <p class="actions">
-          <a class="btn btn-light" href="${mail}">${esc(c.hero.ctaPrimary)}${icon.arrow}</a>
+          <a class="btn btn-accent" href="${mail}">${esc(c.hero.ctaPrimary)}${icon.arrow}</a>
           <a class="btn btn-ghost" href="#expertise">${esc(c.hero.ctaSecondary)}</a>
         </p>
         <ul class="cities" aria-label="${esc(c.contact.offices)}">${c.contact.cities.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+        </div>
+        <nav class="hero-offers" aria-label="${esc(c.hero.offersLabel)}">
+          <ol>${c.expertise.items
+            .map(
+              (it, i) =>
+                `<li><a href="#expertise-${i + 1}"><span class="hero-offer-num">0${i + 1}</span><span class="hero-offer-title">${esc(it.title)}</span><span class="hero-offer-text">${esc(it.short)}</span></a></li>`
+            )
+            .join('')}</ol>
+        </nav>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="${esc(c.clients.title)}">
+      <div class="wrap trust-inner">
+        <div class="trust-head">
+          <p class="trust-label">${esc(c.clients.title)}</p>
+          <a class="link-arrow" href="#clients">${esc(c.clients.all)}${icon.arrow}</a>
+        </div>
+        <ul class="trust-logos">${strip}</ul>
+      </div>
+    </section>
+
+    <section class="paths" aria-label="${esc(c.paths.label)}">
+      <div class="wrap paths-grid">
+        ${pathCard(c.paths.leader, '#expertise', 'leader')}
+        ${pathCard(c.paths.investor, mailSubject(c.paths.investor.subject), 'investor')}
+      </div>
+    </section>
+
+    <section class="section section-tint" id="expertise">
+      <div class="wrap">
+        ${label(c.expertise.label)}
+        <h2>${esc(c.expertise.title)}</h2>
+        <div class="expertise-grid">${expertise}</div>
+        <div class="boards">
+          <h3>${esc(c.expertise.boardsTitle)}</h3>
+          <ul>${c.expertise.boards.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
+        </div>
+        <p class="more"><a class="btn btn-accent" href="${mail}">${esc(c.expertise.cta)}${icon.arrow}</a></p>
       </div>
     </section>
 
@@ -222,16 +364,9 @@ export function renderHome(c, lang) {
       </div>
     </section>
 
-    <section class="section section-tint" id="expertise">
+    <section class="conviction">
       <div class="wrap">
-        ${label(c.expertise.label)}
-        <h2>${esc(c.expertise.title)}</h2>
-        <div class="expertise-grid">${expertise}</div>
-        <div class="boards">
-          <h3>${esc(c.expertise.boardsTitle)}</h3>
-          <ul>${c.expertise.boards.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
-        </div>
-        <p class="more"><a class="link-arrow" href="#contact">${esc(c.expertise.cta)}${icon.arrow}</a></p>
+        <p>${esc(c.conviction)}</p>
       </div>
     </section>
 
@@ -246,7 +381,7 @@ export function renderHome(c, lang) {
             <p>${esc(c.team.extendedText)}</p>
             <p class="join">${esc(c.team.joinText)} <a class="link-arrow" href="${mail}">${esc(c.team.joinCta)}${icon.arrow}</a></p>
           </div>
-          <img src="${r}assets/img/team/extended-team.jpg" width="1716" height="406" alt="${esc(c.team.extendedAlt)}" loading="lazy">
+          <ul class="mosaic" aria-label="${esc(c.team.extendedAlt)}">${tiles}</ul>
         </div>
       </div>
     </section>
@@ -259,7 +394,15 @@ export function renderHome(c, lang) {
       </div>
     </section>
 
-    <section class="section" id="partners">
+    <section class="section" id="testimonials">
+      <div class="wrap">
+        ${label(c.testimonials.label)}
+        <h2>${esc(c.testimonials.title)}</h2>
+        <div class="quotes">${quotes}</div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="partners">
       <div class="wrap">
         <div class="split">
           <div>
@@ -293,8 +436,6 @@ export function renderHome(c, lang) {
           <div>
             <h3>${esc(c.contact.offices)}</h3>
             <p>${c.contact.cities.map(esc).join(' · ')}</p>
-            <h3 class="h-gap">${esc(c.contact.headOffice)}</h3>
-            <address>${site.headOffice.map(esc).join('<br>')}</address>
           </div>
         </div>
       </div>
@@ -306,22 +447,26 @@ export function renderHome(c, lang) {
 `;
 }
 
-export function renderLegal(c, lang) {
-  const from = pagePath(lang, 'legal');
-  const title = `${c.legal.title} · Habeas Corpus Consulting`;
+function renderTextPage(c, lang, kind, description) {
+  const from = pagePath(lang, kind);
+  const page = c[kind];
+  const title = `${page.title} · Habeas Corpus Consulting`;
   return `<!doctype html>
 <html lang="${lang.code}">
-  ${head(c, lang, 'legal', from, title, c.meta.description)}
+  ${head(c, lang, kind, from, title, description)}
   <body>
-  ${header(c, lang, 'legal', from)}
+  ${header(c, lang, kind, from)}
   <main id="main" class="legal">
     <div class="wrap narrow">
-      <h1>${esc(c.legal.title)}</h1>
-      ${c.legal.sections.map((s) => `<section><h2>${esc(s.h)}</h2>${s.html}</section>`).join('\n      ')}
+      <h1>${esc(page.title)}</h1>
+      ${page.sections.map((s) => `<section><h2>${esc(s.h)}</h2>${s.html}</section>`).join('\n      ')}
     </div>
   </main>
-  ${footer(c, lang, 'legal', from)}
+  ${footer(c, lang, kind, from)}
   </body>
 </html>
 `;
 }
+
+export const renderLegal = (c, lang) => renderTextPage(c, lang, 'legal', c.meta.legalDescription);
+export const renderPrivacy = (c, lang) => renderTextPage(c, lang, 'privacy', c.meta.privacyDescription);

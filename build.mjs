@@ -3,7 +3,7 @@
 import { rm, mkdir, writeFile, cp } from 'node:fs/promises';
 import { join } from 'node:path';
 import { languages, site } from './src/data.mjs';
-import { renderHome, renderLegal, pagePath } from './src/template.mjs';
+import { renderHome, renderLegal, renderPrivacy, pagePath } from './src/template.mjs';
 
 const OUT = 'docs';
 const t = {
@@ -20,27 +20,49 @@ await cp('static', join(OUT, 'assets'), {
   filter: (src) => !src.endsWith('desktop.ini'),
 });
 
+const kinds = [['home', renderHome], ['legal', renderLegal], ['privacy', renderPrivacy]];
+const urlOf = (lang, kind) => site.url + '/' + pagePath(lang, kind).parts.map((p) => p + '/').join('');
 const urls = [];
 for (const lang of languages) {
-  for (const [kind, render] of [['home', renderHome], ['legal', renderLegal]]) {
+  for (const [kind, render] of kinds) {
     const { parts } = pagePath(lang, kind);
     const dir = join(OUT, ...parts);
     await mkdir(dir, { recursive: true });
     await writeFile(join(dir, 'index.html'), render(t[lang.code], lang));
-    urls.push(site.url + '/' + parts.map((p) => p + '/').join(''));
+    urls.push({ lang, kind });
   }
 }
 
+// Plan du site avec les équivalences linguistiques (hreflang) et la date de génération
+const today = new Date().toISOString().slice(0, 10);
 await writeFile(
   join(OUT, 'sitemap.xml'),
   `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urls
+  .map(
+    ({ lang, kind }) => `  <url>
+    <loc>${urlOf(lang, kind)}</loc>
+    <lastmod>${today}</lastmod>
+${languages.map((l) => `    <xhtml:link rel="alternate" hreflang="${l.code}" href="${urlOf(l, kind)}"/>`).join('\n')}
+    <xhtml:link rel="alternate" hreflang="x-default" href="${urlOf(languages[0], kind)}"/>
+  </url>`
+  )
+  .join('\n')}
 </urlset>
 `
 );
-await writeFile(join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`);
+// PREVIEW=1 : version de relecture, exclue des moteurs de recherche
+await writeFile(
+  join(OUT, 'robots.txt'),
+  process.env.PREVIEW
+    ? 'User-agent: *\nDisallow: /\n'
+    : `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`
+);
 await writeFile(join(OUT, '.nojekyll'), '');
+// Version de production : domaine personnalisé pour GitHub Pages (absent de la version de relecture,
+// sinon GitHub redirigerait l'adresse de relecture vers www.hcorpus.com avant la bascule DNS)
+if (!process.env.PREVIEW) await writeFile(join(OUT, 'CNAME'), new URL(site.url).hostname + '\n');
 await writeFile(
   join(OUT, '404.html'),
   `<!doctype html>

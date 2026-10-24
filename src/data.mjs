@@ -8,31 +8,36 @@ export const site = {
   phoneHref: '+33189167322',
   paris: ['19 rue Jean-Jacques Rousseau', '75001 Paris'],
   headOffice: ['5 route du Bosc André', '27230 Saint-Germain-la-Campagne'],
+  linkedin: 'https://www.linkedin.com/company/habeas-corpus-sas/',
 };
 
 export const languages = [
-  { code: 'fr', label: 'FR', dir: '', legal: 'mentions-legales' },
-  { code: 'en', label: 'EN', dir: 'en', legal: 'legal-notice' },
-  { code: 'de', label: 'DE', dir: 'de', legal: 'impressum' },
-  { code: 'it', label: 'IT', dir: 'it', legal: 'note-legali' },
+  { code: 'fr', label: 'FR', dir: '', legal: 'mentions-legales', privacy: 'confidentialite', ogLocale: 'fr_FR' },
+  { code: 'en', label: 'EN', dir: 'en', legal: 'legal-notice', privacy: 'privacy', ogLocale: 'en_GB' },
+  { code: 'de', label: 'DE', dir: 'de', legal: 'impressum', privacy: 'datenschutz', ogLocale: 'de_DE' },
+  { code: 'it', label: 'IT', dir: 'it', legal: 'note-legali', privacy: 'privacy', ogLocale: 'it_IT' },
 ];
 
 // linkedin : renseigner l'URL du profil pour afficher le lien
 export const team = [
   { id: 'marc', name: 'Marc Brunstein', photo: 'marc-brunstein.jpg', linkedin: 'https://www.linkedin.com/in/marcbrunstein/' },
   { id: 'arnaud', name: 'Arnaud Huet', photo: 'arnaud-huet.jpg', linkedin: 'https://www.linkedin.com/in/arnaudhuet/' },
-  { id: 'jerome', name: 'Jérôme Ravet', photo: 'jerome-ravet.jpg', linkedin: 'https://www.linkedin.com/in/jeromeravet92300/' },
   { id: 'nathalie', name: 'Nathalie Blumberg', photo: 'nathalie-blumberg.jpg', linkedin: 'https://www.linkedin.com/in/nathalie-blumberg-145b30193/' },
 ];
+
+// Extended team : nombre de portraits (sans noms), fichiers static/img/team/extended/01.jpg à NN.jpg
+// générés par tools/portraits.py
+export const extendedCount = 16;
 
 // logo : fichier dans static/img/clients/ (null = nom affiché en typographie)
 // large : true pour un logo compact qui doit s'afficher un peu plus grand
 // url : lien ouvert au clic sur le logo (absent = logo non cliquable)
+// strip : false pour exclure un logo du bandeau sous l'en-tête (logo illisible en petit et en gris)
 // Les groupes s'affichent dans cet ordre ; leurs titres sont dans src/i18n (clients.groups)
 export const clients = {
   large: [
     { name: 'AXA', logo: 'axa.png', country: 'fr', url: 'https://www.axa.fr/' },
-    { name: 'Orange', logo: 'orange.png', country: 'fr', url: 'https://www.orange.fr/' },
+    { name: 'Orange', logo: 'orange.png', country: 'fr', url: 'https://www.orange.fr/', strip: false },
     { name: 'SFR', logo: 'sfr.png', country: 'fr', url: 'https://www.sfr.fr/' },
     { name: 'Disneyland Paris', logo: 'disneyland-paris.png', country: 'fr', url: 'https://www.disneylandparis.com/fr-fr/' },
     { name: 'Michelin', logo: 'michelin.png', country: 'fr', url: 'https://www.michelin.fr/' },
@@ -56,13 +61,15 @@ export const clients = {
     { name: 'Youree', logo: 'youree.png', country: 'fr', url: 'https://www.youree.io/' },
   ],
   mid: [
-    { name: 'Promosalons', logo: 'promosalons.png', country: 'fr', url: 'https://www.promosalons.com/' },
+    { name: 'Promosalons', logo: 'promosalons.png', country: 'fr', url: 'https://promosalons.com/' },
     { name: 'VT Scan', logo: 'vtscan.png', country: 'fr', url: 'https://www.vtscan.fr/' },
     { name: 'Epoka', logo: 'epoka.png', country: 'fr', url: 'https://www.epoka.fr/' },
     { name: 'Cynck Consulting MEA', logo: 'cynck.png', country: 'ae' },
     { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'frde', url: 'https://www.afa-info.com/' },
     { name: 'Crea Valoris', logo: 'crea-valoris.png', country: 'fr', url: 'https://tonygoncalves.fr/crea-valoris/' },
-    { name: 'Annie', logo: 'annie.png', country: 'fr' },
+    { name: 'Annie', logo: 'annie.png', country: 'fr', url: 'https://www.newsassurancespro.com/annie' },
+    { name: 'WeeeCycling', logo: 'weeecycling.svg', country: 'fr', url: 'https://www.weeecycling.com/' },
+    { name: 'Ecocea Technologies', logo: 'ecocea.svg', country: 'fr', url: 'https://www.ecoceatechnologies.com/fr' },
   ],
 };
 
