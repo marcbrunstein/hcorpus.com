@@ -42,7 +42,7 @@ export default {
   },
   expertise: {
     label: 'Expertise',
-    title: 'Four areas of expertise',
+    title: 'What we bring you',
     items: [
       {
         title: 'Governance',
@@ -79,7 +79,7 @@ export default {
       {
         title: 'Artificial intelligence',
         question: 'How do you make AI a lever rather than a risk?',
-        lead: 'Steering AI as a leadership project, from assessment to deployment.',
+        lead: 'No miracle promises, no timidity: AI applied with discernment, in service of your strategy.',
         body: null,
         list: [
           'Data and AI assessment: maturity, high-impact use cases, expected gains; AI due diligence for investors',

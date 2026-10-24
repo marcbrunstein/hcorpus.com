@@ -42,7 +42,7 @@ export default {
   },
   expertise: {
     label: 'Expertises',
-    title: 'Quatre domaines d’intervention',
+    title: 'Ce que nous vous apportons',
     items: [
       {
         title: 'Gouvernance',
@@ -79,7 +79,7 @@ export default {
       {
         title: 'Intelligence artificielle',
         question: 'Comment faire de l’IA un levier plutôt qu’un risque ?',
-        lead: 'Piloter l’IA comme un projet de direction, du diagnostic au déploiement.',
+        lead: 'Ni promesses miracles ni frilosité : l’IA avec discernement, au service de votre stratégie.',
         body: null,
         list: [
           'Diagnostic data et IA : maturité, cas d’usage à fort impact, gains attendus ; due diligence IA pour les investisseurs',

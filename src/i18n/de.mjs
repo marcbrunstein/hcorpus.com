@@ -42,7 +42,7 @@ export default {
   },
   expertise: {
     label: 'Leistungen',
-    title: 'Vier Beratungsschwerpunkte',
+    title: 'Was wir Ihnen bieten',
     items: [
       {
         title: 'Governance',
@@ -79,7 +79,7 @@ export default {
       {
         title: 'Künstliche Intelligenz',
         question: 'Wie wird KI zum Hebel statt zum Risiko?',
-        lead: 'KI als Führungsprojekt steuern – von der Diagnose bis zur Einführung.',
+        lead: 'Weder Wunderversprechen noch Zögerlichkeit: KI mit Augenmaß, im Dienst Ihrer Strategie.',
         body: null,
         list: [
           'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle mit hoher Wirkung, erwarteter Nutzen; KI-Due-Diligence für Investoren',

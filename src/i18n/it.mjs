@@ -42,7 +42,7 @@ export default {
   },
   expertise: {
     label: 'Competenze',
-    title: 'Quattro ambiti di intervento',
+    title: 'Cosa vi offriamo',
     items: [
       {
         title: 'Governance',
@@ -79,7 +79,7 @@ export default {
       {
         title: 'Intelligenza artificiale',
         question: 'Come fare dell’IA una leva anziché un rischio?',
-        lead: 'Guidare l’IA come un progetto di direzione, dalla diagnosi all’implementazione.',
+        lead: 'Né promesse miracolose né timori: l’IA con discernimento, al servizio della vostra strategia.',
         body: null,
         list: [
           'Diagnosi data e IA: maturità, casi d’uso ad alto impatto, benefici attesi; due diligence IA per gli investitori',
