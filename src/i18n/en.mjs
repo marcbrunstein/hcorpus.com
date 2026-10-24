@@ -60,8 +60,8 @@ export default {
         ],
         note: 'Assessment carried out by a Bpifrance-accredited expert and co-financed by the Diag Data IA programme for eligible French SMEs and mid-sized companies. We do not carry out technical development (agents, integrations): we entrust it to specialised partners and steer its delivery.',
         case: {
-          title: 'Client case · International trade fair promotion network',
-          text: 'For a network of 150 staff across 50 offices worldwide, we led, in partnership with Araïko, a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
+          title: 'Client case · International business promotion network',
+          text: 'For a network of several hundred staff across 50 offices worldwide, we led, in partnership with Araïko, a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
         },
       },
       {
