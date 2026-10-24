@@ -69,7 +69,7 @@ export const clients = {
     { name: 'Crea Valoris', logo: 'crea-valoris.png', country: 'fr', url: 'https://tonygoncalves.fr/crea-valoris/' },
     { name: 'Annie', logo: 'annie.png', country: 'fr', url: 'https://www.newsassurancespro.com/annie' },
     { name: 'WeeeCycling', logo: 'weeecycling.svg', country: 'fr', url: 'https://www.weeecycling.com/' },
-    { name: 'Ecocea Technologies', logo: null, country: 'fr' },
+    { name: 'Ecocea Technologies', logo: 'ecocea.svg', country: 'fr', url: 'https://www.ecoceatechnologies.com/fr' },
   ],
 };
 
