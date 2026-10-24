@@ -1,7 +1,7 @@
 export default {
   meta: {
     title: 'Beratung für KI, Governance & Strategie | Habeas Corpus',
-    description: 'Europäisches Beratungskollektiv seit 1998: KI, Governance und Boards, Strategie, Internationalisierung. Data- und KI-Diagnose mit Bpifrance-Förderung.',
+    description: 'Europäisches Beratungskollektiv seit 1998: KI, Governance und Boards, Strategie, Wachstum und Internationalisierung. Data- und KI-Diagnose mit Bpifrance-Förderung.',
     legalDescription: 'Impressum, Hosting und Datenschutz der Website von Habeas Corpus Consulting.',
     privacyDescription: 'Datenschutzerklärung der Website von Habeas Corpus Consulting: verarbeitete Daten, Zwecke, Speicherdauer und Ihre Rechte nach der DSGVO.',
     imageAlt: 'Logo von Habeas Corpus Consulting',
@@ -20,10 +20,10 @@ export default {
     contact: 'Kontakt',
   },
   hero: {
-    eyebrow: 'Beratung zu KI, Governance, Strategie und Internationalisierung · seit 1998',
+    eyebrow: 'Beratung zu KI, Governance, Strategie und Wachstum · seit 1998',
     title: 'Besser führen, klarer entscheiden, <em>gezielter wachsen.</em>',
     lead:
-      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren bei der durchdachten Einführung künstlicher Intelligenz sowie in Fragen der Governance, der Strategie und der internationalen Entwicklung.',
+      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren bei der durchdachten Einführung künstlicher Intelligenz sowie in Fragen der Governance, der Strategie und des Wachstums – im In- und Ausland.',
     ctaPrimary: 'Sprechen wir über Ihr Projekt',
     ctaSecondary: 'Unsere Leistungen',
     offersLabel: 'Unsere Leistungen',
@@ -38,7 +38,7 @@ export default {
     facts: [
       { value: '1998', label: 'Gründung des Kollektivs' },
       { value: '4 Länder', label: 'Frankreich, Deutschland, Vereinigtes Königreich, Italien' },
-      { value: '4 Schwerpunkte', label: 'KI, Governance, Strategie, Internationalisierung' },
+      { value: '4 Schwerpunkte', label: 'KI, Governance, Strategie, Wachstum' },
     ],
   },
   expertise: {
@@ -98,15 +98,15 @@ export default {
         },
       },
       {
-        title: 'Internationale Entwicklung',
-        short: 'Neue Märkte mit Methode erschließen',
-        question: 'Wie gelingt der Eintritt in einen neuen Markt, ohne sich zu verzetteln?',
-        lead: 'In einem neuen Markt erfolgreich sein, ohne Ihre Ressourcen zu zersplittern.',
+        title: 'Wachstum',
+        short: 'Neue Märkte erschließen – im In- und Ausland',
+        question: 'Wo liegen Ihre nächsten Wachstumstreiber?',
+        lead: 'Neue Märkte erschließen, im In- wie im Ausland – mit Methode.',
         body: null,
         list: [
-          'Geografische Expansion und Internationalisierung',
           'Vertriebsstrategie',
           'Analyse der Vertriebsorganisation',
+          'Erschließung neuer Märkte und Internationalisierung',
           'Wettbewerbs-Benchmarking',
         ],
         case: {

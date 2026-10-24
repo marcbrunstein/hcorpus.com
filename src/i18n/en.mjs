@@ -1,7 +1,7 @@
 export default {
   meta: {
     title: 'AI, governance & strategy consulting | Habeas Corpus',
-    description: 'European consulting firm since 1998: AI, governance and boards, strategy, international development. Bpifrance-eligible data and AI assessment.',
+    description: 'European consulting firm since 1998: AI, governance and boards, strategy, growth and international expansion. Bpifrance-eligible data and AI assessment.',
     legalDescription: 'Legal notice, hosting and personal data protection for the Habeas Corpus Consulting website.',
     privacyDescription: 'Privacy policy of the Habeas Corpus Consulting website: data processed, purposes, retention periods and your GDPR rights.',
     imageAlt: 'Habeas Corpus Consulting logo',
@@ -20,10 +20,10 @@ export default {
     contact: 'Contact',
   },
   hero: {
-    eyebrow: 'AI, governance, strategy and international consulting · since 1998',
+    eyebrow: 'AI, governance, strategy and growth consulting · since 1998',
     title: 'Better governance, sharper decisions, <em>stronger growth.</em>',
     lead:
-      'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with the thoughtful adoption of artificial intelligence, their governance, strategy and international development.',
+      'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with the thoughtful adoption of artificial intelligence, their governance, strategy and growth, at home and abroad.',
     ctaPrimary: 'Let’s discuss your project',
     ctaSecondary: 'Explore our expertise',
     offersLabel: 'Our expertise',
@@ -38,7 +38,7 @@ export default {
     facts: [
       { value: '1998', label: 'Collective founded' },
       { value: '4 countries', label: 'France, Germany, United Kingdom, Italy' },
-      { value: '4 areas', label: 'AI, governance, strategy, international' },
+      { value: '4 areas', label: 'AI, governance, strategy, growth' },
     ],
   },
   expertise: {
@@ -98,15 +98,15 @@ export default {
         },
       },
       {
-        title: 'International development',
-        short: 'Winning new markets, methodically',
-        question: 'How do you succeed in a new market without losing your way?',
-        lead: 'Succeed in a new market without spreading your resources too thin.',
+        title: 'Growth',
+        short: 'Winning new markets, at home and abroad',
+        question: 'Where will your next growth drivers come from?',
+        lead: 'Winning new markets, at home and abroad, methodically.',
         body: null,
         list: [
-          'Geographic expansion and internationalisation',
           'Sales strategy',
-          'Sales organisation review',
+          'Sales organisation assessment',
+          'New market entry and internationalisation',
           'Competitive benchmarking',
         ],
         case: {
