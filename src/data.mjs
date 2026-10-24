@@ -88,3 +88,29 @@ export const partners = [
   { id: 'nikita', name: 'Nikita', url: 'https://agencenikita.com/' },
   { id: 'nmu', name: 'NMU City Roaming', url: 'https://www.linkedin.com/company/nmu-city-roaming' },
 ];
+
+// Anciennes adresses du site WordPress (jusqu'en octobre 2026) redirigées vers les nouvelles pages.
+// Chemin d'origine (sans / initial) -> cible relative à la racine du site
+export const legacyRedirects = {
+  'index.php': '',
+  'index.php/notre-offre': '#expertise',
+  'index.php/nos-references': '#clients',
+  'index.php/nos-partenaires-2': '#partners',
+  'index.php/contact': '#contact',
+  'index.php/mentions-legales': 'mentions-legales/',
+  'index.php/blog': '',
+  'index.php/2021/03/25/bonjour-tout-le-monde': '',
+  'index.php/en': 'en/',
+  'index.php/en/a-propos-english': 'en/#about',
+  'index.php/en/our-offers': 'en/#expertise',
+  'index.php/en/our-references': 'en/#clients',
+  'index.php/en/our-partnerships': 'en/#partners',
+  'index.php/en/contact-us': 'en/#contact',
+  'index.php/en/legal-information': 'en/legal-notice/',
+  'index.php/de': 'de/',
+  'index.php/de/uber-uns': 'de/#about',
+  'index.php/de/unsere-leistungen': 'de/#expertise',
+  'index.php/de/referenzen': 'de/#clients',
+  'index.php/de/kontakt': 'de/#contact',
+  'index.php/de/impressum': 'de/impressum/',
+};
