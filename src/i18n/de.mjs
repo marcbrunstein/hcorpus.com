@@ -23,7 +23,7 @@ export default {
     eyebrow: 'Beratung zu Governance, Strategie, Internationalisierung und KI · seit 1998',
     title: 'Besser führen, klarer entscheiden, <em>gezielter wachsen.</em>',
     lead:
-      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der Einführung künstlicher Intelligenz.',
+      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der durchdachten Einführung künstlicher Intelligenz.',
     ctaPrimary: 'Sprechen wir über Ihr Projekt',
     ctaSecondary: 'Unsere Leistungen',
   },

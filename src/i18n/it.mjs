@@ -23,7 +23,7 @@ export default {
     eyebrow: 'Consulenza in governance, strategia, internazionalizzazione e IA · dal 1998',
     title: 'Governare meglio, decidere meglio, <em>crescere meglio.</em>',
     lead:
-      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione dell’intelligenza artificiale.',
+      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione ragionata dell’intelligenza artificiale.',
     ctaPrimary: 'Parliamo del vostro progetto',
     ctaSecondary: 'Le nostre competenze',
   },
