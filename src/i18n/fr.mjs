@@ -83,6 +83,10 @@ export default {
           'Diagnostic de l’organisation commerciale',
           'Benchmark concurrentiel',
         ],
+        case: {
+          title: 'Cas client · Éditeur de logiciels américain',
+          text: 'Nous avons accompagné un éditeur de logiciels américain dans son expansion à l’échelle de l’Europe, avec pour partenaire un grand groupe informatique international. Cette démarche a abouti à la signature de son premier client européen, un grand opérateur de télécommunications français. Selon son vice-président commercial, elle a considérablement accéléré sa pénétration du marché et amélioré sa rentabilité en Europe.',
+        },
       },
       {
         title: 'Intelligence artificielle',
@@ -98,6 +102,10 @@ export default {
           'Accompagnement des dirigeants et des équipes : acculturation et conduite du changement',
         ],
         note: 'Diagnostic réalisé par un expert référencé Bpifrance et cofinancé par le programme Diag Data IA pour les PME et ETI éligibles. Nous ne réalisons pas de développements techniques (agents, intégrations) : nous les confions à des partenaires spécialisés et en pilotons la réalisation.',
+        case: {
+          title: 'Cas client · Réseau international de promotion de salons',
+          text: 'Pour un réseau de 150 collaborateurs répartis dans 50 bureaux à travers le monde, nous avons piloté un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
+        },
       },
     ],
     boardsTitle: 'Les instances que nous accompagnons',

@@ -83,6 +83,10 @@ export default {
           'Sales organisation review',
           'Competitive benchmarking',
         ],
+        case: {
+          title: 'Client case · US software publisher',
+          text: 'We supported a US software publisher in its expansion across Europe, working alongside a major international IT group as partner. This led to the signing of its first European client, a major French telecoms operator. According to its VP Sales, our support significantly accelerated its market penetration and improved its profitability in Europe.',
+        },
       },
       {
         title: 'Artificial intelligence',
@@ -98,6 +102,10 @@ export default {
           'Support for leaders and teams: AI literacy and change management',
         ],
         note: 'Assessment carried out by a Bpifrance-accredited expert and co-financed by the Diag Data IA programme for eligible French SMEs and mid-sized companies. We do not carry out technical development (agents, integrations): we entrust it to specialised partners and steer its delivery.',
+        case: {
+          title: 'Client case · International trade fair promotion network',
+          text: 'For a network of 150 staff across 50 offices worldwide, we led a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
+        },
       },
     ],
     boardsTitle: 'The governing bodies we work with',

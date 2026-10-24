@@ -83,6 +83,10 @@ export default {
           'Diagnosi dell’organizzazione commerciale',
           'Benchmark competitivo',
         ],
+        case: {
+          title: 'Caso cliente · Editore di software statunitense',
+          text: 'Abbiamo accompagnato un editore di software statunitense nella sua espansione in tutta Europa, con un grande gruppo informatico internazionale come partner. Ne è nata la firma del suo primo cliente europeo, un grande operatore di telecomunicazioni francese. Secondo il suo vicepresidente commerciale, il nostro accompagnamento ha accelerato notevolmente la sua penetrazione del mercato e migliorato la sua redditività in Europa.',
+        },
       },
       {
         title: 'Intelligenza artificiale',
@@ -98,6 +102,10 @@ export default {
           'Accompagnamento di dirigenti e team: alfabetizzazione all’IA e gestione del cambiamento',
         ],
         note: 'Diagnosi realizzata da un esperto accreditato presso Bpifrance e cofinanziata dal programma Diag Data IA per le PMI e medie imprese francesi ammissibili. Non realizziamo sviluppi tecnici (agenti, integrazioni): li affidiamo a partner specializzati e ne guidiamo la realizzazione.',
+        case: {
+          title: 'Caso cliente · Rete internazionale di promozione fieristica',
+          text: 'Per una rete di 150 collaboratori distribuiti in 50 uffici nel mondo abbiamo guidato una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
+        },
       },
     ],
     boardsTitle: 'Gli organi che accompagniamo',
