@@ -1,7 +1,7 @@
 export default {
   meta: {
-    title: 'Conseil en gouvernance, stratégie et IA | Habeas Corpus',
-    description: 'Cabinet de conseil européen depuis 1998 : gouvernance et boards, stratégie, développement international et IA. Diagnostic Data IA éligible Bpifrance.',
+    title: 'Conseil en IA, gouvernance et stratégie | Habeas Corpus',
+    description: 'Cabinet de conseil européen depuis 1998 : IA, gouvernance et boards, stratégie, développement international. Diagnostic Data IA éligible Bpifrance.',
     legalDescription: 'Mentions légales, hébergement et protection des données personnelles du site Habeas Corpus Consulting.',
     privacyDescription: 'Politique de confidentialité du site Habeas Corpus Consulting : données traitées, finalités, durées de conservation et droits RGPD.',
     imageAlt: 'Logo Habeas Corpus Consulting',
@@ -20,10 +20,10 @@ export default {
     contact: 'Contact',
   },
   hero: {
-    eyebrow: 'Conseil en gouvernance, stratégie, international et IA · depuis 1998',
+    eyebrow: 'Conseil en IA, gouvernance, stratégie et international · depuis 1998',
     title: 'Mieux gouverner, mieux décider, <em>mieux grandir.</em>',
     lead:
-      'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration raisonnée de l’intelligence artificielle.',
+      'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans l’intégration raisonnée de l’intelligence artificielle, leur gouvernance, leur stratégie et leur développement international.',
     ctaPrimary: 'Parlons de votre projet',
     ctaSecondary: 'Découvrir nos expertises',
     offersLabel: 'Nos expertises',
@@ -38,13 +38,32 @@ export default {
     facts: [
       { value: '1998', label: 'Création du collectif' },
       { value: '4 pays', label: 'France, Allemagne, Royaume-Uni, Italie' },
-      { value: '4 expertises', label: 'Gouvernance, stratégie, international, IA' },
+      { value: '4 expertises', label: 'IA, gouvernance, stratégie, international' },
     ],
   },
   expertise: {
     label: 'Expertises',
     title: 'Ce que nous vous apportons',
     items: [
+      {
+        title: 'Intelligence artificielle',
+        short: 'Une intégration raisonnée de l’IA',
+        question: 'Comment faire de l’IA un levier plutôt qu’un risque ?',
+        lead: 'Ni promesses miracles ni frilosité : l’IA avec discernement, au service de votre stratégie.',
+        body: null,
+        list: [
+          'Diagnostic data et IA : maturité, cas d’usage à fort impact, gains attendus ; due diligence IA pour les investisseurs',
+          'Stratégie et feuille de route : priorités, business cases, choix des solutions et des partenaires',
+          'Assistance à maîtrise d’ouvrage : cahier des charges, sélection des prestataires, pilotage des projets jusqu’au déploiement',
+          'Gouvernance, éthique et conformité : comité IA, maîtrise des risques, AI Act',
+          'Accompagnement des dirigeants et des équipes : acculturation et conduite du changement',
+        ],
+        note: 'Diagnostic réalisé par un expert référencé Bpifrance et cofinancé par le programme Diag Data IA pour les PME et ETI éligibles. Nous ne réalisons pas de développements techniques (agents, intégrations) : nous les confions à des partenaires spécialisés et en pilotons la réalisation.',
+        case: {
+          title: 'Cas client · Réseau international de promotion de salons',
+          text: 'Pour un réseau de 150 collaborateurs répartis dans 50 bureaux à travers le monde, nous avons piloté, en partenariat avec Araïko, un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
+        },
+      },
       {
         title: 'Gouvernance',
         short: 'Boards et comités de direction qui aident à décider',
@@ -95,25 +114,6 @@ export default {
           text: 'Nous avons accompagné un éditeur de logiciels américain dans son expansion à l’échelle de l’Europe, avec pour partenaire un grand groupe informatique international. Cette démarche a abouti à la signature de son premier client européen, un grand opérateur de télécommunications français. Selon son vice-président commercial, elle a considérablement accéléré sa pénétration du marché et amélioré sa rentabilité en Europe.',
         },
       },
-      {
-        title: 'Intelligence artificielle',
-        short: 'Une intégration raisonnée de l’IA',
-        question: 'Comment faire de l’IA un levier plutôt qu’un risque ?',
-        lead: 'Ni promesses miracles ni frilosité : l’IA avec discernement, au service de votre stratégie.',
-        body: null,
-        list: [
-          'Diagnostic data et IA : maturité, cas d’usage à fort impact, gains attendus ; due diligence IA pour les investisseurs',
-          'Stratégie et feuille de route : priorités, business cases, choix des solutions et des partenaires',
-          'Assistance à maîtrise d’ouvrage : cahier des charges, sélection des prestataires, pilotage des projets jusqu’au déploiement',
-          'Gouvernance, éthique et conformité : comité IA, maîtrise des risques, AI Act',
-          'Accompagnement des dirigeants et des équipes : acculturation et conduite du changement',
-        ],
-        note: 'Diagnostic réalisé par un expert référencé Bpifrance et cofinancé par le programme Diag Data IA pour les PME et ETI éligibles. Nous ne réalisons pas de développements techniques (agents, intégrations) : nous les confions à des partenaires spécialisés et en pilotons la réalisation.',
-        case: {
-          title: 'Cas client · Réseau international de promotion de salons',
-          text: 'Pour un réseau de 150 collaborateurs répartis dans 50 bureaux à travers le monde, nous avons piloté, en partenariat avec Araïko, un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
-        },
-      },
     ],
     boardsTitle: 'Les instances que nous accompagnons',
     boards: [
@@ -139,7 +139,7 @@ export default {
     leader: {
       kicker: 'Vous êtes dirigeant',
       title: 'Structurer votre gouvernance, accélérer votre croissance',
-      text: 'Vous dirigez une start-up, une PME ou une ETI. Nous vous aidons à structurer votre gouvernance, clarifier votre stratégie, conquérir de nouveaux marchés et intégrer l’intelligence artificielle.',
+      text: 'Vous dirigez une start-up, une PME ou une ETI. Nous vous aidons à intégrer l’intelligence artificielle, structurer votre gouvernance, clarifier votre stratégie et conquérir de nouveaux marchés.',
       cta: 'Voir nos expertises',
     },
     investor: {

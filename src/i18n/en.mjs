@@ -1,7 +1,7 @@
 export default {
   meta: {
-    title: 'Governance, strategy & AI consulting | Habeas Corpus',
-    description: 'European consulting firm since 1998: governance and boards, strategy, international development and AI. Bpifrance-eligible data and AI assessment.',
+    title: 'AI, governance & strategy consulting | Habeas Corpus',
+    description: 'European consulting firm since 1998: AI, governance and boards, strategy, international development. Bpifrance-eligible data and AI assessment.',
     legalDescription: 'Legal notice, hosting and personal data protection for the Habeas Corpus Consulting website.',
     privacyDescription: 'Privacy policy of the Habeas Corpus Consulting website: data processed, purposes, retention periods and your GDPR rights.',
     imageAlt: 'Habeas Corpus Consulting logo',
@@ -20,10 +20,10 @@ export default {
     contact: 'Contact',
   },
   hero: {
-    eyebrow: 'Governance, strategy, international and AI consulting · since 1998',
+    eyebrow: 'AI, governance, strategy and international consulting · since 1998',
     title: 'Better governance, sharper decisions, <em>stronger growth.</em>',
     lead:
-      'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy, international development and the thoughtful adoption of artificial intelligence.',
+      'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with the thoughtful adoption of artificial intelligence, their governance, strategy and international development.',
     ctaPrimary: 'Let’s discuss your project',
     ctaSecondary: 'Explore our expertise',
     offersLabel: 'Our expertise',
@@ -38,13 +38,32 @@ export default {
     facts: [
       { value: '1998', label: 'Collective founded' },
       { value: '4 countries', label: 'France, Germany, United Kingdom, Italy' },
-      { value: '4 areas', label: 'Governance, strategy, international, AI' },
+      { value: '4 areas', label: 'AI, governance, strategy, international' },
     ],
   },
   expertise: {
     label: 'Expertise',
     title: 'What we bring you',
     items: [
+      {
+        title: 'Artificial intelligence',
+        short: 'A thoughtful adoption of AI',
+        question: 'How do you make AI a lever rather than a risk?',
+        lead: 'No miracle promises, no timidity: AI applied with discernment, in service of your strategy.',
+        body: null,
+        list: [
+          'Data and AI assessment: maturity, high-impact use cases, expected gains; AI due diligence for investors',
+          'Strategy and roadmap: priorities, business cases, choice of solutions and partners',
+          'Client-side project support: specifications, vendor selection, project steering through to deployment',
+          'Governance, ethics and compliance: AI committee, risk management, AI Act',
+          'Support for leaders and teams: AI literacy and change management',
+        ],
+        note: 'Assessment carried out by a Bpifrance-accredited expert and co-financed by the Diag Data IA programme for eligible French SMEs and mid-sized companies. We do not carry out technical development (agents, integrations): we entrust it to specialised partners and steer its delivery.',
+        case: {
+          title: 'Client case · International trade fair promotion network',
+          text: 'For a network of 150 staff across 50 offices worldwide, we led, in partnership with Araïko, a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
+        },
+      },
       {
         title: 'Governance',
         short: 'Boards and leadership teams that help you decide',
@@ -95,25 +114,6 @@ export default {
           text: 'We supported a US software publisher in its expansion across Europe, working alongside a major international IT group as partner. This led to the signing of its first European client, a major French telecoms operator. According to its VP Sales, our support significantly accelerated its market penetration and improved its profitability in Europe.',
         },
       },
-      {
-        title: 'Artificial intelligence',
-        short: 'A thoughtful adoption of AI',
-        question: 'How do you make AI a lever rather than a risk?',
-        lead: 'No miracle promises, no timidity: AI applied with discernment, in service of your strategy.',
-        body: null,
-        list: [
-          'Data and AI assessment: maturity, high-impact use cases, expected gains; AI due diligence for investors',
-          'Strategy and roadmap: priorities, business cases, choice of solutions and partners',
-          'Client-side project support: specifications, vendor selection, project steering through to deployment',
-          'Governance, ethics and compliance: AI committee, risk management, AI Act',
-          'Support for leaders and teams: AI literacy and change management',
-        ],
-        note: 'Assessment carried out by a Bpifrance-accredited expert and co-financed by the Diag Data IA programme for eligible French SMEs and mid-sized companies. We do not carry out technical development (agents, integrations): we entrust it to specialised partners and steer its delivery.',
-        case: {
-          title: 'Client case · International trade fair promotion network',
-          text: 'For a network of 150 staff across 50 offices worldwide, we led, in partnership with Araïko, a Diag Data IA assessment co-financed by Bpifrance. Some twenty interviews in France, Germany and Italy made it possible to identify and prioritise 21 use cases, three of which were studied in depth, with estimated gains and costs. The 18-month roadmap starts with the essentials: building the teams’ AI literacy and an AI usage charter, before the first tools are deployed.',
-        },
-      },
     ],
     boardsTitle: 'The governing bodies we work with',
     boards: [
@@ -139,7 +139,7 @@ export default {
     leader: {
       kicker: 'You lead a company',
       title: 'Strengthen your governance, accelerate your growth',
-      text: 'You run a start-up, an SME or a mid-sized company. We help you structure your governance, clarify your strategy, enter new markets and adopt artificial intelligence.',
+      text: 'You run a start-up, an SME or a mid-sized company. We help you adopt artificial intelligence, structure your governance, clarify your strategy and enter new markets.',
       cta: 'See our expertise',
     },
     investor: {

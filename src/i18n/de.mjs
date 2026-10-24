@@ -1,7 +1,7 @@
 export default {
   meta: {
-    title: 'Beratung für Governance, Strategie & KI | Habeas Corpus',
-    description: 'Europäisches Beratungskollektiv seit 1998: Governance und Boards, Strategie, Internationalisierung und KI. Data- und KI-Diagnose mit Bpifrance-Förderung.',
+    title: 'Beratung für KI, Governance & Strategie | Habeas Corpus',
+    description: 'Europäisches Beratungskollektiv seit 1998: KI, Governance und Boards, Strategie, Internationalisierung. Data- und KI-Diagnose mit Bpifrance-Förderung.',
     legalDescription: 'Impressum, Hosting und Datenschutz der Website von Habeas Corpus Consulting.',
     privacyDescription: 'Datenschutzerklärung der Website von Habeas Corpus Consulting: verarbeitete Daten, Zwecke, Speicherdauer und Ihre Rechte nach der DSGVO.',
     imageAlt: 'Logo von Habeas Corpus Consulting',
@@ -20,10 +20,10 @@ export default {
     contact: 'Kontakt',
   },
   hero: {
-    eyebrow: 'Beratung zu Governance, Strategie, Internationalisierung und KI · seit 1998',
+    eyebrow: 'Beratung zu KI, Governance, Strategie und Internationalisierung · seit 1998',
     title: 'Besser führen, klarer entscheiden, <em>gezielter wachsen.</em>',
     lead:
-      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der durchdachten Einführung künstlicher Intelligenz.',
+      'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren bei der durchdachten Einführung künstlicher Intelligenz sowie in Fragen der Governance, der Strategie und der internationalen Entwicklung.',
     ctaPrimary: 'Sprechen wir über Ihr Projekt',
     ctaSecondary: 'Unsere Leistungen',
     offersLabel: 'Unsere Leistungen',
@@ -38,13 +38,32 @@ export default {
     facts: [
       { value: '1998', label: 'Gründung des Kollektivs' },
       { value: '4 Länder', label: 'Frankreich, Deutschland, Vereinigtes Königreich, Italien' },
-      { value: '4 Schwerpunkte', label: 'Governance, Strategie, Internationalisierung, KI' },
+      { value: '4 Schwerpunkte', label: 'KI, Governance, Strategie, Internationalisierung' },
     ],
   },
   expertise: {
     label: 'Leistungen',
     title: 'Was wir Ihnen bieten',
     items: [
+      {
+        title: 'Künstliche Intelligenz',
+        short: 'KI mit Augenmaß einführen',
+        question: 'Wie wird KI zum Hebel statt zum Risiko?',
+        lead: 'Weder Wunderversprechen noch Zögerlichkeit: KI mit Augenmaß, im Dienst Ihrer Strategie.',
+        body: null,
+        list: [
+          'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle mit hoher Wirkung, erwarteter Nutzen; KI-Due-Diligence für Investoren',
+          'Strategie und Roadmap: Prioritäten, Business Cases, Auswahl von Lösungen und Partnern',
+          'Projektsteuerung auf Auftraggeberseite: Lastenheft, Auswahl der Dienstleister, Steuerung der Projekte bis zur Einführung',
+          'Governance, Ethik und Compliance: KI-Ausschuss, Risikomanagement, AI Act',
+          'Begleitung von Führungskräften und Teams: KI-Kompetenz und Change-Management',
+        ],
+        note: 'Die Diagnose wird von einem bei Bpifrance gelisteten Experten durchgeführt und für förderfähige französische KMU und Mittelständler im Programm Diag Data IA kofinanziert. Technische Entwicklungen (Agenten, Integrationen) übernehmen wir nicht selbst: Wir vergeben sie an spezialisierte Partner und steuern ihre Umsetzung.',
+        case: {
+          title: 'Kundenbeispiel · Internationales Netzwerk zur Messeförderung',
+          text: 'Für ein Netzwerk mit 150 Mitarbeitenden in 50 Büros weltweit haben wir gemeinsam mit Araïko eine von Bpifrance kofinanzierte Diag-Data-IA-Diagnose geleitet. Rund zwanzig Interviews in Frankreich, Deutschland und Italien ermöglichten es, 21 Anwendungsfälle zu identifizieren und zu priorisieren; drei davon wurden mit bezifferten Nutzen und Kosten vertieft untersucht. Die Roadmap über 18 Monate beginnt mit dem Wesentlichen: KI-Kompetenz der Teams und eine Charta für den KI-Einsatz, bevor die ersten Werkzeuge eingeführt werden.',
+        },
+      },
       {
         title: 'Governance',
         short: 'Boards und Führungsgremien, die Entscheidungen stärken',
@@ -95,25 +114,6 @@ export default {
           text: 'Wir haben einen US-amerikanischen Softwareanbieter bei seiner Expansion in ganz Europa begleitet, mit einem großen internationalen IT-Konzern als Partner. Daraus ging der erste europäische Kunde hervor, ein großer französischer Telekommunikationsbetreiber. Nach Aussage seines Vertriebsleiters hat unsere Begleitung die Marktdurchdringung deutlich beschleunigt und die Rentabilität in Europa verbessert.',
         },
       },
-      {
-        title: 'Künstliche Intelligenz',
-        short: 'KI mit Augenmaß einführen',
-        question: 'Wie wird KI zum Hebel statt zum Risiko?',
-        lead: 'Weder Wunderversprechen noch Zögerlichkeit: KI mit Augenmaß, im Dienst Ihrer Strategie.',
-        body: null,
-        list: [
-          'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle mit hoher Wirkung, erwarteter Nutzen; KI-Due-Diligence für Investoren',
-          'Strategie und Roadmap: Prioritäten, Business Cases, Auswahl von Lösungen und Partnern',
-          'Projektsteuerung auf Auftraggeberseite: Lastenheft, Auswahl der Dienstleister, Steuerung der Projekte bis zur Einführung',
-          'Governance, Ethik und Compliance: KI-Ausschuss, Risikomanagement, AI Act',
-          'Begleitung von Führungskräften und Teams: KI-Kompetenz und Change-Management',
-        ],
-        note: 'Die Diagnose wird von einem bei Bpifrance gelisteten Experten durchgeführt und für förderfähige französische KMU und Mittelständler im Programm Diag Data IA kofinanziert. Technische Entwicklungen (Agenten, Integrationen) übernehmen wir nicht selbst: Wir vergeben sie an spezialisierte Partner und steuern ihre Umsetzung.',
-        case: {
-          title: 'Kundenbeispiel · Internationales Netzwerk zur Messeförderung',
-          text: 'Für ein Netzwerk mit 150 Mitarbeitenden in 50 Büros weltweit haben wir gemeinsam mit Araïko eine von Bpifrance kofinanzierte Diag-Data-IA-Diagnose geleitet. Rund zwanzig Interviews in Frankreich, Deutschland und Italien ermöglichten es, 21 Anwendungsfälle zu identifizieren und zu priorisieren; drei davon wurden mit bezifferten Nutzen und Kosten vertieft untersucht. Die Roadmap über 18 Monate beginnt mit dem Wesentlichen: KI-Kompetenz der Teams und eine Charta für den KI-Einsatz, bevor die ersten Werkzeuge eingeführt werden.',
-        },
-      },
     ],
     boardsTitle: 'Gremien, die wir begleiten',
     boards: [
@@ -139,7 +139,7 @@ export default {
     leader: {
       kicker: 'Sie leiten ein Unternehmen',
       title: 'Governance stärken, Wachstum beschleunigen',
-      text: 'Sie leiten ein Start-up, ein KMU oder ein mittelständisches Unternehmen. Wir helfen Ihnen, Ihre Governance zu strukturieren, Ihre Strategie zu schärfen, neue Märkte zu erschließen und künstliche Intelligenz einzuführen.',
+      text: 'Sie leiten ein Start-up, ein KMU oder ein mittelständisches Unternehmen. Wir helfen Ihnen, künstliche Intelligenz einzuführen, Ihre Governance zu strukturieren, Ihre Strategie zu schärfen und neue Märkte zu erschließen.',
       cta: 'Unsere Leistungen',
     },
     investor: {

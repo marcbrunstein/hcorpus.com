@@ -1,7 +1,7 @@
 export default {
   meta: {
-    title: 'Consulenza in governance, strategia e IA | Habeas Corpus',
-    description: 'Collettivo europeo di consulenza dal 1998: governance e board, strategia, sviluppo internazionale e IA. Diagnosi data e IA ammissibile a Bpifrance.',
+    title: 'Consulenza in IA, governance e strategia | Habeas Corpus',
+    description: 'Collettivo europeo di consulenza dal 1998: IA, governance e board, strategia, sviluppo internazionale. Diagnosi data e IA ammissibile a Bpifrance.',
     legalDescription: 'Note legali, hosting e protezione dei dati personali del sito di Habeas Corpus Consulting.',
     privacyDescription: 'Informativa sulla privacy del sito Habeas Corpus Consulting: dati trattati, finalità, tempi di conservazione e diritti GDPR.',
     imageAlt: 'Logo di Habeas Corpus Consulting',
@@ -20,10 +20,10 @@ export default {
     contact: 'Contatti',
   },
   hero: {
-    eyebrow: 'Consulenza in governance, strategia, internazionalizzazione e IA · dal 1998',
+    eyebrow: 'Consulenza in IA, governance, strategia e internazionalizzazione · dal 1998',
     title: 'Governare meglio, decidere meglio, <em>crescere meglio.</em>',
     lead:
-      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nella governance, nella strategia, nello sviluppo internazionale e nell’adozione ragionata dell’intelligenza artificiale.',
+      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nell’adozione ragionata dell’intelligenza artificiale, nella governance, nella strategia e nello sviluppo internazionale.',
     ctaPrimary: 'Parliamo del vostro progetto',
     ctaSecondary: 'Le nostre competenze',
     offersLabel: 'Le nostre competenze',
@@ -38,13 +38,32 @@ export default {
     facts: [
       { value: '1998', label: 'Nascita del collettivo' },
       { value: '4 paesi', label: 'Francia, Germania, Regno Unito, Italia' },
-      { value: '4 competenze', label: 'Governance, strategia, internazionale, IA' },
+      { value: '4 competenze', label: 'IA, governance, strategia, internazionale' },
     ],
   },
   expertise: {
     label: 'Competenze',
     title: 'Cosa vi offriamo',
     items: [
+      {
+        title: 'Intelligenza artificiale',
+        short: 'Un’adozione ragionata dell’IA',
+        question: 'Come fare dell’IA una leva anziché un rischio?',
+        lead: 'Né promesse miracolose né timori: l’IA con discernimento, al servizio della vostra strategia.',
+        body: null,
+        list: [
+          'Diagnosi data e IA: maturità, casi d’uso ad alto impatto, benefici attesi; due diligence IA per gli investitori',
+          'Strategia e roadmap: priorità, business case, scelta di soluzioni e partner',
+          'Assistenza al committente: capitolato, selezione dei fornitori, gestione dei progetti fino all’implementazione',
+          'Governance, etica e conformità: comitato IA, gestione dei rischi, AI Act',
+          'Accompagnamento di dirigenti e team: alfabetizzazione all’IA e gestione del cambiamento',
+        ],
+        note: 'Diagnosi realizzata da un esperto accreditato presso Bpifrance e cofinanziata dal programma Diag Data IA per le PMI e medie imprese francesi ammissibili. Non realizziamo sviluppi tecnici (agenti, integrazioni): li affidiamo a partner specializzati e ne guidiamo la realizzazione.',
+        case: {
+          title: 'Caso cliente · Rete internazionale di promozione fieristica',
+          text: 'Per una rete di 150 collaboratori distribuiti in 50 uffici nel mondo abbiamo guidato, in partnership con Araïko, una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
+        },
+      },
       {
         title: 'Governance',
         short: 'Board e comitati di direzione che aiutano a decidere',
@@ -95,25 +114,6 @@ export default {
           text: 'Abbiamo accompagnato un editore di software statunitense nella sua espansione in tutta Europa, con un grande gruppo informatico internazionale come partner. Ne è nata la firma del suo primo cliente europeo, un grande operatore di telecomunicazioni francese. Secondo il suo vicepresidente commerciale, il nostro accompagnamento ha accelerato notevolmente la sua penetrazione del mercato e migliorato la sua redditività in Europa.',
         },
       },
-      {
-        title: 'Intelligenza artificiale',
-        short: 'Un’adozione ragionata dell’IA',
-        question: 'Come fare dell’IA una leva anziché un rischio?',
-        lead: 'Né promesse miracolose né timori: l’IA con discernimento, al servizio della vostra strategia.',
-        body: null,
-        list: [
-          'Diagnosi data e IA: maturità, casi d’uso ad alto impatto, benefici attesi; due diligence IA per gli investitori',
-          'Strategia e roadmap: priorità, business case, scelta di soluzioni e partner',
-          'Assistenza al committente: capitolato, selezione dei fornitori, gestione dei progetti fino all’implementazione',
-          'Governance, etica e conformità: comitato IA, gestione dei rischi, AI Act',
-          'Accompagnamento di dirigenti e team: alfabetizzazione all’IA e gestione del cambiamento',
-        ],
-        note: 'Diagnosi realizzata da un esperto accreditato presso Bpifrance e cofinanziata dal programma Diag Data IA per le PMI e medie imprese francesi ammissibili. Non realizziamo sviluppi tecnici (agenti, integrazioni): li affidiamo a partner specializzati e ne guidiamo la realizzazione.',
-        case: {
-          title: 'Caso cliente · Rete internazionale di promozione fieristica',
-          text: 'Per una rete di 150 collaboratori distribuiti in 50 uffici nel mondo abbiamo guidato, in partnership con Araïko, una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
-        },
-      },
     ],
     boardsTitle: 'Gli organi che accompagniamo',
     boards: [
@@ -139,7 +139,7 @@ export default {
     leader: {
       kicker: 'Siete imprenditori o dirigenti',
       title: 'Rafforzare la governance, accelerare la crescita',
-      text: 'Guidate una start-up, una PMI o una media impresa. Vi aiutiamo a strutturare la governance, chiarire la strategia, conquistare nuovi mercati e adottare l’intelligenza artificiale.',
+      text: 'Guidate una start-up, una PMI o una media impresa. Vi aiutiamo ad adottare l’intelligenza artificiale, strutturare la governance, chiarire la strategia e conquistare nuovi mercati.',
       cta: 'Le nostre competenze',
     },
     investor: {
