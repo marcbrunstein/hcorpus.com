@@ -9,6 +9,8 @@ export const site = {
   paris: ['19 rue Jean-Jacques Rousseau', '75001 Paris'],
   headOffice: ['5 route du Bosc André', '27230 Saint-Germain-la-Campagne'],
   linkedin: 'https://www.linkedin.com/company/habeas-corpus-sas/',
+  // Fichier de validation Google Search Console (propriété https://www.hcorpus.com/), à conserver
+  googleVerification: 'google8d1d94a109e372b2',
 };
 
 export const languages = [
