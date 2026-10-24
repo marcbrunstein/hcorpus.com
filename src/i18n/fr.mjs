@@ -1,7 +1,7 @@
 export default {
   meta: {
     title: 'Conseil en IA, gouvernance et stratégie | Habeas Corpus',
-    description: 'Cabinet de conseil européen depuis 1998 : IA, gouvernance et boards, stratégie, développement international. Diagnostic Data IA éligible Bpifrance.',
+    description: 'Cabinet de conseil européen depuis 1998 : IA, gouvernance et boards, stratégie, croissance et international. Diagnostic Data IA éligible Bpifrance.',
     legalDescription: 'Mentions légales, hébergement et protection des données personnelles du site Habeas Corpus Consulting.',
     privacyDescription: 'Politique de confidentialité du site Habeas Corpus Consulting : données traitées, finalités, durées de conservation et droits RGPD.',
     imageAlt: 'Logo Habeas Corpus Consulting',
@@ -20,10 +20,10 @@ export default {
     contact: 'Contact',
   },
   hero: {
-    eyebrow: 'Conseil en IA, gouvernance, stratégie et international · depuis 1998',
+    eyebrow: 'Conseil en IA, gouvernance, stratégie et croissance · depuis 1998',
     title: 'Mieux gouverner, mieux décider, <em>mieux grandir.</em>',
     lead:
-      'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans l’intégration raisonnée de l’intelligence artificielle, leur gouvernance, leur stratégie et leur développement international.',
+      'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans l’intégration raisonnée de l’intelligence artificielle, leur gouvernance, leur stratégie et leur croissance, en France comme à l’international.',
     ctaPrimary: 'Parlons de votre projet',
     ctaSecondary: 'Découvrir nos expertises',
     offersLabel: 'Nos expertises',
@@ -38,7 +38,7 @@ export default {
     facts: [
       { value: '1998', label: 'Création du collectif' },
       { value: '4 pays', label: 'France, Allemagne, Royaume-Uni, Italie' },
-      { value: '4 expertises', label: 'IA, gouvernance, stratégie, international' },
+      { value: '4 expertises', label: 'IA, gouvernance, stratégie, croissance' },
     ],
   },
   expertise: {
@@ -98,15 +98,15 @@ export default {
         },
       },
       {
-        title: 'Développement international',
-        short: 'Conquérir de nouveaux marchés avec méthode',
-        question: 'Comment réussir sur un nouveau marché sans vous y perdre ?',
-        lead: 'Réussir sur un nouveau marché sans disperser vos ressources.',
+        title: 'Croissance',
+        short: 'Conquérir de nouveaux marchés, en France et à l’international',
+        question: 'Où trouver vos prochains relais de croissance ?',
+        lead: 'Conquérir de nouveaux marchés, en France comme à l’international, avec méthode.',
         body: null,
         list: [
-          'Expansion géographique et internationalisation',
           'Stratégie commerciale',
           'Diagnostic de l’organisation commerciale',
+          'Conquête de nouveaux marchés et internationalisation',
           'Benchmark concurrentiel',
         ],
         case: {

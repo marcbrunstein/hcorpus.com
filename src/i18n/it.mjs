@@ -1,7 +1,7 @@
 export default {
   meta: {
     title: 'Consulenza in IA, governance e strategia | Habeas Corpus',
-    description: 'Collettivo europeo di consulenza dal 1998: IA, governance e board, strategia, sviluppo internazionale. Diagnosi data e IA ammissibile a Bpifrance.',
+    description: 'Collettivo europeo di consulenza dal 1998: IA, governance e board, strategia, crescita e internazionalizzazione. Diagnosi data e IA ammissibile a Bpifrance.',
     legalDescription: 'Note legali, hosting e protezione dei dati personali del sito di Habeas Corpus Consulting.',
     privacyDescription: 'Informativa sulla privacy del sito Habeas Corpus Consulting: dati trattati, finalità, tempi di conservazione e diritti GDPR.',
     imageAlt: 'Logo di Habeas Corpus Consulting',
@@ -20,10 +20,10 @@ export default {
     contact: 'Contatti',
   },
   hero: {
-    eyebrow: 'Consulenza in IA, governance, strategia e internazionalizzazione · dal 1998',
+    eyebrow: 'Consulenza in IA, governance, strategia e crescita · dal 1998',
     title: 'Governare meglio, decidere meglio, <em>crescere meglio.</em>',
     lead:
-      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nell’adozione ragionata dell’intelligenza artificiale, nella governance, nella strategia e nello sviluppo internazionale.',
+      'Habeas Corpus Consulting è un collettivo europeo di consulenti presente in Francia, Germania, Regno Unito e Italia. Affianchiamo imprenditori, dirigenti e investitori nell’adozione ragionata dell’intelligenza artificiale, nella governance, nella strategia e nella crescita, in patria e all’estero.',
     ctaPrimary: 'Parliamo del vostro progetto',
     ctaSecondary: 'Le nostre competenze',
     offersLabel: 'Le nostre competenze',
@@ -38,7 +38,7 @@ export default {
     facts: [
       { value: '1998', label: 'Nascita del collettivo' },
       { value: '4 paesi', label: 'Francia, Germania, Regno Unito, Italia' },
-      { value: '4 competenze', label: 'IA, governance, strategia, internazionale' },
+      { value: '4 competenze', label: 'IA, governance, strategia, crescita' },
     ],
   },
   expertise: {
@@ -98,15 +98,15 @@ export default {
         },
       },
       {
-        title: 'Sviluppo internazionale',
-        short: 'Conquistare nuovi mercati con metodo',
-        question: 'Come riuscire su un nuovo mercato senza perdersi?',
-        lead: 'Avere successo in un nuovo mercato senza disperdere le vostre risorse.',
+        title: 'Crescita',
+        short: 'Conquistare nuovi mercati, in patria e all’estero',
+        question: 'Dove trovare i vostri prossimi motori di crescita?',
+        lead: 'Conquistare nuovi mercati, in patria come all’estero, con metodo.',
         body: null,
         list: [
-          'Espansione geografica e internazionalizzazione',
           'Strategia commerciale',
           'Diagnosi dell’organizzazione commerciale',
+          'Conquista di nuovi mercati e internazionalizzazione',
           'Benchmark competitivo',
         ],
         case: {
