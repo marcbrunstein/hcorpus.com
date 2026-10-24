@@ -68,6 +68,8 @@ export const clients = {
     { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'frde', url: 'https://www.afa-info.com/' },
     { name: 'Crea Valoris', logo: 'crea-valoris.png', country: 'fr', url: 'https://tonygoncalves.fr/crea-valoris/' },
     { name: 'Annie', logo: 'annie.png', country: 'fr', url: 'https://www.newsassurancespro.com/annie' },
+    { name: 'WeeeCycling', logo: 'weeecycling.svg', country: 'fr', url: 'https://www.weeecycling.com/' },
+    { name: 'Ecocea Technologies', logo: null, country: 'fr' },
   ],
 };
 
