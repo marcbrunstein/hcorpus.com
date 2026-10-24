@@ -60,6 +60,10 @@ await writeFile(
     : `User-agent: *\nAllow: /\n\nSitemap: ${site.url}/sitemap.xml\n`
 );
 await writeFile(join(OUT, '.nojekyll'), '');
+// Version de production : domaine personnalisé pour GitHub Pages (absent de la version de relecture,
+// sinon GitHub redirigerait l'adresse de relecture vers www.hcorpus.com avant la bascule DNS)
+if (!process.env.PREVIEW) await writeFile(join(OUT, 'CNAME'), new URL(site.url).hostname + '
+');
 await writeFile(
   join(OUT, '404.html'),
   `<!doctype html>
