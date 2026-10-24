@@ -3,6 +3,7 @@ export default {
     title: 'Governance, strategy & AI consulting | Habeas Corpus',
     description: 'European consulting firm since 1998: governance and boards, strategy, international development and AI. Bpifrance-eligible data and AI assessment.',
     legalDescription: 'Legal notice, hosting and personal data protection for the Habeas Corpus Consulting website.',
+    privacyDescription: 'Privacy policy of the Habeas Corpus Consulting website: data processed, purposes, retention periods and your GDPR rights.',
     imageAlt: 'Habeas Corpus Consulting logo',
     ogLocale: 'en_GB',
   },
@@ -20,17 +21,17 @@ export default {
   },
   hero: {
     eyebrow: 'Governance, strategy, international and AI consulting · since 1998',
-    title: 'Better governance, sharper decisions, <em>growth beyond borders.</em>',
+    title: 'Better governance, sharper decisions, <em>stronger growth.</em>',
     lead:
       'Habeas Corpus Consulting is a European collective of consultants operating in France, Germany, the United Kingdom and Italy. We support business leaders and investors with their governance, strategy, international development and adoption of artificial intelligence.',
-    ctaPrimary: 'Get in touch',
+    ctaPrimary: 'Let’s discuss your project',
     ctaSecondary: 'Explore our expertise',
   },
   about: {
     label: 'About',
     title: 'A European collective committed to lasting performance',
     paragraphs: [
-      'Working alongside business leaders and investors, our mission is to make a lasting contribution to our clients’ performance. We step in where the decisions that shape a company are made: how its boards are composed and run, its strategic choices, its expansion into new markets and, increasingly, its transformation through artificial intelligence.',
+      'Alongside business leaders and investors, we work where the decisions that shape a company are made: its governing bodies, its strategic choices, its new markets and, increasingly, its transformation through artificial intelligence.',
       'We do not stop at recommendations: we also support the implementation of the transformations that follow.',
     ],
     facts: [
@@ -78,17 +79,16 @@ export default {
       {
         title: 'Artificial intelligence',
         question: 'How do you make AI a lever rather than a risk?',
-        wide: true,
-        lead: 'Making AI a leadership issue, not just a technology one.',
+        lead: 'Steering AI as a leadership project, from assessment to deployment.',
         body: null,
         list: [
-          'Data and AI assessment: maturity, high-impact use cases, expected gains',
-          'AI strategy and roadmap: priorities, business cases, choice of solutions and partners',
-          'AI governance: the place of AI in governing bodies, setting up an AI committee, risk management and AI Act compliance',
-          'Executive committee support: leadership awareness and steering the transformation',
-          'AI due diligence for investors',
+          'Data and AI assessment: maturity, high-impact use cases, expected gains; AI due diligence for investors',
+          'Strategy and roadmap: priorities, business cases, choice of solutions and partners',
+          'Client-side project support: specifications, vendor selection, project steering through to deployment',
+          'Governance, ethics and compliance: AI committee, risk management, AI Act',
+          'Support for leaders and teams: AI literacy and change management',
         ],
-        note: 'Assessment eligible for Bpifrance’s Diag Data IA programme. For technical implementation, we work with specialised partners.',
+        note: 'Assessment carried out by a Bpifrance-accredited expert and co-financed by the Diag Data IA programme for eligible French SMEs and mid-sized companies. We do not carry out technical development (agents, integrations): we entrust it to specialised partners and steer its delivery.',
       },
     ],
     boardsTitle: 'The governing bodies we work with',
@@ -114,32 +114,19 @@ export default {
     label: 'Who we work with',
     leader: {
       kicker: 'You lead a company',
-      title: 'Govern, decide, grow',
+      title: 'Strengthen your governance, accelerate your growth',
       text: 'You run a start-up, an SME or a mid-sized company. We help you structure your governance, clarify your strategy, enter new markets and adopt artificial intelligence.',
       cta: 'See our expertise',
     },
     investor: {
       kicker: 'You are an investor',
-      title: 'Secure and grow your portfolio companies',
+      title: 'Strengthen governance and value across your portfolio',
       text: 'You invest in companies. We set up and run the boards of your portfolio companies, assess their AI maturity before you invest and support their international development.',
       cta: 'Let’s talk about your portfolio',
       subject: 'Investor – conversation with Habeas Corpus',
     },
   },
   conviction: 'No leader should find themselves alone when making the choices that shape the future of their company.',
-  diag: {
-    label: 'Diag Data IA',
-    title: 'A data and AI assessment eligible for Bpifrance’s Diag Data IA programme',
-    text: 'Marc Brunstein is a Bpifrance-accredited expert for the Diag Data IA programme. We assess your data and AI maturity, identify the use cases with the greatest impact and build a realistic roadmap with you.',
-    points: [
-      'Your company’s data and AI maturity',
-      'Priority use cases and expected gains',
-      'Roadmap and action plan',
-    ],
-    financing: 'Bpifrance’s Diag Data IA programme co-finances this assessment for eligible French SMEs and mid-sized companies.',
-    cta: 'Check my eligibility',
-    subject: 'Diag Data IA – eligibility',
-  },
   testimonials: {
     label: 'Testimonials',
     title: 'In their words',
@@ -191,6 +178,7 @@ export default {
       tech: 'Technology, telecoms and digital',
       mid: 'Mid-sized companies, SMEs and start-ups',
     },
+    all: 'All our clients',
     countries: {
       fr: 'France',
       us: 'United States',
@@ -210,7 +198,7 @@ export default {
     visit: 'Website of',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      bpi: 'The French public investment bank. Marc Brunstein is a Bpifrance-accredited expert.',
+      bpi: 'The French public investment bank. Our founding partner is a Bpifrance-accredited expert for the Diag Data IA programme.',
       oct:
         'A consulting (O Consulting) and training-coaching (O Training) collective with which we offer joint consulting and training services.',
       cristaleye:
@@ -235,10 +223,10 @@ export default {
     paris: 'Paris office',
     offices: 'Our presence',
     cities: ['Paris', 'Munich', 'London', 'Milan'],
-    headOffice: 'Registered office',
   },
   footer: {
     legal: 'Legal notice',
+    privacy: 'Privacy',
     home: 'Back to home page',
   },
   legal: {
@@ -260,14 +248,47 @@ Contact: <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a> · +33 1 8
         html: `<p>GitHub, Inc. (GitHub Pages)<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States<br><a href="https://github.com" rel="noopener">github.com</a></p>`,
       },
       {
-        h: 'Personal data and cookies',
-        html: `<p>This website sets no cookies and uses no audience measurement or third-party tracking tools. Fonts are hosted on the website itself.</p>
-<p>The hosting provider may log technical connection data (including IP addresses) for security and service operation purposes.</p>
-<p>Information you send us by email is used solely to respond to your request and is never passed on to third parties. Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, erase and object to the processing of your data, which you may exercise by writing to <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a>. You may also lodge a complaint with the French data protection authority (CNIL).</p>`,
+        h: 'Personal data',
+        html: `<p>This website sets no cookies. How we process your personal data is described in our <a href="../privacy/">privacy policy</a>.</p>`,
       },
       {
         h: 'Intellectual property',
         html: `<p>All content on this website (text, logo, photographs) is the property of Habeas Corpus or of its respective authors. Any reproduction without prior permission is prohibited. The logos and trademarks of the clients and partners mentioned belong to their respective owners.</p>`,
+      },
+    ],
+  },
+  privacy: {
+    title: 'Privacy policy',
+    sections: [
+      {
+        h: 'Data controller',
+        html: `<p>Habeas Corpus (trading as Habeas Corpus Consulting), a French simplified joint-stock company with a sole shareholder, 5 route du Bosc André, 27230 Saint-Germain-la-Campagne, France, represented by Marc Brunstein, President.<br>
+Contact: <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a></p>`,
+      },
+      {
+        h: 'What this website does not do',
+        html: `<p>This website has no forms, sets no cookies and uses no audience measurement, advertising or tracking tools. Fonts are hosted on the website itself: your browser does not contact any third-party service to load them.</p>`,
+      },
+      {
+        h: 'Data processed and purposes',
+        html: `<ul>
+<li><strong>Technical connection data</strong> (IP address, date and time, page requested, browser): logged by the hosting provider to keep the website secure and running properly. Legal basis: legitimate interest.</li>
+<li><strong>Data you send us</strong> when you write to or call us (name, contact details, content of your message): used solely to respond to your request and, where relevant, to follow up on our exchanges. Legal basis: legitimate interest and pre-contractual steps taken at your request.</li>
+</ul>`,
+      },
+      {
+        h: 'Recipients',
+        html: `<p>Your data is intended solely for Habeas Corpus. It is never sold, rented or passed on to third parties.</p>
+<p>The website is hosted by GitHub, Inc. (GitHub Pages), based in the United States. The related data transfers are covered by the EU–US Data Privacy Framework.</p>`,
+      },
+      {
+        h: 'Retention periods',
+        html: `<p>Exchanges you initiate with us are kept for as long as needed to handle your request and, where no contractual relationship follows, for no more than three years after our last contact. Technical connection data is kept by the hosting provider for a limited period.</p>`,
+      },
+      {
+        h: 'Your rights',
+        html: `<p>Under the General Data Protection Regulation (GDPR), you have the right to access, rectify, erase, restrict, object to the processing of and port your data. To exercise these rights, write to us at <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a>. You may also lodge a complaint with the French data protection authority, the CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>), or with the authority in your country.</p>
+<p>Last updated: October 2026.</p>`,
       },
     ],
   },

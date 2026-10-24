@@ -3,6 +3,7 @@ export default {
     title: 'Beratung für Governance, Strategie & KI | Habeas Corpus',
     description: 'Europäisches Beratungskollektiv seit 1998: Governance und Boards, Strategie, Internationalisierung und KI. Data- und KI-Diagnose mit Bpifrance-Förderung.',
     legalDescription: 'Impressum, Hosting und Datenschutz der Website von Habeas Corpus Consulting.',
+    privacyDescription: 'Datenschutzerklärung der Website von Habeas Corpus Consulting: verarbeitete Daten, Zwecke, Speicherdauer und Ihre Rechte nach der DSGVO.',
     imageAlt: 'Logo von Habeas Corpus Consulting',
     ogLocale: 'de_DE',
   },
@@ -20,17 +21,17 @@ export default {
   },
   hero: {
     eyebrow: 'Beratung zu Governance, Strategie, Internationalisierung und KI · seit 1998',
-    title: 'Besser führen, klarer entscheiden, <em>über Grenzen hinaus wachsen.</em>',
+    title: 'Besser führen, klarer entscheiden, <em>gezielter wachsen.</em>',
     lead:
       'Habeas Corpus Consulting ist ein europäisches Beraterkollektiv mit Präsenz in Frankreich, Deutschland, dem Vereinigten Königreich und Italien. Wir begleiten Geschäftsführer und Investoren in Fragen der Governance, der Strategie, der internationalen Entwicklung und der Einführung künstlicher Intelligenz.',
-    ctaPrimary: 'Schreiben Sie uns',
+    ctaPrimary: 'Sprechen wir über Ihr Projekt',
     ctaSecondary: 'Unsere Leistungen',
   },
   about: {
     label: 'Über uns',
     title: 'Ein europäisches Kollektiv für nachhaltigen Erfolg',
     paragraphs: [
-      'An der Seite von Geschäftsführern und Investoren ist es unser Auftrag, nachhaltig zum Erfolg unserer Kunden beizutragen. Wir setzen dort an, wo die für das Unternehmen entscheidenden Weichen gestellt werden: bei der Zusammensetzung und Arbeitsweise seiner Gremien, bei seinen strategischen Entscheidungen bei der Erschließung neuer Märkte und zunehmend bei der Transformation durch künstliche Intelligenz.',
+      'An der Seite von Geschäftsführern und Investoren setzen wir dort an, wo die entscheidenden Weichen gestellt werden: bei den Gremien, den strategischen Entscheidungen, der Erschließung neuer Märkte und zunehmend bei der Transformation durch künstliche Intelligenz.',
       'Wir belassen es nicht bei Empfehlungen: Wir begleiten auch die Umsetzung der daraus folgenden Veränderungen.',
     ],
     facts: [
@@ -78,17 +79,16 @@ export default {
       {
         title: 'Künstliche Intelligenz',
         question: 'Wie wird KI zum Hebel statt zum Risiko?',
-        wide: true,
-        lead: 'KI zur Führungsaufgabe machen, nicht nur zum Technologiethema.',
+        lead: 'KI als Führungsprojekt steuern – von der Diagnose bis zur Einführung.',
         body: null,
         list: [
-          'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle mit hoher Wirkung, erwarteter Nutzen',
-          'KI-Strategie und Roadmap: Prioritäten, Business Cases, Auswahl von Lösungen und Partnern',
-          'KI-Governance: Stellenwert der KI in den Gremien, Einrichtung eines KI-Ausschusses, Risikomanagement und Einhaltung des AI Act',
-          'Begleitung der Geschäftsleitung: Sensibilisierung der Führungskräfte und Steuerung der Transformation',
-          'KI-Due-Diligence für Investoren',
+          'Data- und KI-Diagnose: Reifegrad, Anwendungsfälle mit hoher Wirkung, erwarteter Nutzen; KI-Due-Diligence für Investoren',
+          'Strategie und Roadmap: Prioritäten, Business Cases, Auswahl von Lösungen und Partnern',
+          'Projektsteuerung auf Auftraggeberseite: Lastenheft, Auswahl der Dienstleister, Steuerung der Projekte bis zur Einführung',
+          'Governance, Ethik und Compliance: KI-Ausschuss, Risikomanagement, AI Act',
+          'Begleitung von Führungskräften und Teams: KI-Kompetenz und Change-Management',
         ],
-        note: 'Die Diagnose ist im Programm Diag Data IA von Bpifrance förderfähig. Für die technische Umsetzung arbeiten wir mit spezialisierten Partnern zusammen.',
+        note: 'Die Diagnose wird von einem bei Bpifrance gelisteten Experten durchgeführt und für förderfähige französische KMU und Mittelständler im Programm Diag Data IA kofinanziert. Technische Entwicklungen (Agenten, Integrationen) übernehmen wir nicht selbst: Wir vergeben sie an spezialisierte Partner und steuern ihre Umsetzung.',
       },
     ],
     boardsTitle: 'Gremien, die wir begleiten',
@@ -114,32 +114,19 @@ export default {
     label: 'Für wen',
     leader: {
       kicker: 'Sie leiten ein Unternehmen',
-      title: 'Führen, entscheiden, wachsen',
+      title: 'Governance stärken, Wachstum beschleunigen',
       text: 'Sie leiten ein Start-up, ein KMU oder ein mittelständisches Unternehmen. Wir helfen Ihnen, Ihre Governance zu strukturieren, Ihre Strategie zu schärfen, neue Märkte zu erschließen und künstliche Intelligenz einzuführen.',
       cta: 'Unsere Leistungen',
     },
     investor: {
       kicker: 'Sie sind Investor',
-      title: 'Beteiligungen absichern und entwickeln',
+      title: 'Governance und Wert Ihrer Beteiligungen stärken',
       text: 'Sie investieren in Unternehmen. Wir bauen die Boards Ihrer Beteiligungen auf und moderieren sie, bewerten vor einer Investition deren KI-Reife und begleiten ihre internationale Entwicklung.',
       cta: 'Sprechen wir über Ihre Beteiligungen',
       subject: 'Investor – Austausch mit Habeas Corpus',
     },
   },
   conviction: 'Keine Führungskraft sollte allein dastehen, wenn sie Entscheidungen trifft, die die Zukunft ihres Unternehmens prägen.',
-  diag: {
-    label: 'Diag Data IA',
-    title: 'Eine Data- und KI-Diagnose, förderfähig im Programm Diag Data IA von Bpifrance',
-    text: 'Marc Brunstein ist bei Bpifrance als Experte für das Programm Diag Data IA gelistet. Wir bewerten Ihren Data- und KI-Reifegrad, identifizieren die Anwendungsfälle mit der größten Wirkung und erarbeiten mit Ihnen eine realistische Roadmap.',
-    points: [
-      'Data- und KI-Reifegrad des Unternehmens',
-      'Prioritäre Anwendungsfälle und erwarteter Nutzen',
-      'Roadmap und Maßnahmenplan',
-    ],
-    financing: 'Das Programm Diag Data IA von Bpifrance kofinanziert diese Diagnose für förderfähige französische KMU und mittelständische Unternehmen.',
-    cta: 'Förderfähigkeit prüfen',
-    subject: 'Diag Data IA – Förderfähigkeit',
-  },
   testimonials: {
     label: 'Stimmen',
     title: 'Was unsere Kunden sagen',
@@ -192,6 +179,7 @@ export default {
       tech: 'Technologie, Telekommunikation und Digitales',
       mid: 'Mittelstand, KMU und Start-ups',
     },
+    all: 'Alle Referenzen',
     countries: {
       fr: 'Frankreich',
       us: 'Vereinigte Staaten',
@@ -211,7 +199,7 @@ export default {
     visit: 'Website von',
     names: { pfa: 'Pôle Franco-Allemand' },
     items: {
-      bpi: 'Die französische öffentliche Investitionsbank. Marc Brunstein ist bei Bpifrance als Experte gelistet.',
+      bpi: 'Die französische öffentliche Investitionsbank. Unser Gründungspartner ist bei Bpifrance als Experte für das Programm Diag Data IA gelistet.',
       oct:
         'Ein Kollektiv aus Beratung (O Consulting) sowie Training und Coaching (O Training), mit dem wir gemeinsame Beratungs- und Schulungsangebote entwickeln.',
       cristaleye:
@@ -236,10 +224,10 @@ export default {
     paris: 'Büro Paris',
     offices: 'Unsere Präsenz',
     cities: ['Paris', 'München', 'London', 'Mailand'],
-    headOffice: 'Firmensitz',
   },
   footer: {
     legal: 'Impressum',
+    privacy: 'Datenschutz',
     home: 'Zurück zur Startseite',
   },
   legal: {
@@ -261,14 +249,47 @@ Kontakt: <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a> · +33 1 8
         html: `<p>GitHub, Inc. (GitHub Pages)<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, Vereinigte Staaten<br><a href="https://github.com" rel="noopener">github.com</a></p>`,
       },
       {
-        h: 'Datenschutz und Cookies',
-        html: `<p>Diese Website setzt keine Cookies und verwendet weder Reichweitenmessung noch Tracking-Dienste Dritter. Die Schriftarten werden auf der Website selbst gehostet.</p>
-<p>Der Hosting-Anbieter kann technische Verbindungsdaten (insbesondere IP-Adressen) zu Sicherheits- und Betriebszwecken protokollieren.</p>
-<p>Informationen, die Sie uns per E-Mail übermitteln, werden ausschließlich zur Beantwortung Ihrer Anfrage verwendet und niemals an Dritte weitergegeben. Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung, Löschung und Widerspruch; wenden Sie sich dazu an <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a>. Sie haben zudem das Recht, Beschwerde bei einer Datenschutzaufsichtsbehörde einzulegen.</p>`,
+        h: 'Datenschutz',
+        html: `<p>Diese Website setzt keine Cookies. Wie wir Ihre personenbezogenen Daten verarbeiten, erfahren Sie in unserer <a href="../datenschutz/">Datenschutzerklärung</a>.</p>`,
       },
       {
         h: 'Urheberrecht',
         html: `<p>Sämtliche Inhalte dieser Website (Texte, Logo, Fotografien) sind Eigentum von Habeas Corpus bzw. ihrer jeweiligen Urheber. Jede Vervielfältigung ohne vorherige Genehmigung ist untersagt. Die Logos und Marken der genannten Kunden und Partner sind Eigentum ihrer jeweiligen Inhaber.</p>`,
+      },
+    ],
+  },
+  privacy: {
+    title: 'Datenschutzerklärung',
+    sections: [
+      {
+        h: 'Verantwortlicher',
+        html: `<p>Habeas Corpus (Handelsname: Habeas Corpus Consulting), vereinfachte Aktiengesellschaft mit einem Gesellschafter (SASU) französischen Rechts, 5 route du Bosc André, 27230 Saint-Germain-la-Campagne, Frankreich, vertreten durch den Präsidenten Marc Brunstein.<br>
+Kontakt: <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a></p>`,
+      },
+      {
+        h: 'Was diese Website nicht tut',
+        html: `<p>Diese Website enthält keine Formulare, setzt keine Cookies und verwendet keine Werkzeuge zur Reichweitenmessung, Werbung oder Nachverfolgung. Die Schriftarten werden auf der Website selbst gehostet: Ihr Browser kontaktiert dafür keinen Drittanbieter.</p>`,
+      },
+      {
+        h: 'Verarbeitete Daten und Zwecke',
+        html: `<ul>
+<li><strong>Technische Verbindungsdaten</strong> (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser): vom Hosting-Anbieter protokolliert, um Sicherheit und Betrieb der Website zu gewährleisten. Rechtsgrundlage: berechtigtes Interesse.</li>
+<li><strong>Daten, die Sie uns übermitteln</strong>, wenn Sie uns schreiben oder anrufen (Name, Kontaktdaten, Inhalt Ihrer Nachricht): ausschließlich zur Beantwortung Ihrer Anfrage und gegebenenfalls zur Fortsetzung unseres Austauschs verwendet. Rechtsgrundlage: berechtigtes Interesse und vorvertragliche Maßnahmen auf Ihre Anfrage.</li>
+</ul>`,
+      },
+      {
+        h: 'Empfänger',
+        html: `<p>Ihre Daten sind ausschließlich für Habeas Corpus bestimmt. Sie werden niemals verkauft, vermietet oder an Dritte weitergegeben.</p>
+<p>Die Website wird von GitHub, Inc. (GitHub Pages) mit Sitz in den Vereinigten Staaten gehostet. Die damit verbundenen Datenübermittlungen erfolgen auf Grundlage des EU-US Data Privacy Framework.</p>`,
+      },
+      {
+        h: 'Speicherdauer',
+        html: `<p>Von Ihnen begonnene Korrespondenz bewahren wir so lange auf, wie es für die Bearbeitung Ihrer Anfrage erforderlich ist, und – sofern keine Vertragsbeziehung entsteht – höchstens drei Jahre nach unserem letzten Kontakt. Technische Verbindungsdaten werden vom Hosting-Anbieter für einen begrenzten Zeitraum gespeichert.</p>`,
+      },
+      {
+        h: 'Ihre Rechte',
+        html: `<p>Nach der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit. Wenden Sie sich dazu an <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a>. Sie können außerdem Beschwerde bei einer Datenschutzaufsichtsbehörde einlegen, etwa bei der französischen CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>) oder der Behörde Ihres Landes.</p>
+<p>Stand: Oktober 2026.</p>`,
       },
     ],
   },

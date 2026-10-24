@@ -3,6 +3,7 @@ export default {
     title: 'Conseil en gouvernance, stratégie et IA | Habeas Corpus',
     description: 'Cabinet de conseil européen depuis 1998 : gouvernance et boards, stratégie, développement international et IA. Diagnostic Data IA éligible Bpifrance.',
     legalDescription: 'Mentions légales, hébergement et protection des données personnelles du site Habeas Corpus Consulting.',
+    privacyDescription: 'Politique de confidentialité du site Habeas Corpus Consulting : données traitées, finalités, durées de conservation et droits RGPD.',
     imageAlt: 'Logo Habeas Corpus Consulting',
     ogLocale: 'fr_FR',
   },
@@ -20,17 +21,17 @@ export default {
   },
   hero: {
     eyebrow: 'Conseil en gouvernance, stratégie, international et IA · depuis 1998',
-    title: 'Mieux gouverner, mieux décider, <em>grandir au-delà des frontières.</em>',
+    title: 'Mieux gouverner, mieux décider, <em>mieux grandir.</em>',
     lead:
       'Habeas Corpus Consulting est un collectif européen de consultants présent en France, en Allemagne, au Royaume-Uni et en Italie. Nous accompagnons dirigeants et investisseurs dans leur gouvernance, leur stratégie, leur développement international et l’intégration de l’intelligence artificielle.',
-    ctaPrimary: 'Nous écrire',
+    ctaPrimary: 'Parlons de votre projet',
     ctaSecondary: 'Découvrir nos expertises',
   },
   about: {
     label: 'Le cabinet',
     title: 'Un collectif européen au service d’une performance durable',
     paragraphs: [
-      'Aux côtés des dirigeants et des investisseurs, notre mission est de contribuer durablement à la performance de nos clients. Nous intervenons là où se prennent les décisions qui engagent l’entreprise : la composition et le fonctionnement de ses instances, ses choix stratégiques, sa conquête de nouveaux marchés et, désormais, sa transformation par l’intelligence artificielle.',
+      'Aux côtés des dirigeants et des investisseurs, nous intervenons là où se prennent les décisions qui engagent l’entreprise : ses instances, ses choix stratégiques, ses nouveaux marchés et, désormais, sa transformation par l’intelligence artificielle.',
       'Nous ne nous arrêtons pas à la recommandation : nous accompagnons aussi la mise en œuvre des transformations qui en découlent.',
     ],
     facts: [
@@ -78,17 +79,16 @@ export default {
       {
         title: 'Intelligence artificielle',
         question: 'Comment faire de l’IA un levier plutôt qu’un risque ?',
-        wide: true,
-        lead: 'Faire de l’IA un sujet de direction, pas seulement de technologie.',
+        lead: 'Piloter l’IA comme un projet de direction, du diagnostic au déploiement.',
         body: null,
         list: [
-          'Diagnostic data et IA : maturité, cas d’usage à fort impact, gains attendus',
-          'Stratégie IA et feuille de route : priorités, business cases, choix de solutions et de partenaires',
-          'Gouvernance de l’IA : place de l’IA dans les instances, création d’un comité IA, maîtrise des risques et conformité à l’AI Act',
-          'Accompagnement du codir : acculturation des dirigeants et pilotage de la transformation',
-          'Due diligence IA pour les investisseurs',
+          'Diagnostic data et IA : maturité, cas d’usage à fort impact, gains attendus ; due diligence IA pour les investisseurs',
+          'Stratégie et feuille de route : priorités, business cases, choix des solutions et des partenaires',
+          'Assistance à maîtrise d’ouvrage : cahier des charges, sélection des prestataires, pilotage des projets jusqu’au déploiement',
+          'Gouvernance, éthique et conformité : comité IA, maîtrise des risques, AI Act',
+          'Accompagnement des dirigeants et des équipes : acculturation et conduite du changement',
         ],
-        note: 'Diagnostic éligible au programme Diag Data IA de Bpifrance. Pour la mise en œuvre technique, nous nous appuyons sur des partenaires spécialisés.',
+        note: 'Diagnostic réalisé par un expert référencé Bpifrance et cofinancé par le programme Diag Data IA pour les PME et ETI éligibles. Nous ne réalisons pas de développements techniques (agents, intégrations) : nous les confions à des partenaires spécialisés et en pilotons la réalisation.',
       },
     ],
     boardsTitle: 'Les instances que nous accompagnons',
@@ -114,32 +114,19 @@ export default {
     label: 'Pour qui',
     leader: {
       kicker: 'Vous êtes dirigeant',
-      title: 'Gouverner, décider, grandir',
+      title: 'Structurer votre gouvernance, accélérer votre croissance',
       text: 'Vous dirigez une start-up, une PME ou une ETI. Nous vous aidons à structurer votre gouvernance, clarifier votre stratégie, conquérir de nouveaux marchés et intégrer l’intelligence artificielle.',
       cta: 'Voir nos expertises',
     },
     investor: {
       kicker: 'Vous êtes investisseur',
-      title: 'Sécuriser et valoriser vos participations',
+      title: 'Renforcer la gouvernance et la valeur de vos participations',
       text: 'Vous investissez dans des entreprises. Nous mettons en place et animons les boards de vos participations, évaluons leur maturité IA avant investissement et accompagnons leur développement international.',
       cta: 'Parlons de vos participations',
       subject: 'Investisseur – échange avec Habeas Corpus',
     },
   },
   conviction: 'Aucun dirigeant ne devrait se retrouver seul au moment de faire des choix qui engagent l’avenir de son entreprise.',
-  diag: {
-    label: 'Diag Data IA',
-    title: 'Un diagnostic data et IA éligible au programme Diag Data IA de Bpifrance',
-    text: 'Marc Brunstein est expert référencé par Bpifrance pour le programme Diag Data IA. Nous évaluons votre maturité data et IA, identifions les cas d’usage à plus fort impact et construisons avec vous une feuille de route réaliste.',
-    points: [
-      'Maturité data et IA de l’entreprise',
-      'Cas d’usage prioritaires et gains attendus',
-      'Feuille de route et plan d’action',
-    ],
-    financing: 'Le programme Diag Data IA de Bpifrance cofinance ce diagnostic pour les PME et ETI éligibles.',
-    cta: 'Vérifier mon éligibilité',
-    subject: 'Diag Data IA – éligibilité',
-  },
   testimonials: {
     label: 'Témoignages',
     title: 'Ils en parlent',
@@ -191,6 +178,7 @@ export default {
       tech: 'Technologies, télécoms et numérique',
       mid: 'ETI, PME et start-ups',
     },
+    all: 'Toutes nos références',
     countries: {
       fr: 'France',
       us: 'États-Unis',
@@ -209,7 +197,7 @@ export default {
     intro: 'Des partenaires choisis pour compléter nos expertises et proposer des offres conjointes.',
     visit: 'Site de',
     items: {
-      bpi: 'Banque publique d’investissement. Marc Brunstein est expert référencé par Bpifrance.',
+      bpi: 'Banque publique d’investissement. Notre associé fondateur est expert référencé Bpifrance pour le programme Diag Data IA.',
       oct:
         'Un collectif conseil (O Consulting) et formation-coaching (O Training) avec lequel nous proposons des offres conjointes en conseil et en formation.',
       cristaleye:
@@ -234,10 +222,10 @@ export default {
     paris: 'Bureau de Paris',
     offices: 'Notre présence',
     cities: ['Paris', 'Munich', 'Londres', 'Milan'],
-    headOffice: 'Siège social',
   },
   footer: {
     legal: 'Mentions légales',
+    privacy: 'Confidentialité',
     home: 'Retour à l’accueil',
   },
   legal: {
@@ -259,14 +247,47 @@ Contact : <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a> · +33 1 
         html: `<p>GitHub, Inc. (GitHub Pages)<br>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis<br><a href="https://github.com" rel="noopener">github.com</a></p>`,
       },
       {
-        h: 'Données personnelles et cookies',
-        html: `<p>Ce site ne dépose aucun cookie et n’utilise aucun outil de mesure d’audience ni aucun service tiers de suivi. Les polices de caractères sont hébergées sur le site lui-même.</p>
-<p>L’hébergeur peut enregistrer des données techniques de connexion (adresse IP notamment) à des fins de sécurité et de bon fonctionnement du service.</p>
-<p>Les informations que vous nous transmettez par courriel sont utilisées uniquement pour répondre à votre demande et ne sont jamais cédées à des tiers. Conformément au Règlement général sur la protection des données (RGPD), vous disposez d’un droit d’accès, de rectification, d’effacement et d’opposition, que vous pouvez exercer en écrivant à <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a>. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>`,
+        h: 'Données personnelles',
+        html: `<p>Ce site ne dépose aucun cookie. Le traitement de vos données personnelles est décrit dans notre <a href="../confidentialite/">politique de confidentialité</a>.</p>`,
       },
       {
         h: 'Propriété intellectuelle',
         html: `<p>L’ensemble des contenus de ce site (textes, logo, photographies) est la propriété de Habeas Corpus ou de leurs auteurs respectifs. Toute reproduction sans autorisation préalable est interdite. Les logos et marques des clients et partenaires cités appartiennent à leurs titulaires respectifs.</p>`,
+      },
+    ],
+  },
+  privacy: {
+    title: 'Politique de confidentialité',
+    sections: [
+      {
+        h: 'Responsable du traitement',
+        html: `<p>Habeas Corpus (nom commercial : Habeas Corpus Consulting), société par actions simplifiée à associé unique, 5 route du Bosc André, 27230 Saint-Germain-la-Campagne, France, représentée par Marc Brunstein, Président.<br>
+Contact : <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a></p>`,
+      },
+      {
+        h: 'Ce que ce site ne fait pas',
+        html: `<p>Ce site ne comporte aucun formulaire, ne dépose aucun cookie et n’utilise aucun outil de mesure d’audience, de publicité ou de suivi. Les polices de caractères sont hébergées sur le site lui-même : votre navigateur ne contacte aucun service tiers pour les charger.</p>`,
+      },
+      {
+        h: 'Données traitées et finalités',
+        html: `<ul>
+<li><strong>Données techniques de connexion</strong> (adresse IP, date et heure, page demandée, navigateur) : enregistrées par l’hébergeur pour assurer la sécurité et le bon fonctionnement du site. Base légale : intérêt légitime.</li>
+<li><strong>Données que vous nous transmettez</strong> lorsque vous nous écrivez ou nous appelez (nom, coordonnées, contenu de votre message) : utilisées uniquement pour répondre à votre demande et, le cas échéant, pour la suite de nos échanges. Base légale : intérêt légitime et mesures précontractuelles prises à votre demande.</li>
+</ul>`,
+      },
+      {
+        h: 'Destinataires',
+        html: `<p>Vos données sont destinées exclusivement à Habeas Corpus. Elles ne sont jamais vendues, louées ni cédées à des tiers.</p>
+<p>Le site est hébergé par GitHub, Inc. (GitHub Pages), établi aux États-Unis. Les transferts de données correspondants sont encadrés par le Data Privacy Framework UE–États-Unis.</p>`,
+      },
+      {
+        h: 'Durées de conservation',
+        html: `<p>Les échanges que vous engagez avec nous sont conservés le temps nécessaire au traitement de votre demande puis, en l’absence de relation contractuelle, trois ans au plus après notre dernier contact. Les données techniques de connexion sont conservées par l’hébergeur pour une durée limitée.</p>`,
+      },
+      {
+        h: 'Vos droits',
+        html: `<p>Conformément au Règlement général sur la protection des données (RGPD), vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité de vos données. Pour les exercer, écrivez-nous à <a href="mailto:contact@hcorpus.com">contact@hcorpus.com</a>. Vous pouvez également introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>).</p>
+<p>Dernière mise à jour : octobre 2026.</p>`,
       },
     ],
   },

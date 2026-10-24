@@ -3,7 +3,7 @@
 import { rm, mkdir, writeFile, cp } from 'node:fs/promises';
 import { join } from 'node:path';
 import { languages, site } from './src/data.mjs';
-import { renderHome, renderLegal, pagePath } from './src/template.mjs';
+import { renderHome, renderLegal, renderPrivacy, pagePath } from './src/template.mjs';
 
 const OUT = 'docs';
 const t = {
@@ -20,7 +20,7 @@ await cp('static', join(OUT, 'assets'), {
   filter: (src) => !src.endsWith('desktop.ini'),
 });
 
-const kinds = [['home', renderHome], ['legal', renderLegal]];
+const kinds = [['home', renderHome], ['legal', renderLegal], ['privacy', renderPrivacy]];
 const urlOf = (lang, kind) => site.url + '/' + pagePath(lang, kind).parts.map((p) => p + '/').join('');
 const urls = [];
 for (const lang of languages) {

@@ -4,7 +4,7 @@ Traitement identique pour chaque visage : niveaux de gris, contraste et luminosi
 normalisés, puis bichromie bleu marine de la charte.
 
 Usage (depuis la racine du dépôt) : python tools/portraits.py
-Sources attendues dans _source/ (non versionné) : marc.jpg, arnaud-2026.jpg, jerome.png, dario.jpg,
+Sources attendues dans _source/ (non versionné) : marc-2026.jpg, arnaud-2026.jpg, jerome.png, dario.jpg,
 nathalie.jpg, extended.png (mosaïque d'origine 4 x 4).
 """
 import math
@@ -53,7 +53,7 @@ def duotone(im):
 # Sinon "rotate" (degrés, sens antihoraire, autour de "center") puis "box" (carré de recadrage),
 # pour aligner cadrage serré et légère inclinaison de la tête sur les autres portraits.
 CORE = {
-    "marc-brunstein": {"src": "marc.jpg"},
+    "marc-brunstein": {"src": "marc-2026.jpg", "box": (130, 70, 1370, 1310)},
     "arnaud-huet": {"src": "arnaud-2026.jpg", "rotate": 6, "center": (420, 330), "box": (150, 80, 690, 620)},
     "nathalie-blumberg": {"src": "nathalie.jpg"},
 }

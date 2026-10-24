@@ -12,10 +12,10 @@ export const site = {
 };
 
 export const languages = [
-  { code: 'fr', label: 'FR', dir: '', legal: 'mentions-legales', ogLocale: 'fr_FR' },
-  { code: 'en', label: 'EN', dir: 'en', legal: 'legal-notice', ogLocale: 'en_GB' },
-  { code: 'de', label: 'DE', dir: 'de', legal: 'impressum', ogLocale: 'de_DE' },
-  { code: 'it', label: 'IT', dir: 'it', legal: 'note-legali', ogLocale: 'it_IT' },
+  { code: 'fr', label: 'FR', dir: '', legal: 'mentions-legales', privacy: 'confidentialite', ogLocale: 'fr_FR' },
+  { code: 'en', label: 'EN', dir: 'en', legal: 'legal-notice', privacy: 'privacy', ogLocale: 'en_GB' },
+  { code: 'de', label: 'DE', dir: 'de', legal: 'impressum', privacy: 'datenschutz', ogLocale: 'de_DE' },
+  { code: 'it', label: 'IT', dir: 'it', legal: 'note-legali', privacy: 'privacy', ogLocale: 'it_IT' },
 ];
 
 // linkedin : renseigner l'URL du profil pour afficher le lien
@@ -32,11 +32,12 @@ export const extendedCount = 16;
 // logo : fichier dans static/img/clients/ (null = nom affiché en typographie)
 // large : true pour un logo compact qui doit s'afficher un peu plus grand
 // url : lien ouvert au clic sur le logo (absent = logo non cliquable)
+// strip : false pour exclure un logo du bandeau sous l'en-tête (logo illisible en petit et en gris)
 // Les groupes s'affichent dans cet ordre ; leurs titres sont dans src/i18n (clients.groups)
 export const clients = {
   large: [
     { name: 'AXA', logo: 'axa.png', country: 'fr', url: 'https://www.axa.fr/' },
-    { name: 'Orange', logo: 'orange.png', country: 'fr', url: 'https://www.orange.fr/' },
+    { name: 'Orange', logo: 'orange.png', country: 'fr', url: 'https://www.orange.fr/', strip: false },
     { name: 'SFR', logo: 'sfr.png', country: 'fr', url: 'https://www.sfr.fr/' },
     { name: 'Disneyland Paris', logo: 'disneyland-paris.png', country: 'fr', url: 'https://www.disneylandparis.com/fr-fr/' },
     { name: 'Michelin', logo: 'michelin.png', country: 'fr', url: 'https://www.michelin.fr/' },

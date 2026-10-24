@@ -32,7 +32,7 @@
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.documentElement.classList.add('js');
     const targets = document.querySelectorAll(
-      '.section h2, .path, .facts > div, .conviction p, .expertise, .boards, .diag-card, .person, .extended, .client-group, .quote, .partners li'
+      '.section h2, .path, .facts > div, .conviction p, .expertise, .boards, .person, .extended, .client-group, .quote, .partners li'
     );
     const reveal = new IntersectionObserver(
       (entries) => {

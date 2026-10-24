@@ -4,11 +4,11 @@ import { flags, languageNames } from './flags.mjs';
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-const SECTIONS = ['about', 'expertise', 'team', 'clients', 'partners', 'contact'];
+const SECTIONS = ['expertise', 'about', 'team', 'clients', 'partners', 'contact'];
 
 // Chemin relatif d'une page vers la racine du site (compatible sous-dossier GitHub Pages)
 export const pagePath = (lang, kind) => {
-  const parts = [lang.dir, kind === 'legal' ? lang.legal : ''].filter(Boolean);
+  const parts = [lang.dir, kind === 'home' ? '' : lang[kind]].filter(Boolean);
   return { parts, root: '../'.repeat(parts.length) };
 };
 
@@ -177,8 +177,8 @@ function footer(c, lang, kind, from) {
   return `<footer class="site-footer">
     <div class="wrap footer-inner">
       <p>© ${year} Habeas Corpus Consulting</p>
-      <p><a class="footer-linkedin" href="${site.linkedin}" rel="noopener" target="_blank">${icon.linkedin}LinkedIn</a> · <a href="${hrefTo(from, lang, 'legal')}">${esc(c.footer.legal)}</a>${
-        kind === 'legal' ? ` · <a href="${home}">${esc(c.footer.home)}</a>` : ''
+      <p><a class="footer-linkedin" href="${site.linkedin}" rel="noopener" target="_blank">${icon.linkedin}LinkedIn</a> · <a href="${hrefTo(from, lang, 'legal')}">${esc(c.footer.legal)}</a> · <a href="${hrefTo(from, lang, 'privacy')}">${esc(c.footer.privacy)}</a>${
+        kind !== 'home' ? ` · <a href="${home}">${esc(c.footer.home)}</a>` : ''
       }</p>
     </div>
   </footer>
@@ -205,7 +205,7 @@ export function renderHome(c, lang) {
 
   const expertise = c.expertise.items
     .map(
-      (it, i) => `<article class="expertise${it.wide ? ' expertise-wide' : ''}">
+      (it, i) => `<article class="expertise">
           <p class="num">0${i + 1}</p>
           ${it.question ? `<p class="question">${esc(it.question)}</p>` : ''}
           <h3>${esc(it.title)}</h3>
@@ -247,6 +247,13 @@ export function renderHome(c, lang) {
           <ul class="logos">${clients[g].map((cl) => clientItem(cl, c, from)).join('')}</ul>
         </div>`
     )
+    .join('');
+
+  // Bandeau de confiance sous l'en-tête : logos des grands comptes (la liste complète est dans Références)
+  const strip = clients.large
+    .filter((cl) => cl.logo && cl.strip !== false)
+    .slice(0, 7)
+    .map((cl) => `<li><img${cl.large ? ' class="logo-lg"' : ''} src="${r}assets/img/clients/${cl.logo}" alt="${esc(cl.name)}" loading="lazy"></li>`)
     .join('');
 
   const partnerList = partners
@@ -292,10 +299,20 @@ export function renderHome(c, lang) {
         <p class="hero-title">${c.hero.title}</p>
         <p class="hero-lead">${esc(c.hero.lead)}</p>
         <p class="actions">
-          <a class="btn btn-light" href="${mail}">${esc(c.hero.ctaPrimary)}${icon.arrow}</a>
+          <a class="btn btn-accent" href="${mail}">${esc(c.hero.ctaPrimary)}${icon.arrow}</a>
           <a class="btn btn-ghost" href="#expertise">${esc(c.hero.ctaSecondary)}</a>
         </p>
         <ul class="cities" aria-label="${esc(c.contact.offices)}">${c.contact.cities.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="${esc(c.clients.title)}">
+      <div class="wrap trust-inner">
+        <div class="trust-head">
+          <p class="trust-label">${esc(c.clients.title)}</p>
+          <a class="link-arrow" href="#clients">${esc(c.clients.all)}${icon.arrow}</a>
+        </div>
+        <ul class="trust-logos">${strip}</ul>
       </div>
     </section>
 
@@ -303,6 +320,19 @@ export function renderHome(c, lang) {
       <div class="wrap paths-grid">
         ${pathCard(c.paths.leader, '#expertise', 'leader')}
         ${pathCard(c.paths.investor, mailSubject(c.paths.investor.subject), 'investor')}
+      </div>
+    </section>
+
+    <section class="section section-tint" id="expertise">
+      <div class="wrap">
+        ${label(c.expertise.label)}
+        <h2>${esc(c.expertise.title)}</h2>
+        <div class="expertise-grid">${expertise}</div>
+        <div class="boards">
+          <h3>${esc(c.expertise.boardsTitle)}</h3>
+          <ul>${c.expertise.boards.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
+        </div>
+        <p class="more"><a class="btn btn-accent" href="${mail}">${esc(c.expertise.cta)}${icon.arrow}</a></p>
       </div>
     </section>
 
@@ -326,36 +356,6 @@ export function renderHome(c, lang) {
     <section class="conviction">
       <div class="wrap">
         <p>${esc(c.conviction)}</p>
-      </div>
-    </section>
-
-    <section class="section section-tint" id="expertise">
-      <div class="wrap">
-        ${label(c.expertise.label)}
-        <h2>${esc(c.expertise.title)}</h2>
-        <div class="expertise-grid">${expertise}</div>
-        <div class="boards">
-          <h3>${esc(c.expertise.boardsTitle)}</h3>
-          <ul>${c.expertise.boards.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>
-        </div>
-        <p class="more"><a class="link-arrow" href="#contact">${esc(c.expertise.cta)}${icon.arrow}</a></p>
-      </div>
-    </section>
-
-    <section class="section diag" id="diag-data-ia">
-      <div class="wrap">
-        <div class="diag-card">
-          <div class="diag-main">
-            ${label(c.diag.label)}
-            <h2>${esc(c.diag.title)}</h2>
-            <p>${esc(c.diag.text)}</p>
-          </div>
-          <div class="diag-side">
-            <ul class="ticks">${c.diag.points.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
-            <p class="diag-financing">${esc(c.diag.financing)}</p>
-            <a class="btn btn-yellow" href="${mailSubject(c.diag.subject)}">${esc(c.diag.cta)}${icon.arrow}</a>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -425,8 +425,6 @@ export function renderHome(c, lang) {
           <div>
             <h3>${esc(c.contact.offices)}</h3>
             <p>${c.contact.cities.map(esc).join(' · ')}</p>
-            <h3 class="h-gap">${esc(c.contact.headOffice)}</h3>
-            <address>${site.headOffice.map(esc).join('<br>')}</address>
           </div>
         </div>
       </div>
@@ -438,22 +436,26 @@ export function renderHome(c, lang) {
 `;
 }
 
-export function renderLegal(c, lang) {
-  const from = pagePath(lang, 'legal');
-  const title = `${c.legal.title} · Habeas Corpus Consulting`;
+function renderTextPage(c, lang, kind, description) {
+  const from = pagePath(lang, kind);
+  const page = c[kind];
+  const title = `${page.title} · Habeas Corpus Consulting`;
   return `<!doctype html>
 <html lang="${lang.code}">
-  ${head(c, lang, 'legal', from, title, c.meta.legalDescription)}
+  ${head(c, lang, kind, from, title, description)}
   <body>
-  ${header(c, lang, 'legal', from)}
+  ${header(c, lang, kind, from)}
   <main id="main" class="legal">
     <div class="wrap narrow">
-      <h1>${esc(c.legal.title)}</h1>
-      ${c.legal.sections.map((s) => `<section><h2>${esc(s.h)}</h2>${s.html}</section>`).join('\n      ')}
+      <h1>${esc(page.title)}</h1>
+      ${page.sections.map((s) => `<section><h2>${esc(s.h)}</h2>${s.html}</section>`).join('\n      ')}
     </div>
   </main>
-  ${footer(c, lang, 'legal', from)}
+  ${footer(c, lang, kind, from)}
   </body>
 </html>
 `;
 }
+
+export const renderLegal = (c, lang) => renderTextPage(c, lang, 'legal', c.meta.legalDescription);
+export const renderPrivacy = (c, lang) => renderTextPage(c, lang, 'privacy', c.meta.privacyDescription);

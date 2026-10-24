@@ -33,6 +33,9 @@
   --navy: #0b2e47;
   --navy-deep: #07223a;
   --yellow: #ffcc00;
+  /* couleur chaude réservée aux boutons d'appel à l'action */
+  --accent: #c2410c;
+  --accent-deep: #9a3412;
   --ink: #16242f;
   --muted: #5a6873;
   --paper: #fbfaf7;
@@ -460,6 +463,13 @@ p {
 .btn-light:hover {
   background: var(--yellow);
 }
+.btn-accent {
+  background: var(--accent);
+  color: var(--white);
+}
+.btn-accent:hover {
+  background: var(--accent-deep);
+}
 .btn-ghost {
   color: var(--white);
   border-color: rgb(255 255 255 / 0.35);
@@ -577,44 +587,24 @@ p {
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
   border-top: 1px solid var(--line);
 }
 .expertise {
-  padding: 36px 36px 8px 0;
+  padding: 40px 48px 24px 0;
 }
-.expertise + .expertise {
-  padding-left: 36px;
+.expertise:nth-child(even) {
+  padding: 40px 0 24px 48px;
   border-left: 1px solid var(--line);
+}
+.expertise:nth-child(n + 3) {
+  border-top: 1px solid var(--line);
 }
 .expertise .note {
   margin-top: 16px;
   font-size: 0.9rem;
   color: var(--muted);
-}
-
-/* Expertise en pleine largeur (IA) : intitulé à gauche, offres à droite */
-@media (min-width: 901px) {
-  .expertise-grid .expertise-wide {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    column-gap: 72px;
-    align-content: start;
-    margin-top: 28px;
-    padding: 36px 0 8px;
-    border-left: 0;
-    border-top: 1px solid var(--line);
-  }
-  .expertise-wide > * {
-    grid-column: 1;
-  }
-  .expertise-wide .ticks {
-    grid-column: 2;
-    grid-row: 1 / span 6;
-    align-self: start;
-  }
 }
 .expertise .num {
   font-family: var(--serif);
@@ -711,7 +701,7 @@ p {
     grid-template-columns: 1fr;
   }
   .expertise,
-  .expertise + .expertise {
+  .expertise:nth-child(even) {
     padding: 32px 0 16px;
     border-left: 0;
   }
@@ -1223,59 +1213,6 @@ p {
   margin-bottom: 36px;
 }
 
-/* ---------- Encart Diag Data IA ---------- */
-
-.diag {
-  padding-top: 0;
-  background: var(--tint);
-}
-.diag-card {
-  display: grid;
-  grid-template-columns: 7fr 5fr;
-  gap: 40px 64px;
-  padding: clamp(32px, 5vw, 56px);
-  background: var(--navy);
-  color: var(--white);
-}
-.diag .label {
-  color: rgb(255 255 255 / 0.7);
-}
-.diag h2 {
-  font-size: clamp(1.7rem, 2.8vw, 2.4rem);
-  max-width: 24ch;
-  margin-bottom: 20px;
-}
-.diag-main p:not(.label) {
-  color: rgb(255 255 255 / 0.85);
-  font-size: 1.05rem;
-  margin: 0;
-}
-.diag .ticks li {
-  border-top-color: rgb(255 255 255 / 0.18);
-  color: rgb(255 255 255 / 0.9);
-}
-.diag .ticks li::before {
-  background: var(--yellow);
-}
-.diag-financing {
-  font-size: 0.92rem;
-  color: rgb(255 255 255 / 0.7);
-  margin: 18px 0 24px;
-}
-.btn-yellow {
-  background: var(--yellow);
-  color: var(--navy);
-}
-.btn-yellow:hover {
-  background: var(--white);
-}
-
-@media (max-width: 900px) {
-  .diag-card {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ---------- Témoignages ---------- */
 
 .quotes {
@@ -1352,5 +1289,102 @@ p {
   .js .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* ---------- Bandeau de logos sous l'en-tête ---------- */
+
+.trust {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--line);
+}
+.trust-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px 56px;
+}
+.trust-head {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.trust-label {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.trust-logos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px 28px;
+}
+.trust-logos img {
+  display: block;
+  height: 30px;
+  width: auto;
+  max-width: 100px;
+  object-fit: contain;
+  filter: grayscale(1) contrast(1.25);
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
+.trust-logos img.logo-lg {
+  height: 36px;
+}
+.trust .link-arrow {
+  font-size: 0.9rem;
+}
+@media (max-width: 900px) {
+  .trust-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trust-logos {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 16px 28px;
+  }
+  .trust-logos img {
+    height: 26px;
+  }
+}
+
+/* ---------- Pages de texte : listes ---------- */
+
+.legal ul {
+  margin: 0 0 1em;
+  padding-left: 1.2em;
+}
+.legal li + li {
+  margin-top: 10px;
+}
+
+/* ---------- Lisibilité sur mobile : plus d'air entre les paragraphes ---------- */
+
+@media (max-width: 700px) {
+  body {
+    line-height: 1.7;
+  }
+  p {
+    margin-bottom: 1.35em;
+  }
+  .prose p {
+    font-size: 1.05rem;
+  }
+  .prose p:first-child {
+    font-size: 1.25rem;
+  }
+  .ticks li {
+    padding: 12px 0 12px 22px;
   }
 }
