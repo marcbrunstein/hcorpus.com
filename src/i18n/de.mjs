@@ -47,7 +47,7 @@ export default {
       {
         title: 'Governance',
         question: 'Ist Ihr Board Ihren Ambitionen gewachsen?',
-        lead: 'Analyse, Aufbau, Optimierung und Moderation von Boards.',
+        lead: 'Ein Board, das die Geschäftsleitung wirklich fordert und ihr hilft, besser zu entscheiden.',
         body:
           'Grundlage unserer Arbeit ist die BMMI-Methode: ein fünfstufiges Reifegradmodell, mit dem sich ein Board bewerten, aufbauen oder weiterentwickeln lässt.',
         list: null,
@@ -55,7 +55,7 @@ export default {
       {
         title: 'Strategie',
         question: 'Wissen Ihre Teams, wohin die Reise geht?',
-        lead: 'Eine klare Richtung vorgeben und teilen.',
+        lead: 'Eine klare Richtung, die Ihre Teams verstehen und mittragen.',
         body: null,
         list: [
           'Strategische Plattform: Vision, Mission, Werte, Ambitionen',
@@ -67,7 +67,7 @@ export default {
       {
         title: 'Internationale Entwicklung',
         question: 'Wie gelingt der Eintritt in einen neuen Markt, ohne sich zu verzetteln?',
-        lead: 'Neue Märkte mit Methode erschließen.',
+        lead: 'In einem neuen Markt erfolgreich sein, ohne Ihre Ressourcen zu zersplittern.',
         body: null,
         list: [
           'Geografische Expansion und Internationalisierung',

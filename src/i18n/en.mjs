@@ -47,7 +47,7 @@ export default {
       {
         title: 'Governance',
         question: 'Is your board equal to your ambitions?',
-        lead: 'Assessing, setting up, optimising and running boards.',
+        lead: 'A board that genuinely challenges management and helps it make better decisions.',
         body:
           'Our work is grounded in the BMMI methodology: a five-level maturity model used to assess a board, build it or help it progress.',
         list: null,
@@ -55,7 +55,7 @@ export default {
       {
         title: 'Strategy',
         question: 'Do your teams know where you are heading?',
-        lead: 'Setting a clear course and sharing it.',
+        lead: 'A clear direction, understood and owned by your teams.',
         body: null,
         list: [
           'Strategic platform: vision, missions, values, ambitions',
@@ -67,7 +67,7 @@ export default {
       {
         title: 'International development',
         question: 'How do you succeed in a new market without losing your way?',
-        lead: 'Entering new markets, methodically.',
+        lead: 'Succeed in a new market without spreading your resources too thin.',
         body: null,
         list: [
           'Geographic expansion and internationalisation',

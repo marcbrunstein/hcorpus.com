@@ -47,7 +47,7 @@ export default {
       {
         title: 'Gouvernance',
         question: 'Votre conseil est-il à la hauteur de vos ambitions ?',
-        lead: 'Diagnostic, création, optimisation et animation de boards.',
+        lead: 'Un board qui challenge vraiment la direction et l’aide à mieux décider.',
         body:
           'Nous nous appuyons sur la méthodologie BMMI : un modèle de maturité en cinq niveaux pour évaluer un board, le constituer ou le faire progresser.',
         list: null,
@@ -55,7 +55,7 @@ export default {
       {
         title: 'Stratégie',
         question: 'Vos équipes savent-elles où vous allez ?',
-        lead: 'Donner un cap clair et le partager.',
+        lead: 'Un cap clair, compris et porté par vos équipes.',
         body: null,
         list: [
           'Plateforme stratégique : vision, missions, valeurs, ambitions',
@@ -67,7 +67,7 @@ export default {
       {
         title: 'Développement international',
         question: 'Comment réussir sur un nouveau marché sans vous y perdre ?',
-        lead: 'Conquérir de nouveaux marchés avec méthode.',
+        lead: 'Réussir sur un nouveau marché sans disperser vos ressources.',
         body: null,
         list: [
           'Expansion géographique et internationalisation',

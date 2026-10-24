@@ -47,7 +47,7 @@ export default {
       {
         title: 'Governance',
         question: 'Il vostro consiglio è all’altezza delle vostre ambizioni?',
-        lead: 'Diagnosi, costituzione, ottimizzazione e animazione dei board.',
+        lead: 'Un board che stimola davvero la direzione e la aiuta a decidere meglio.',
         body:
           'Ci basiamo sulla metodologia BMMI: un modello di maturità a cinque livelli per valutare un board, costituirlo o farlo evolvere.',
         list: null,
@@ -55,7 +55,7 @@ export default {
       {
         title: 'Strategia',
         question: 'I vostri team sanno dove state andando?',
-        lead: 'Definire una rotta chiara e condividerla.',
+        lead: 'Una rotta chiara, compresa e condivisa dai vostri team.',
         body: null,
         list: [
           'Piattaforma strategica: visione, missione, valori, ambizioni',
@@ -67,7 +67,7 @@ export default {
       {
         title: 'Sviluppo internazionale',
         question: 'Come riuscire su un nuovo mercato senza perdersi?',
-        lead: 'Conquistare nuovi mercati con metodo.',
+        lead: 'Avere successo in un nuovo mercato senza disperdere le vostre risorse.',
         body: null,
         list: [
           'Espansione geografica e internazionalizzazione',
