@@ -213,6 +213,7 @@ export function renderHome(c, lang) {
           ${it.body ? `<p>${esc(it.body)}</p>` : ''}
           ${it.list ? `<ul class="ticks">${it.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
           ${it.note ? `<p class="note">${esc(it.note)}</p>` : ''}
+          ${it.case ? `<aside class="case"><p class="case-title">${esc(it.case.title)}</p><p>${esc(it.case.text)}</p></aside>` : ''}
         </article>`
     )
     .join('');

@@ -51,6 +51,10 @@ export default {
         body:
           'Our work is grounded in the BMMI methodology: a five-level maturity model used to assess a board, build it or help it progress.',
         list: null,
+        case: {
+          title: 'Client case · Digital press start-up',
+          text: 'From the company’s creation, we set up a supervisory committee for its founder, recruited five independent figures with complementary profiles (entrepreneurship, publishing, software, public sector, digital advertising) and chaired its work. For eight years, the committee challenged the founder’s strategic choices and supported him through key milestones: international expansion, then a funding round with a venture capital fund. Having become a strategic committee, joined by the fund’s representatives, it supported the company all the way to its exit: the acquisition by a major media and telecoms group.',
+        },
       },
       {
         title: 'Strategy',
@@ -137,7 +141,7 @@ export default {
       {
         quote: 'I asked Marc to form and chair my Supervisory Committee. […] He has always played his role perfectly. […] He’s someone you can entrust with setting up and running a Board. With Marc, you can plan for the long term with complete confidence.',
         author: 'Guillaume Monteux',
-        role: 'Founder of MiLibris, currently CEO and founder of Gadsme',
+        role: 'Founder of miLibris, currently CEO and founder of Gadsme',
         from: 'fr',
       },
       {

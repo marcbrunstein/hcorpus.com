@@ -51,6 +51,10 @@ export default {
         body:
           'Nous nous appuyons sur la méthodologie BMMI : un modèle de maturité en cinq niveaux pour évaluer un board, le constituer ou le faire progresser.',
         list: null,
+        case: {
+          title: 'Cas client · Start-up de la presse numérique',
+          text: 'Dès la création de l’entreprise, nous avons constitué pour son fondateur un comité de surveillance, recruté cinq personnalités indépendantes aux profils complémentaires (entrepreneuriat, édition, logiciel, secteur public, publicité numérique) et présidé ses travaux. Pendant huit ans, le comité a challengé les choix stratégiques du fondateur et l’a accompagné dans ses étapes décisives : le développement international, puis une levée de fonds auprès d’un fonds de capital-risque. Devenu comité stratégique, élargi aux représentants du fonds, il a accompagné l’entreprise jusqu’à son exit : le rachat par un grand groupe de médias et de télécoms.',
+        },
       },
       {
         title: 'Stratégie',
@@ -137,7 +141,7 @@ export default {
       {
         quote: 'J’ai demandé à Marc de constituer et présider mon Comité de Surveillance. […] Il a toujours parfaitement joué son rôle. […] C’est quelqu’un à qui on peut confier la constitution et l’animation d’un Board. Avec Marc, on peut se projeter dans la durée en toute confiance.',
         author: 'Guillaume Monteux',
-        role: 'Fondateur de MiLibris, aujourd’hui CEO et fondateur de Gadsme',
+        role: 'Fondateur de miLibris, aujourd’hui CEO et fondateur de Gadsme',
         from: 'fr',
       },
       {

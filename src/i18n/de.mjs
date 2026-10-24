@@ -51,6 +51,10 @@ export default {
         body:
           'Grundlage unserer Arbeit ist die BMMI-Methode: ein fünfstufiges Reifegradmodell, mit dem sich ein Board bewerten, aufbauen oder weiterentwickeln lässt.',
         list: null,
+        case: {
+          title: 'Kundenbeispiel · Start-up der digitalen Presse',
+          text: 'Gleich bei der Gründung des Unternehmens haben wir für den Gründer einen Aufsichtsausschuss eingerichtet, fünf unabhängige Persönlichkeiten mit sich ergänzenden Profilen gewonnen (Unternehmertum, Verlagswesen, Software, öffentlicher Sektor, digitale Werbung) und den Vorsitz übernommen. Acht Jahre lang hat der Ausschuss die strategischen Entscheidungen des Gründers hinterfragt und ihn in entscheidenden Phasen begleitet: bei der internationalen Expansion und anschließend bei einer Finanzierungsrunde mit einem Venture-Capital-Fonds. Als Strategieausschuss, erweitert um die Vertreter des Fonds, hat er das Unternehmen bis zum Exit begleitet: der Übernahme durch einen großen Medien- und Telekommunikationskonzern.',
+        },
       },
       {
         title: 'Strategie',
@@ -138,7 +142,7 @@ export default {
       {
         quote: 'Ich bat Marc, meinen Aufsichtsrat aufzubauen und zu leiten. […] Er hat seine Rolle stets perfekt ausgefüllt. […] Ihm kann man den Aufbau und die Leitung eines Boards anvertrauen. Mit Marc kann man langfristig und mit vollem Vertrauen planen.',
         author: 'Guillaume Monteux',
-        role: 'Gründer von MiLibris, heute CEO und Gründer von Gadsme',
+        role: 'Gründer von miLibris, heute CEO und Gründer von Gadsme',
         from: 'fr',
       },
       {

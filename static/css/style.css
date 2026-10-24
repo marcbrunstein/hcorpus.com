@@ -1388,3 +1388,24 @@ p {
     padding: 12px 0 12px 22px;
   }
 }
+
+/* ---------- Cas client dans une expertise ---------- */
+
+.expertise .case {
+  margin: 24px 0 16px;
+  padding: 22px 24px;
+  background: var(--paper);
+  border-left: 3px solid var(--yellow);
+}
+.expertise .case-title {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.expertise .case p:last-child {
+  font-size: 0.97rem;
+  margin: 0;
+}
