@@ -61,7 +61,7 @@ export default {
         note: 'Diagnosi realizzata da un esperto accreditato presso Bpifrance e cofinanziata dal programma Diag Data IA per le PMI e medie imprese francesi ammissibili. Non realizziamo sviluppi tecnici (agenti, integrazioni): li affidiamo a partner specializzati e ne guidiamo la realizzazione.',
         case: {
           title: 'Caso cliente · Rete internazionale di promozione commerciale',
-          text: 'Per una rete di diverse centinaia di collaboratori distribuiti in 50 uffici nel mondo abbiamo guidato, in partnership con Araïko, una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
+          text: 'Per una rete di 50 uffici nel mondo abbiamo guidato, in partnership con Araïko, una diagnosi Diag Data IA cofinanziata da Bpifrance. Una ventina di interviste in Francia, Germania e Italia hanno permesso di identificare e prioritizzare 21 casi d’uso, tre dei quali approfonditi con benefici e costi stimati. La roadmap su 18 mesi parte dall’essenziale: l’alfabetizzazione all’IA dei team e una carta d’uso dell’IA, prima dell’implementazione dei primi strumenti.',
         },
       },
       {

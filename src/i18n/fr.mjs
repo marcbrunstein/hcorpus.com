@@ -61,7 +61,7 @@ export default {
         note: 'Diagnostic réalisé par un expert référencé Bpifrance et cofinancé par le programme Diag Data IA pour les PME et ETI éligibles. Nous ne réalisons pas de développements techniques (agents, intégrations) : nous les confions à des partenaires spécialisés et en pilotons la réalisation.',
         case: {
           title: 'Cas client · Réseau international de promotion commerciale',
-          text: 'Pour un réseau de plusieurs centaines de collaborateurs répartis dans 50 bureaux à travers le monde, nous avons piloté, en partenariat avec Araïko, un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
+          text: 'Pour un réseau de 50 bureaux à travers le monde, nous avons piloté, en partenariat avec Araïko, un Diag Data IA cofinancé par Bpifrance. Une vingtaine d’entretiens menés en France, en Allemagne et en Italie ont permis d’identifier et de prioriser 21 cas d’usage, dont trois ont été étudiés en profondeur, gains et coûts chiffrés à l’appui. La feuille de route sur 18 mois commence par l’essentiel : l’acculturation des équipes et une charte d’usage de l’IA, avant le déploiement des premiers outils.',
         },
       },
       {

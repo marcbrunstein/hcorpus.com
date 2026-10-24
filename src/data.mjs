@@ -61,13 +61,13 @@ export const clients = {
     { name: 'Youree', logo: 'youree.png', country: 'fr', url: 'https://www.youree.io/' },
   ],
   mid: [
-    { name: 'Promosalons', logo: 'promosalons.png', country: 'fr', url: 'https://www.promosalons.com/' },
+    { name: 'Promosalons', logo: 'promosalons.png', country: 'fr', url: 'https://promosalons.com/' },
     { name: 'VT Scan', logo: 'vtscan.png', country: 'fr', url: 'https://www.vtscan.fr/' },
     { name: 'Epoka', logo: 'epoka.png', country: 'fr', url: 'https://www.epoka.fr/' },
     { name: 'Cynck Consulting MEA', logo: 'cynck.png', country: 'ae' },
     { name: 'Acteurs du franco-allemand', logo: 'acteurs-franco-allemand.png', country: 'frde', url: 'https://www.afa-info.com/' },
     { name: 'Crea Valoris', logo: 'crea-valoris.png', country: 'fr', url: 'https://tonygoncalves.fr/crea-valoris/' },
-    { name: 'Annie', logo: 'annie.png', country: 'fr' },
+    { name: 'Annie', logo: 'annie.png', country: 'fr', url: 'https://www.newsassurancespro.com/annie' },
   ],
 };
 

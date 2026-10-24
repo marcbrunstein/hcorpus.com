@@ -61,7 +61,7 @@ export default {
         note: 'Die Diagnose wird von einem bei Bpifrance gelisteten Experten durchgeführt und für förderfähige französische KMU und Mittelständler im Programm Diag Data IA kofinanziert. Technische Entwicklungen (Agenten, Integrationen) übernehmen wir nicht selbst: Wir vergeben sie an spezialisierte Partner und steuern ihre Umsetzung.',
         case: {
           title: 'Kundenbeispiel · Internationales Netzwerk für Absatzförderung',
-          text: 'Für ein Netzwerk mit mehreren hundert Mitarbeitenden in 50 Büros weltweit haben wir gemeinsam mit Araïko eine von Bpifrance kofinanzierte Diag-Data-IA-Diagnose geleitet. Rund zwanzig Interviews in Frankreich, Deutschland und Italien ermöglichten es, 21 Anwendungsfälle zu identifizieren und zu priorisieren; drei davon wurden mit bezifferten Nutzen und Kosten vertieft untersucht. Die Roadmap über 18 Monate beginnt mit dem Wesentlichen: KI-Kompetenz der Teams und eine Charta für den KI-Einsatz, bevor die ersten Werkzeuge eingeführt werden.',
+          text: 'Für ein Netzwerk mit 50 Büros weltweit haben wir gemeinsam mit Araïko eine von Bpifrance kofinanzierte Diag-Data-IA-Diagnose geleitet. Rund zwanzig Interviews in Frankreich, Deutschland und Italien ermöglichten es, 21 Anwendungsfälle zu identifizieren und zu priorisieren; drei davon wurden mit bezifferten Nutzen und Kosten vertieft untersucht. Die Roadmap über 18 Monate beginnt mit dem Wesentlichen: KI-Kompetenz der Teams und eine Charta für den KI-Einsatz, bevor die ersten Werkzeuge eingeführt werden.',
         },
       },
       {
